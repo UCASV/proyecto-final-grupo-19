@@ -1,0 +1,9 @@
+C:\Users\edwan\source\repos\bdPooFinalPj\bdPooFinalPj\bin\Debug\bdPooFinalPj.exe.config
+C:\Users\edwan\source\repos\bdPooFinalPj\bdPooFinalPj\bin\Debug\bdPooFinalPj.exe
+C:\Users\edwan\source\repos\bdPooFinalPj\bdPooFinalPj\bin\Debug\bdPooFinalPj.pdb
+C:\Users\edwan\source\repos\bdPooFinalPj\bdPooFinalPj\obj\Debug\bdPooFinalPj.csprojAssemblyReference.cache
+C:\Users\edwan\source\repos\bdPooFinalPj\bdPooFinalPj\obj\Debug\bdPooFinalPj.Properties.Resources.resources
+C:\Users\edwan\source\repos\bdPooFinalPj\bdPooFinalPj\obj\Debug\bdPooFinalPj.csproj.GenerateResource.cache
+C:\Users\edwan\source\repos\bdPooFinalPj\bdPooFinalPj\obj\Debug\bdPooFinalPj.exe
+C:\Users\edwan\source\repos\bdPooFinalPj\bdPooFinalPj\obj\Debug\bdPooFinalPj.pdb
+C:\Users\edwan\source\repos\bdPooFinalPj\bdPooFinalPj\obj\Debug\bdPooFinalPj.FormLogin.resources
