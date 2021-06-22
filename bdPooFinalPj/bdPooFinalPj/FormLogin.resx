@@ -118,72 +118,72 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblU2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblU2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 6pt, style=Bold</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblU2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lblU2.Location" type="System.Drawing.Point, System.Drawing">
     <value>93, 418</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lblU2.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 10</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblU2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
+  <data name="lblU2.Text" xml:space="preserve">
     <value>José Simeón Cañas</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="&gt;&gt;lblU2.Name" xml:space="preserve">
+    <value>lblU2</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblU2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblU2.Parent" xml:space="preserve">
     <value>pnlLogin1</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblU2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lvlU1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lvlU1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 6pt, style=Bold</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lvlU1.Location" type="System.Drawing.Point, System.Drawing">
     <value>78, 404</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lvlU1.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 10</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="lvlU1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="lvlU1.Text" xml:space="preserve">
     <value>Universidad Centroamericana</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;lvlU1.Name" xml:space="preserve">
+    <value>lvlU1</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;lvlU1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lvlU1.Parent" xml:space="preserve">
     <value>pnlLogin1</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lvlU1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pictureBox2.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbLogoU.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAA8CAYAAAAkNenBAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
         EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
@@ -225,37 +225,37 @@
         EWn6rAnimAZ76gBFyUemaHRHikZ3pGh0R4pGd6RodEeKRvcj1fkXDT2GxlRiuOEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox2.ImageLocation" xml:space="preserve">
+  <data name="pbLogoU.ImageLocation" xml:space="preserve">
     <value>0,0</value>
   </data>
-  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="pbLogoU.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pictureBox2.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="pbLogoU.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pbLogoU.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 381</value>
   </data>
-  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pbLogoU.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 63</value>
   </data>
-  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="pbLogoU.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
-    <value>pictureBox2</value>
+  <data name="&gt;&gt;pbLogoU.Name" xml:space="preserve">
+    <value>pbLogoU</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;pbLogoU.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pbLogoU.Parent" xml:space="preserve">
     <value>pnlLogin1</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pbLogoU.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="pictureBox1.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbLogoApp.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
         EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
@@ -305,31 +305,31 @@
         RU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox1.ImageLocation" xml:space="preserve">
+  <data name="pbLogoApp.ImageLocation" xml:space="preserve">
     <value>0,0</value>
   </data>
-  <data name="pictureBox1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="pbLogoApp.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 12</value>
+  <data name="pbLogoApp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 91</value>
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pbLogoApp.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 93</value>
   </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="pbLogoApp.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
+  <data name="&gt;&gt;pbLogoApp.Name" xml:space="preserve">
+    <value>pbLogoApp</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;pbLogoApp.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pbLogoApp.Parent" xml:space="preserve">
     <value>pnlLogin1</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pbLogoApp.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="pnlLogin1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -339,7 +339,7 @@
     <value>0, 0</value>
   </data>
   <data name="pnlLogin1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 456</value>
+    <value>206, 456</value>
   </data>
   <data name="pnlLogin1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -355,6 +355,68 @@
   </data>
   <data name="&gt;&gt;pnlLogin1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="pbClose.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        8hJ0ri0gKoBVrAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="pbClose.ImageLocation" xml:space="preserve">
+    <value>0,0</value>
+  </data>
+  <data name="pbClose.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbClose.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="pbClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>510, 7</value>
+  </data>
+  <data name="pbClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 32</value>
+  </data>
+  <data name="pbClose.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pbClose.Name" xml:space="preserve">
+    <value>pbClose</value>
+  </data>
+  <data name="&gt;&gt;pbClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbClose.Parent" xml:space="preserve">
+    <value>pnlLogin2</value>
+  </data>
+  <data name="&gt;&gt;pbClose.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="cboCabain.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -438,39 +500,39 @@
     <value>pnlLogin2</value>
   </data>
   <data name="&gt;&gt;pnlCabain.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <data name="button1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnLogin.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnLogin.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnLogin.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnLogin.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnLogin.Size" type="System.Drawing.Size, System.Drawing">
     <value>240, 39</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnLogin.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
+  <data name="btnLogin.Text" xml:space="preserve">
     <value>Login</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="&gt;&gt;btnLogin.Name" xml:space="preserve">
+    <value>btnLogin</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnLogin.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnLogin.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnLogin.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
@@ -492,7 +554,7 @@
     <value>pnlLogin2</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="lblPassword.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -525,7 +587,7 @@
     <value>pnlLogin2</value>
   </data>
   <data name="&gt;&gt;lblPassword.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="pnlPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>156, 252</value>
@@ -546,7 +608,7 @@
     <value>pnlLogin2</value>
   </data>
   <data name="&gt;&gt;pnlPassword.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 15.75pt, style=Bold</value>
@@ -570,7 +632,7 @@
     <value>pnlLogin2</value>
   </data>
   <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="lblUsername.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -600,7 +662,7 @@
     <value>pnlLogin2</value>
   </data>
   <data name="&gt;&gt;lblUsername.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="pnlUsername.Location" type="System.Drawing.Point, System.Drawing">
     <value>156, 158</value>
@@ -621,7 +683,7 @@
     <value>pnlLogin2</value>
   </data>
   <data name="&gt;&gt;pnlUsername.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="txtUsername.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 15.75pt, style=Bold</value>
@@ -645,7 +707,7 @@
     <value>pnlLogin2</value>
   </data>
   <data name="&gt;&gt;txtUsername.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="lblLogin.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -678,7 +740,7 @@
     <value>pnlLogin2</value>
   </data>
   <data name="&gt;&gt;lblLogin.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="pnlLogin2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>

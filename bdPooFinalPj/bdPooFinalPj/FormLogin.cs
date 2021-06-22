@@ -32,5 +32,24 @@ namespace bdPooFinalPj
             
 
         }
+
+        private void pbClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormMain formMain = new FormMain();
+            formMain.ShowDialog();
+            formMain = null;
+            Show();
+         }
+
+        private void pbClose_MouseHover(object sender, EventArgs e)
+        {
+
+        }
     }
 }
