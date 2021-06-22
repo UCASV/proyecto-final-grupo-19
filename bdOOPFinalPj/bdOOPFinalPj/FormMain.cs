@@ -1,0 +1,137 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace bdOOPFinalPj
+{
+    public partial class FormMain : Form
+    {
+        public FormMain()
+        {
+            InitializeComponent();
+            pnlIndicator.Height = panel14.Height - 2;
+            pnlIndicator.Top = panel14.Top + 1;
+        }
+        private void btbAppointment_Click(object sender, EventArgs e)
+        {
+            tabControl.SelectedTab = pageAppointment;
+
+            pnlIndicator.Height = panel14.Height - 2;
+            pnlIndicator.Top = panel14.Top + 1;
+
+            txtAddress.Text = String.Empty;
+            txtAge.Text = String.Empty;
+            txtDUI.Text = String.Empty;
+            txtEmail.Text = String.Empty;
+            txtName.Text = String.Empty;
+            txtPhoneNmbr.Text = String.Empty;
+
+            cboID.SelectedIndex = -1;
+            cboIllness.SelectedIndex = -1;
+        }
+        private void btnTracing_Click(object sender, EventArgs e)
+        {   
+            
+            tabControl.SelectedTab = pageTracing;
+
+            pnlIndicator.Height = panel3.Height - 2;
+            pnlIndicator.Top = panel3.Top + 1;
+
+            txtTraceName.Text = String.Empty;
+            txtTraceAddress.Text = String.Empty;
+            txtTraceAge.Text = String.Empty;
+            txtTraceDate1.Text = String.Empty;
+            txtTraceEmail.Text = String.Empty;
+            txtTraceHour1.Text = String.Empty;
+            txtTraceIDInstitution.Text = String.Empty;
+            txtTraceIllness.Text = String.Empty;
+            txtTraceName.Text = String.Empty;
+            txtTracePhoneNmbr.Text = String.Empty;
+            txtTracePlace1.Text = String.Empty;
+
+            lblTraceAddress.Visible = false;
+            lblTraceAge.Visible = false;
+            lblTraceDate1.Visible = false;
+            lblTraceEmail.Visible = false;
+            lblTraceHour1.Visible = false;
+            txtTraceIDInstitution.Visible = false; 
+            lblTraceIllness.Visible = false;
+            lblTraceName.Visible = false;
+            lblTracePhoneNmbr.Visible = false;
+            lblTracePlace1.Visible = false;
+            lblTraceIdInstitution.Visible = false;
+
+            txtTraceAddress.Visible = false;
+            txtTraceAge.Visible = false;
+            txtTraceDate1.Visible = false;
+            txtTraceEmail.Visible = false;
+            txtTraceHour1.Visible = false;
+
+           
+            txtTraceIllness.Visible = false;
+            txtTraceName.Visible = false;
+            txtTracePhoneNmbr.Visible = false;
+            txtTracePlace1.Visible = false;
+
+            panel14.Visible = false;
+            panel15.Visible = false;
+            panel16.Visible = false;
+            panel11.Visible = false;
+            panel18.Visible = false;
+            panel19.Visible = false;
+            panel20.Visible = false;
+            panel21.Visible = false;
+            panel23.Visible = false;
+            panel25.Visible = false;
+            
+        }
+
+        private void btnTrace_Click(object sender, EventArgs e)
+        {
+            lblTraceAddress.Visible = true;
+            lblTraceAge.Visible = true;
+            lblTraceDate1.Visible = true;
+            lblTraceEmail.Visible = true;
+            lblTraceHour1.Visible = true;
+            txtTraceIDInstitution.Visible = true;
+            lblTraceIllness.Visible = true;
+            lblTraceName.Visible = true;
+            lblTracePhoneNmbr.Visible = true;
+            lblTracePlace1.Visible = true;
+            txtTraceIDInstitution.Visible = false;
+            lblTraceIdInstitution.Visible = true;
+
+
+            txtTraceAddress.Visible = true;
+            txtTraceAge.Visible = true;
+            txtTraceDate1.Visible = true;
+            txtTraceEmail.Visible = true;
+            txtTraceHour1.Visible = true;
+            txtTraceIDInstitution.Visible = true;
+            txtTraceIllness.Visible = true;
+            txtTraceName.Visible = true;
+            txtTracePhoneNmbr.Visible = true;
+            txtTracePlace1.Visible = true;
+
+
+            panel14.Visible = true;
+            panel15.Visible = true;
+            panel16.Visible = true;
+            panel11.Visible = true;
+            panel18.Visible = true;
+            panel19.Visible = true;
+            panel20.Visible = true;
+            panel21.Visible = true;
+            panel23.Visible = true;
+            panel25.Visible = true;
+        }
+
+   
+    }
+}
