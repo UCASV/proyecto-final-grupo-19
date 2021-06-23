@@ -15,21 +15,21 @@ namespace bdOOPFinalPj
         public FormMain()
         {
             InitializeComponent();
-            pnlIndicator.Height = panel14.Height - 2;
-            pnlIndicator.Top = panel14.Top + 1;
+            pnlIndicator.Height = panelBase.Height;
+            pnlIndicator.Top = panelBase.Top;
         }
         private void btbAppointment_Click(object sender, EventArgs e)
         {
             tabControl.SelectedTab = pageAppointment;
 
-            pnlIndicator.Height = panel14.Height - 2;
-            pnlIndicator.Top = panel14.Top + 1;
+            pnlIndicator.Height = panelBase.Height;
+            pnlIndicator.Top = panelBase.Top;
 
-            txtAddress.Text = String.Empty;
+            txtName.Text = String.Empty;
             txtAge.Text = String.Empty;
             txtDUI.Text = String.Empty;
             txtEmail.Text = String.Empty;
-            txtName.Text = String.Empty;
+            txtAddress.Text = String.Empty;
             txtPhoneNmbr.Text = String.Empty;
 
             cboID.SelectedIndex = -1;
@@ -40,8 +40,8 @@ namespace bdOOPFinalPj
             
             tabControl.SelectedTab = pageTracing;
 
-            pnlIndicator.Height = panel3.Height - 2;
-            pnlIndicator.Top = panel3.Top + 1;
+            pnlIndicator.Height = panel1.Height;
+            pnlIndicator.Top = panel1.Top;
 
             txtTraceName.Text = String.Empty;
             txtTraceAddress.Text = String.Empty;
@@ -50,9 +50,9 @@ namespace bdOOPFinalPj
             txtTraceEmail.Text = String.Empty;
             txtTraceHour1.Text = String.Empty;
             txtTraceIDInstitution.Text = String.Empty;
-            txtTraceIllness.Text = String.Empty;
-            txtTraceName.Text = String.Empty;
             txtTracePhoneNmbr.Text = String.Empty;
+            txtTraceName.Text = String.Empty;
+            txtTraceIllness.Text = String.Empty;
             txtTracePlace1.Text = String.Empty;
 
             lblTraceAddress.Visible = false;
@@ -74,9 +74,9 @@ namespace bdOOPFinalPj
             txtTraceHour1.Visible = false;
 
            
-            txtTraceIllness.Visible = false;
-            txtTraceName.Visible = false;
             txtTracePhoneNmbr.Visible = false;
+            txtTraceName.Visible = false;
+            txtTraceIllness.Visible = false;
             txtTracePlace1.Visible = false;
 
             panel14.Visible = false;
@@ -114,9 +114,9 @@ namespace bdOOPFinalPj
             txtTraceEmail.Visible = true;
             txtTraceHour1.Visible = true;
             txtTraceIDInstitution.Visible = true;
-            txtTraceIllness.Visible = true;
-            txtTraceName.Visible = true;
             txtTracePhoneNmbr.Visible = true;
+            txtTraceName.Visible = true;
+            txtTraceIllness.Visible = true;
             txtTracePlace1.Visible = true;
 
 
@@ -132,6 +132,38 @@ namespace bdOOPFinalPj
             panel25.Visible = true;
         }
 
-   
+        private void panelBase_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnPrinting_Click(object sender, EventArgs e)
+        {
+            tabControl.SelectedTab = pageDownload;
+
+            pnlIndicator.Height = panel4.Height;
+            pnlIndicator.Top = panel4.Top;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tabControl.SelectedTab = pageVaccination;
+
+            pnlIndicator.Height = panel5.Height;
+            pnlIndicator.Top = panel5.Top;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            tabControl.SelectedTab = pageStats;
+
+            pnlIndicator.Height = panel3.Height;
+            pnlIndicator.Top = panel3.Top;
+        }
     }
 }

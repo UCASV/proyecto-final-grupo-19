@@ -30,5 +30,15 @@ namespace bdOOPFinalPj
         {
 
         }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
