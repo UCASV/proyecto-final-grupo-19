@@ -50,7 +50,7 @@ namespace bdOOPFinalPj
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.cboIllness = new System.Windows.Forms.ComboBox();
             this.lblIllness = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -83,6 +83,8 @@ namespace bdOOPFinalPj
             this.lblTitleAppointment = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pageTracing = new System.Windows.Forms.TabPage();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.txtTraceDate1 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel14 = new System.Windows.Forms.Panel();
             this.txtTraceName = new System.Windows.Forms.TextBox();
@@ -126,8 +128,6 @@ namespace bdOOPFinalPj
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.txtTraceDate1 = new System.Windows.Forms.TextBox();
             this.pnlLeft.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -314,6 +314,7 @@ namespace bdOOPFinalPj
             // 
             // pageAppointment
             // 
+            this.pageAppointment.BackColor = System.Drawing.Color.White;
             this.pageAppointment.Controls.Add(this.pnlTitle1);
             this.pageAppointment.Controls.Add(this.label6);
             this.pageAppointment.Controls.Add(this.panel22);
@@ -352,7 +353,6 @@ namespace bdOOPFinalPj
             this.pageAppointment.Size = new System.Drawing.Size(807, 614);
             this.pageAppointment.TabIndex = 2;
             this.pageAppointment.Text = "tabPage1";
-            this.pageAppointment.UseVisualStyleBackColor = true;
             // 
             // pnlTitle1
             // 
@@ -385,24 +385,25 @@ namespace bdOOPFinalPj
             // 
             // panel22
             // 
-            this.panel22.Controls.Add(this.button1);
+            this.panel22.Controls.Add(this.btnSave);
             this.panel22.Location = new System.Drawing.Point(593, 439);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(77, 39);
             this.panel22.TabIndex = 80;
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::bdOOPFinalPj.Properties.Resources.Save;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 39);
-            this.button1.TabIndex = 33;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Image = global::bdOOPFinalPj.Properties.Resources.Save;
+            this.btnSave.Location = new System.Drawing.Point(0, 0);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(77, 39);
+            this.btnSave.TabIndex = 33;
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // cboIllness
             // 
@@ -463,7 +464,7 @@ namespace bdOOPFinalPj
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.Silver;
-            this.panel10.Location = new System.Drawing.Point(516, 361);
+            this.panel10.Location = new System.Drawing.Point(516, 374);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(160, 1);
             this.panel10.TabIndex = 70;
@@ -492,7 +493,7 @@ namespace bdOOPFinalPj
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Silver;
-            this.panel8.Location = new System.Drawing.Point(89, 362);
+            this.panel8.Location = new System.Drawing.Point(89, 374);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(154, 1);
             this.panel8.TabIndex = 65;
@@ -510,7 +511,7 @@ namespace bdOOPFinalPj
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Silver;
-            this.panel9.Location = new System.Drawing.Point(350, 361);
+            this.panel9.Location = new System.Drawing.Point(352, 374);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(79, 1);
             this.panel9.TabIndex = 67;
@@ -570,7 +571,7 @@ namespace bdOOPFinalPj
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Silver;
-            this.panel7.Location = new System.Drawing.Point(89, 284);
+            this.panel7.Location = new System.Drawing.Point(95, 297);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(581, 1);
             this.panel7.TabIndex = 60;
@@ -609,7 +610,7 @@ namespace bdOOPFinalPj
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Silver;
-            this.panel6.Location = new System.Drawing.Point(427, 208);
+            this.panel6.Location = new System.Drawing.Point(427, 221);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(243, 1);
             this.panel6.TabIndex = 61;
@@ -627,7 +628,7 @@ namespace bdOOPFinalPj
             // pnlUsername
             // 
             this.pnlUsername.BackColor = System.Drawing.Color.Silver;
-            this.pnlUsername.Location = new System.Drawing.Point(89, 208);
+            this.pnlUsername.Location = new System.Drawing.Point(89, 221);
             this.pnlUsername.Name = "pnlUsername";
             this.pnlUsername.Size = new System.Drawing.Size(243, 1);
             this.pnlUsername.TabIndex = 57;
@@ -638,6 +639,7 @@ namespace bdOOPFinalPj
             this.txtDUI.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDUI.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtDUI.Location = new System.Drawing.Point(86, 198);
+            this.txtDUI.MaxLength = 10;
             this.txtDUI.Name = "txtDUI";
             this.txtDUI.Size = new System.Drawing.Size(251, 24);
             this.txtDUI.TabIndex = 56;
@@ -760,6 +762,24 @@ namespace bdOOPFinalPj
             this.pageTracing.TabIndex = 3;
             this.pageTracing.Text = "Chronic Illness";
             this.pageTracing.UseVisualStyleBackColor = true;
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.Silver;
+            this.panel21.Location = new System.Drawing.Point(22, 531);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(243, 1);
+            this.panel21.TabIndex = 63;
+            // 
+            // txtTraceDate1
+            // 
+            this.txtTraceDate1.BackColor = System.Drawing.Color.White;
+            this.txtTraceDate1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTraceDate1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTraceDate1.Location = new System.Drawing.Point(22, 519);
+            this.txtTraceDate1.Name = "txtTraceDate1";
+            this.txtTraceDate1.Size = new System.Drawing.Size(243, 24);
+            this.txtTraceDate1.TabIndex = 62;
             // 
             // textBox1
             // 
@@ -1185,24 +1205,6 @@ namespace bdOOPFinalPj
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.Silver;
-            this.panel21.Location = new System.Drawing.Point(22, 531);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(243, 1);
-            this.panel21.TabIndex = 63;
-            // 
-            // txtTraceDate1
-            // 
-            this.txtTraceDate1.BackColor = System.Drawing.Color.White;
-            this.txtTraceDate1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTraceDate1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTraceDate1.Location = new System.Drawing.Point(22, 519);
-            this.txtTraceDate1.Name = "txtTraceDate1";
-            this.txtTraceDate1.Size = new System.Drawing.Size(243, 24);
-            this.txtTraceDate1.TabIndex = 62;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1219,6 +1221,7 @@ namespace bdOOPFinalPj
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.pnlLeft.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -1267,7 +1270,7 @@ namespace bdOOPFinalPj
         private System.Windows.Forms.TabPage pageAppointment;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox cboIllness;
         private System.Windows.Forms.Label lblIllness;
         private System.Windows.Forms.Label label5;

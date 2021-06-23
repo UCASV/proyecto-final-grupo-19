@@ -30,29 +30,29 @@ namespace bdOOPFinalPj
         private void InitializeComponent()
         {
             this.pnlLogin2 = new System.Windows.Forms.Panel();
-            this.pnlLogin1 = new System.Windows.Forms.Panel();
-            this.pbLogoApp = new System.Windows.Forms.PictureBox();
-            this.lblU1 = new System.Windows.Forms.Label();
-            this.pbLogoU = new System.Windows.Forms.PictureBox();
-            this.lblU2 = new System.Windows.Forms.Label();
-            this.pnlCabain = new System.Windows.Forms.Panel();
-            this.lblCabain = new System.Windows.Forms.Label();
-            this.cboCabain = new System.Windows.Forms.ComboBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.pnlPassword = new System.Windows.Forms.Panel();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.pnlUsername = new System.Windows.Forms.Panel();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.lblLogin = new System.Windows.Forms.Label();
             this.pbClose = new System.Windows.Forms.PictureBox();
+            this.lblLogin = new System.Windows.Forms.Label();
+            this.pnlUsername = new System.Windows.Forms.Panel();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.pnlPassword = new System.Windows.Forms.Panel();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.pnlCabain = new System.Windows.Forms.Panel();
+            this.cboCabain = new System.Windows.Forms.ComboBox();
+            this.lblCabain = new System.Windows.Forms.Label();
+            this.pnlLogin1 = new System.Windows.Forms.Panel();
+            this.lblU2 = new System.Windows.Forms.Label();
+            this.pbLogoU = new System.Windows.Forms.PictureBox();
+            this.lblU1 = new System.Windows.Forms.Label();
+            this.pbLogoApp = new System.Windows.Forms.PictureBox();
             this.pnlLogin2.SuspendLayout();
-            this.pnlLogin1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoApp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoU)).BeginInit();
-            this.pnlCabain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
+            this.pnlCabain.SuspendLayout();
+            this.pnlLogin1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoU)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoApp)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLogin2
@@ -76,6 +76,136 @@ namespace bdOOPFinalPj
             this.pnlLogin2.TabIndex = 1;
             this.pnlLogin2.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLogin2_Paint);
             // 
+            // pbClose
+            // 
+            this.pbClose.Image = global::bdOOPFinalPj.Properties.Resources.close;
+            this.pbClose.Location = new System.Drawing.Point(510, 7);
+            this.pbClose.Name = "pbClose";
+            this.pbClose.Size = new System.Drawing.Size(30, 32);
+            this.pbClose.TabIndex = 16;
+            this.pbClose.TabStop = false;
+            this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
+            // 
+            // lblLogin
+            // 
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblLogin.Location = new System.Drawing.Point(205, 52);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(172, 18);
+            this.lblLogin.TabIndex = 15;
+            this.lblLogin.Text = "Log into your account";
+            // 
+            // pnlUsername
+            // 
+            this.pnlUsername.BackColor = System.Drawing.Color.Silver;
+            this.pnlUsername.Location = new System.Drawing.Point(156, 168);
+            this.pnlUsername.Name = "pnlUsername";
+            this.pnlUsername.Size = new System.Drawing.Size(243, 1);
+            this.pnlUsername.TabIndex = 14;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblUsername.ForeColor = System.Drawing.Color.Silver;
+            this.lblUsername.Location = new System.Drawing.Point(156, 114);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(63, 13);
+            this.lblUsername.TabIndex = 13;
+            this.lblUsername.Text = "Username";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.BackColor = System.Drawing.Color.White;
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtUsername.Location = new System.Drawing.Point(156, 145);
+            this.txtUsername.MaxLength = 100;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(243, 24);
+            this.txtUsername.TabIndex = 1;
+            // 
+            // pnlPassword
+            // 
+            this.pnlPassword.BackColor = System.Drawing.Color.Silver;
+            this.pnlPassword.Location = new System.Drawing.Point(156, 261);
+            this.pnlPassword.Name = "pnlPassword";
+            this.pnlPassword.Size = new System.Drawing.Size(243, 1);
+            this.pnlPassword.TabIndex = 12;
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPassword.ForeColor = System.Drawing.Color.Silver;
+            this.lblPassword.Location = new System.Drawing.Point(156, 208);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(61, 13);
+            this.lblPassword.TabIndex = 11;
+            this.lblPassword.Text = "Password";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.Color.White;
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtPassword.Location = new System.Drawing.Point(159, 238);
+            this.txtPassword.MaxLength = 100;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(243, 24);
+            this.txtPassword.TabIndex = 2;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogin.Location = new System.Drawing.Point(162, 293);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(240, 39);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // pnlCabain
+            // 
+            this.pnlCabain.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.pnlCabain.Controls.Add(this.cboCabain);
+            this.pnlCabain.Controls.Add(this.lblCabain);
+            this.pnlCabain.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlCabain.Location = new System.Drawing.Point(0, 360);
+            this.pnlCabain.Name = "pnlCabain";
+            this.pnlCabain.Size = new System.Drawing.Size(547, 96);
+            this.pnlCabain.TabIndex = 8;
+            // 
+            // cboCabain
+            // 
+            this.cboCabain.BackColor = System.Drawing.Color.White;
+            this.cboCabain.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cboCabain.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cboCabain.FormattingEnabled = true;
+            this.cboCabain.Location = new System.Drawing.Point(219, 41);
+            this.cboCabain.Name = "cboCabain";
+            this.cboCabain.Size = new System.Drawing.Size(121, 24);
+            this.cboCabain.TabIndex = 3;
+            this.cboCabain.Text = "Cabains";
+            // 
+            // lblCabain
+            // 
+            this.lblCabain.AutoSize = true;
+            this.lblCabain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCabain.Location = new System.Drawing.Point(216, 10);
+            this.lblCabain.Name = "lblCabain";
+            this.lblCabain.Size = new System.Drawing.Size(161, 13);
+            this.lblCabain.TabIndex = 0;
+            this.lblCabain.Text = "Please, select your cabain ";
+            // 
             // pnlLogin1
             // 
             this.pnlLogin1.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -90,24 +220,15 @@ namespace bdOOPFinalPj
             this.pnlLogin1.Size = new System.Drawing.Size(206, 456);
             this.pnlLogin1.TabIndex = 0;
             // 
-            // pbLogoApp
+            // lblU2
             // 
-            this.pbLogoApp.Image = global::bdOOPFinalPj.Properties.Resources.HAPPA_littler;
-            this.pbLogoApp.Location = new System.Drawing.Point(51, 91);
-            this.pbLogoApp.Name = "pbLogoApp";
-            this.pbLogoApp.Size = new System.Drawing.Size(101, 93);
-            this.pbLogoApp.TabIndex = 0;
-            this.pbLogoApp.TabStop = false;
-            // 
-            // lblU1
-            // 
-            this.lblU1.AutoSize = true;
-            this.lblU1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblU1.Location = new System.Drawing.Point(71, 405);
-            this.lblU1.Name = "lblU1";
-            this.lblU1.Size = new System.Drawing.Size(134, 9);
-            this.lblU1.TabIndex = 2;
-            this.lblU1.Text = "Universidad Centroamericana";
+            this.lblU2.AutoSize = true;
+            this.lblU2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblU2.Location = new System.Drawing.Point(93, 418);
+            this.lblU2.Name = "lblU2";
+            this.lblU2.Size = new System.Drawing.Size(90, 9);
+            this.lblU2.TabIndex = 4;
+            this.lblU2.Text = "José Simeón Cañas";
             // 
             // pbLogoU
             // 
@@ -119,141 +240,24 @@ namespace bdOOPFinalPj
             this.pbLogoU.TabIndex = 3;
             this.pbLogoU.TabStop = false;
             // 
-            // lblU2
+            // lblU1
             // 
-            this.lblU2.AutoSize = true;
-            this.lblU2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblU2.Location = new System.Drawing.Point(93, 418);
-            this.lblU2.Name = "lblU2";
-            this.lblU2.Size = new System.Drawing.Size(90, 9);
-            this.lblU2.TabIndex = 4;
-            this.lblU2.Text = "José Simeón Cañas";
+            this.lblU1.AutoSize = true;
+            this.lblU1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblU1.Location = new System.Drawing.Point(71, 405);
+            this.lblU1.Name = "lblU1";
+            this.lblU1.Size = new System.Drawing.Size(134, 9);
+            this.lblU1.TabIndex = 2;
+            this.lblU1.Text = "Universidad Centroamericana";
             // 
-            // pnlCabain
+            // pbLogoApp
             // 
-            this.pnlCabain.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pnlCabain.Controls.Add(this.cboCabain);
-            this.pnlCabain.Controls.Add(this.lblCabain);
-            this.pnlCabain.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlCabain.Location = new System.Drawing.Point(0, 360);
-            this.pnlCabain.Name = "pnlCabain";
-            this.pnlCabain.Size = new System.Drawing.Size(547, 96);
-            this.pnlCabain.TabIndex = 8;
-            // 
-            // lblCabain
-            // 
-            this.lblCabain.AutoSize = true;
-            this.lblCabain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCabain.Location = new System.Drawing.Point(216, 10);
-            this.lblCabain.Name = "lblCabain";
-            this.lblCabain.Size = new System.Drawing.Size(161, 13);
-            this.lblCabain.TabIndex = 0;
-            this.lblCabain.Text = "Please, select your cabain ";
-            // 
-            // cboCabain
-            // 
-            this.cboCabain.BackColor = System.Drawing.Color.White;
-            this.cboCabain.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cboCabain.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cboCabain.FormattingEnabled = true;
-            this.cboCabain.Location = new System.Drawing.Point(219, 41);
-            this.cboCabain.Name = "cboCabain";
-            this.cboCabain.Size = new System.Drawing.Size(121, 24);
-            this.cboCabain.TabIndex = 1;
-            this.cboCabain.Text = "Cabains";
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLogin.Location = new System.Drawing.Point(162, 293);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(240, 39);
-            this.btnLogin.TabIndex = 9;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.BackColor = System.Drawing.Color.White;
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtPassword.Location = new System.Drawing.Point(159, 238);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(243, 24);
-            this.txtPassword.TabIndex = 10;
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
-            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPassword.ForeColor = System.Drawing.Color.Silver;
-            this.lblPassword.Location = new System.Drawing.Point(156, 208);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(61, 13);
-            this.lblPassword.TabIndex = 11;
-            this.lblPassword.Text = "Password";
-            // 
-            // pnlPassword
-            // 
-            this.pnlPassword.BackColor = System.Drawing.Color.Silver;
-            this.pnlPassword.Location = new System.Drawing.Point(156, 252);
-            this.pnlPassword.Name = "pnlPassword";
-            this.pnlPassword.Size = new System.Drawing.Size(243, 1);
-            this.pnlPassword.TabIndex = 12;
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblUsername.ForeColor = System.Drawing.Color.Silver;
-            this.lblUsername.Location = new System.Drawing.Point(156, 114);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(63, 13);
-            this.lblUsername.TabIndex = 13;
-            this.lblUsername.Text = "Username";
-            // 
-            // pnlUsername
-            // 
-            this.pnlUsername.BackColor = System.Drawing.Color.Silver;
-            this.pnlUsername.Location = new System.Drawing.Point(156, 158);
-            this.pnlUsername.Name = "pnlUsername";
-            this.pnlUsername.Size = new System.Drawing.Size(243, 1);
-            this.pnlUsername.TabIndex = 14;
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.BackColor = System.Drawing.Color.White;
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtUsername.Location = new System.Drawing.Point(156, 145);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(243, 24);
-            this.txtUsername.TabIndex = 13;
-            // 
-            // lblLogin
-            // 
-            this.lblLogin.AutoSize = true;
-            this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblLogin.Location = new System.Drawing.Point(205, 52);
-            this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(172, 18);
-            this.lblLogin.TabIndex = 15;
-            this.lblLogin.Text = "Log into your account";
-            // 
-            // pbClose
-            // 
-            this.pbClose.Image = global::bdOOPFinalPj.Properties.Resources.close;
-            this.pbClose.Location = new System.Drawing.Point(510, 7);
-            this.pbClose.Name = "pbClose";
-            this.pbClose.Size = new System.Drawing.Size(30, 32);
-            this.pbClose.TabIndex = 16;
-            this.pbClose.TabStop = false;
+            this.pbLogoApp.Image = global::bdOOPFinalPj.Properties.Resources.HAPPA_littler;
+            this.pbLogoApp.Location = new System.Drawing.Point(51, 91);
+            this.pbLogoApp.Name = "pbLogoApp";
+            this.pbLogoApp.Size = new System.Drawing.Size(101, 93);
+            this.pbLogoApp.TabIndex = 0;
+            this.pbLogoApp.TabStop = false;
             // 
             // FormLogin
             // 
@@ -269,13 +273,13 @@ namespace bdOOPFinalPj
             this.Text = "FormLogin";
             this.pnlLogin2.ResumeLayout(false);
             this.pnlLogin2.PerformLayout();
-            this.pnlLogin1.ResumeLayout(false);
-            this.pnlLogin1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoApp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoU)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             this.pnlCabain.ResumeLayout(false);
             this.pnlCabain.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
+            this.pnlLogin1.ResumeLayout(false);
+            this.pnlLogin1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoU)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoApp)).EndInit();
             this.ResumeLayout(false);
 
         }
