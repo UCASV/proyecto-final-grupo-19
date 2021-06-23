@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -132,6 +133,7 @@ namespace bdOOPFinalPj
             panel25.Visible = true;
         }
 
+<<<<<<< HEAD
         private void panelBase_Paint(object sender, PaintEventArgs e)
         {
 
@@ -164,6 +166,50 @@ namespace bdOOPFinalPj
 
             pnlIndicator.Height = panel3.Height;
             pnlIndicator.Top = panel3.Top;
+=======
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            tabControl.Appearance = TabAppearance.FlatButtons;
+            tabControl.ItemSize = new Size(0, 1);
+            tabControl.SizeMode = TabSizeMode.Fixed;
+            tabControl.TabStop = false;
+        }
+
+        private bool ValidDUI()
+        {
+            int n;
+            if (txtDUI.Text.Length > 9 && Regex.IsMatch(txtDUI.Text.Substring(0, 7), @"^[0-9]+$") &&
+                    (txtDUI.Text[9] == '0' || txtDUI.Text[9] == '1' || txtDUI.Text[9] == '2' || txtDUI.Text[9] == '3' || txtDUI.Text[9] == '4' || txtDUI.Text[9] == '5' || txtDUI.Text[9] == '6' ||
+                        txtDUI.Text[9] == '7' || txtDUI.Text[9] == '8' || txtDUI.Text[9] == '9'))
+            {
+                if (txtDUI.Text[8] == '-')
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            bool valid = ValidDUI();
+            if (valid)
+            {
+                MessageBox.Show("Exito", "HAPA", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("Error", "HAPA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
+>>>>>>> 9573a056cab2e50b6f6fcd23838d1c70b047c6ee
         }
     }
 }

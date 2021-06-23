@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\edwan\\Desktop\\POO\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj": {}
   },
   "projects": {
@@ -12,9 +13,27 @@
         "projectPath": "C:\\Users\\edwan\\Desktop\\POO\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
         "packagesPath": "C:\\Users\\edwan\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\edwan\\Desktop\\POO\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\obj\\",
+=======
+    "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
+        "projectName": "bdOOPFinalPj",
+        "projectPath": "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\obj\\",
+>>>>>>> 9573a056cab2e50b6f6fcd23838d1c70b047c6ee
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\edwan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 9573a056cab2e50b6f6fcd23838d1c70b047c6ee
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

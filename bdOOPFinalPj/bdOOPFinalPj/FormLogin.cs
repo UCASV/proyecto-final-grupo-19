@@ -31,6 +31,7 @@ namespace bdOOPFinalPj
 
         }
 
+<<<<<<< HEAD
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
 
@@ -39,6 +40,11 @@ namespace bdOOPFinalPj
         private void pbClose_Click(object sender, EventArgs e)
         {
             Close();
+=======
+        private void pbClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+>>>>>>> 9573a056cab2e50b6f6fcd23838d1c70b047c6ee
         }
     }
 }
