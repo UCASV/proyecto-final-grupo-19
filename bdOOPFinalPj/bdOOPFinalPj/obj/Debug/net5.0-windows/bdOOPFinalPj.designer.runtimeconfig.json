@@ -6,14 +6,9 @@
       "version": "5.0.0"
     },
     "additionalProbingPaths": [
-<<<<<<< HEAD
-      "C:\\Users\\edwan\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\edwan\\.nuget\\packages"
-=======
       "C:\\Users\\user\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\user\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
->>>>>>> 9573a056cab2e50b6f6fcd23838d1c70b047c6ee
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

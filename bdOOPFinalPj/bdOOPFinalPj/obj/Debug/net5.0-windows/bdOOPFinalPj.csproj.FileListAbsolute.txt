@@ -1,45 +1,3 @@
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.exe
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.deps.json
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.runtimeconfig.json
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.runtimeconfig.dev.json
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.dll
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\ref\bdOOPFinalPj.dll
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.pdb
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.AssemblyReference.cache
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.FormLogin.resources
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.FormMain.resources
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.Properties.Resources.resources
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.GenerateResource.cache
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.AssemblyInfoInputs.cache
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.AssemblyInfo.cs
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.CoreCompileInputs.cache
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.dll
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\ref\bdOOPFinalPj.dll
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.pdb
-C:\Users\Hernández López\OneDrive\Documentos\OOPProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.genruntimeconfig.cache
-<<<<<<< HEAD
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.exe
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.deps.json
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.runtimeconfig.json
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.runtimeconfig.dev.json
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.dll
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\ref\bdOOPFinalPj.dll
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.pdb
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.AssemblyReference.cache
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.FormLogin.resources
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.FormMain.resources
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.Properties.Resources.resources
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.GenerateResource.cache
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.AssemblyInfoInputs.cache
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.AssemblyInfo.cs
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.CoreCompileInputs.cache
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.dll
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\ref\bdOOPFinalPj.dll
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.pdb
-C:\Users\edwan\Desktop\POO\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.genruntimeconfig.cache
-=======
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.exe
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.deps.json
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.runtimeconfig.json
@@ -47,7 +5,6 @@ C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.dll
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\ref\bdOOPFinalPj.dll
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.pdb
-C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.AssemblyReference.cache
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.FormLogin.resources
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.FormMain.resources
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.Properties.Resources.resources
@@ -60,4 +17,3 @@ C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\ref\bdOOPFinalPj.dll
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.pdb
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.genruntimeconfig.cache
->>>>>>> 9573a056cab2e50b6f6fcd23838d1c70b047c6ee

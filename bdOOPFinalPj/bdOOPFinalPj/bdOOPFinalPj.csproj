@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="obj\Debug\net5.0-windows\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
     <Compile Include="obj\Debug\net5.0-windows\bdOOPFinalPj.AssemblyInfo.cs" />
   </ItemGroup>
 

@@ -133,7 +133,6 @@ namespace bdOOPFinalPj
             panel25.Visible = true;
         }
 
-<<<<<<< HEAD
         private void panelBase_Paint(object sender, PaintEventArgs e)
         {
 
@@ -166,7 +165,8 @@ namespace bdOOPFinalPj
 
             pnlIndicator.Height = panel3.Height;
             pnlIndicator.Top = panel3.Top;
-=======
+        }
+
         private void FormMain_Load(object sender, EventArgs e)
         {
             tabControl.Appearance = TabAppearance.FlatButtons;
@@ -209,7 +209,6 @@ namespace bdOOPFinalPj
                 MessageBox.Show("Error", "HAPA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
->>>>>>> 9573a056cab2e50b6f6fcd23838d1c70b047c6ee
         }
     }
 }
