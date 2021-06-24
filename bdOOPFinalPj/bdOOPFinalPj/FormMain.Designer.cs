@@ -31,8 +31,6 @@ namespace bdOOPFinalPj
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.pnlLeft = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnStats = new System.Windows.Forms.Button();
             this.pnlIndicator = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,6 +41,8 @@ namespace bdOOPFinalPj
             this.btnDownload = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnVaccination = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnStats = new System.Windows.Forms.Button();
             this.pbLogoMainForm = new System.Windows.Forms.PictureBox();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.pageAppointment = new System.Windows.Forms.TabPage();
@@ -143,11 +143,11 @@ namespace bdOOPFinalPj
             this.btnDownloadVerify = new System.Windows.Forms.Button();
             this.pageStats = new System.Windows.Forms.TabPage();
             this.pnlLeft.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelBase.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoMainForm)).BeginInit();
             this.tabControl.SuspendLayout();
             this.pageAppointment.SuspendLayout();
@@ -183,33 +183,6 @@ namespace bdOOPFinalPj
             this.pnlLeft.Size = new System.Drawing.Size(216, 717);
             this.pnlLeft.TabIndex = 0;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.panel3.Controls.Add(this.btnStats);
-            this.panel3.Location = new System.Drawing.Point(1, 595);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(216, 120);
-            this.panel3.TabIndex = 2;
-            // 
-            // btnStats
-            // 
-            this.btnStats.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnStats.CausesValidation = false;
-            this.btnStats.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnStats.FlatAppearance.BorderSize = 0;
-            this.btnStats.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStats.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnStats.Image = ((System.Drawing.Image)(resources.GetObject("btnStats.Image")));
-            this.btnStats.Location = new System.Drawing.Point(0, 0);
-            this.btnStats.Name = "btnStats";
-            this.btnStats.Size = new System.Drawing.Size(216, 120);
-            this.btnStats.TabIndex = 4;
-            this.btnStats.Text = "Vaccination Stats";
-            this.btnStats.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnStats.UseVisualStyleBackColor = false;
-            this.btnStats.Click += new System.EventHandler(this.button5_Click);
-            // 
             // pnlIndicator
             // 
             this.pnlIndicator.BackColor = System.Drawing.Color.LightPink;
@@ -242,7 +215,7 @@ namespace bdOOPFinalPj
             this.btnTracing.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnTracing.FlatAppearance.BorderSize = 0;
             this.btnTracing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTracing.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTracing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTracing.Image = ((System.Drawing.Image)(resources.GetObject("btnTracing.Image")));
             this.btnTracing.Location = new System.Drawing.Point(0, 0);
             this.btnTracing.Name = "btnTracing";
@@ -269,7 +242,7 @@ namespace bdOOPFinalPj
             this.btbAppointment.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btbAppointment.FlatAppearance.BorderSize = 0;
             this.btbAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btbAppointment.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btbAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btbAppointment.Image = ((System.Drawing.Image)(resources.GetObject("btbAppointment.Image")));
             this.btbAppointment.Location = new System.Drawing.Point(0, 0);
             this.btbAppointment.Name = "btbAppointment";
@@ -295,7 +268,7 @@ namespace bdOOPFinalPj
             this.btnDownload.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDownload.FlatAppearance.BorderSize = 0;
             this.btnDownload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDownload.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDownload.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDownload.Image = ((System.Drawing.Image)(resources.GetObject("btnDownload.Image")));
             this.btnDownload.Location = new System.Drawing.Point(0, 0);
             this.btnDownload.Name = "btnDownload";
@@ -320,7 +293,7 @@ namespace bdOOPFinalPj
             this.btnVaccination.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnVaccination.FlatAppearance.BorderSize = 0;
             this.btnVaccination.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVaccination.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnVaccination.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnVaccination.Image = ((System.Drawing.Image)(resources.GetObject("btnVaccination.Image")));
             this.btnVaccination.Location = new System.Drawing.Point(0, 0);
             this.btnVaccination.Name = "btnVaccination";
@@ -330,6 +303,33 @@ namespace bdOOPFinalPj
             this.btnVaccination.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnVaccination.UseVisualStyleBackColor = false;
             this.btnVaccination.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel3.Controls.Add(this.btnStats);
+            this.panel3.Location = new System.Drawing.Point(1, 595);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(216, 120);
+            this.panel3.TabIndex = 2;
+            // 
+            // btnStats
+            // 
+            this.btnStats.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnStats.CausesValidation = false;
+            this.btnStats.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnStats.FlatAppearance.BorderSize = 0;
+            this.btnStats.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnStats.Image = ((System.Drawing.Image)(resources.GetObject("btnStats.Image")));
+            this.btnStats.Location = new System.Drawing.Point(0, 0);
+            this.btnStats.Name = "btnStats";
+            this.btnStats.Size = new System.Drawing.Size(216, 120);
+            this.btnStats.TabIndex = 4;
+            this.btnStats.Text = "Vaccination Stats";
+            this.btnStats.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnStats.UseVisualStyleBackColor = false;
+            this.btnStats.Click += new System.EventHandler(this.button5_Click);
             // 
             // pbLogoMainForm
             // 
@@ -349,10 +349,10 @@ namespace bdOOPFinalPj
             this.tabControl.Controls.Add(this.pageVaccination);
             this.tabControl.Controls.Add(this.pageDownload);
             this.tabControl.Controls.Add(this.pageStats);
-            this.tabControl.Location = new System.Drawing.Point(209, -24);
+            this.tabControl.Location = new System.Drawing.Point(206, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(825, 756);
+            this.tabControl.Size = new System.Drawing.Size(831, 756);
             this.tabControl.TabIndex = 5;
             // 
             // pageAppointment
@@ -393,7 +393,7 @@ namespace bdOOPFinalPj
             this.pageAppointment.Location = new System.Drawing.Point(4, 22);
             this.pageAppointment.Name = "pageAppointment";
             this.pageAppointment.Padding = new System.Windows.Forms.Padding(3);
-            this.pageAppointment.Size = new System.Drawing.Size(817, 730);
+            this.pageAppointment.Size = new System.Drawing.Size(823, 730);
             this.pageAppointment.TabIndex = 2;
             this.pageAppointment.Text = "tabPage1";
             // 
@@ -404,16 +404,16 @@ namespace bdOOPFinalPj
             this.pnlTitle1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlTitle1.Location = new System.Drawing.Point(3, 637);
             this.pnlTitle1.Name = "pnlTitle1";
-            this.pnlTitle1.Size = new System.Drawing.Size(811, 90);
+            this.pnlTitle1.Size = new System.Drawing.Size(817, 90);
             this.pnlTitle1.TabIndex = 82;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(144, 34);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(512, 17);
+            this.label9.Size = new System.Drawing.Size(530, 17);
             this.label9.TabIndex = 0;
             this.label9.Text = "In this area you will be able to enter the patience data, to be saved in our data" +
     "base";
@@ -444,7 +444,7 @@ namespace bdOOPFinalPj
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Image = global::bdOOPFinalPj.Properties.Resources.Save;
             this.btnSave.Location = new System.Drawing.Point(0, 0);
-            this.btnSave.Name = "button1";
+            this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(77, 39);
             this.btnSave.TabIndex = 64;
             this.btnSave.UseVisualStyleBackColor = false;
@@ -454,22 +454,22 @@ namespace bdOOPFinalPj
             // 
             this.cboIllness.BackColor = System.Drawing.Color.White;
             this.cboIllness.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cboIllness.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cboIllness.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cboIllness.FormattingEnabled = true;
             this.cboIllness.Location = new System.Drawing.Point(356, 549);
             this.cboIllness.Name = "cboIllness";
-            this.cboIllness.Size = new System.Drawing.Size(121, 23);
+            this.cboIllness.Size = new System.Drawing.Size(121, 24);
             this.cboIllness.TabIndex = 63;
             this.cboIllness.Text = "Illness";
             // 
             // lblIllness
             // 
             this.lblIllness.AutoSize = true;
-            this.lblIllness.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIllness.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblIllness.ForeColor = System.Drawing.Color.Silver;
             this.lblIllness.Location = new System.Drawing.Point(357, 523);
             this.lblIllness.Name = "lblIllness";
-            this.lblIllness.Size = new System.Drawing.Size(81, 13);
+            this.lblIllness.Size = new System.Drawing.Size(90, 13);
             this.lblIllness.TabIndex = 78;
             this.lblIllness.Text = "Chronic Illness";
             // 
@@ -486,11 +486,11 @@ namespace bdOOPFinalPj
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblID.ForeColor = System.Drawing.Color.Silver;
             this.lblID.Location = new System.Drawing.Point(112, 524);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(123, 13);
+            this.lblID.Size = new System.Drawing.Size(137, 13);
             this.lblID.TabIndex = 76;
             this.lblID.Text = "Institutional ID Number";
             // 
@@ -498,11 +498,11 @@ namespace bdOOPFinalPj
             // 
             this.cboID.BackColor = System.Drawing.Color.White;
             this.cboID.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cboID.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cboID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cboID.FormattingEnabled = true;
             this.cboID.Location = new System.Drawing.Point(115, 550);
             this.cboID.Name = "cboID";
-            this.cboID.Size = new System.Drawing.Size(121, 23);
+            this.cboID.Size = new System.Drawing.Size(121, 24);
             this.cboID.TabIndex = 62;
             this.cboID.Text = "Identification";
             // 
@@ -518,20 +518,20 @@ namespace bdOOPFinalPj
             // 
             this.txtEmail.BackColor = System.Drawing.Color.White;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtEmail.Location = new System.Drawing.Point(539, 442);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(154, 26);
+            this.txtEmail.Size = new System.Drawing.Size(154, 24);
             this.txtEmail.TabIndex = 61;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblEmail.ForeColor = System.Drawing.Color.Silver;
             this.lblEmail.Location = new System.Drawing.Point(539, 420);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(35, 13);
+            this.lblEmail.Size = new System.Drawing.Size(37, 13);
             this.lblEmail.TabIndex = 74;
             this.lblEmail.Text = "Email";
             // 
@@ -547,10 +547,10 @@ namespace bdOOPFinalPj
             // 
             this.txtPhoneNmbr.BackColor = System.Drawing.Color.White;
             this.txtPhoneNmbr.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPhoneNmbr.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtPhoneNmbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtPhoneNmbr.Location = new System.Drawing.Point(112, 442);
             this.txtPhoneNmbr.Name = "txtPhoneNmbr";
-            this.txtPhoneNmbr.Size = new System.Drawing.Size(154, 26);
+            this.txtPhoneNmbr.Size = new System.Drawing.Size(154, 24);
             this.txtPhoneNmbr.TabIndex = 59;
             // 
             // panel9
@@ -565,10 +565,10 @@ namespace bdOOPFinalPj
             // 
             this.txtAge.BackColor = System.Drawing.Color.White;
             this.txtAge.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAge.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtAge.Location = new System.Drawing.Point(333, 442);
             this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(154, 26);
+            this.txtAge.Size = new System.Drawing.Size(154, 24);
             this.txtAge.TabIndex = 60;
             // 
             // label4
@@ -584,11 +584,11 @@ namespace bdOOPFinalPj
             // lblAge
             // 
             this.lblAge.AutoSize = true;
-            this.lblAge.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblAge.ForeColor = System.Drawing.Color.Silver;
             this.lblAge.Location = new System.Drawing.Point(333, 420);
             this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(26, 13);
+            this.lblAge.Size = new System.Drawing.Size(29, 13);
             this.lblAge.TabIndex = 72;
             this.lblAge.Text = "Age";
             // 
@@ -605,11 +605,11 @@ namespace bdOOPFinalPj
             // lblPhoneNmbr
             // 
             this.lblPhoneNmbr.AutoSize = true;
-            this.lblPhoneNmbr.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPhoneNmbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPhoneNmbr.ForeColor = System.Drawing.Color.Silver;
             this.lblPhoneNmbr.Location = new System.Drawing.Point(112, 420);
             this.lblPhoneNmbr.Name = "lblPhoneNmbr";
-            this.lblPhoneNmbr.Size = new System.Drawing.Size(81, 13);
+            this.lblPhoneNmbr.Size = new System.Drawing.Size(90, 13);
             this.lblPhoneNmbr.TabIndex = 69;
             this.lblPhoneNmbr.Text = "Phone Number";
             // 
@@ -625,10 +625,10 @@ namespace bdOOPFinalPj
             // 
             this.txtName.BackColor = System.Drawing.Color.White;
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtName.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtName.Location = new System.Drawing.Point(451, 289);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(243, 26);
+            this.txtName.Size = new System.Drawing.Size(243, 24);
             this.txtName.TabIndex = 57;
             // 
             // label1
@@ -644,11 +644,11 @@ namespace bdOOPFinalPj
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblAddress.ForeColor = System.Drawing.Color.Silver;
             this.lblAddress.Location = new System.Drawing.Point(112, 340);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(48, 13);
+            this.lblAddress.Size = new System.Drawing.Size(52, 13);
             this.lblAddress.TabIndex = 62;
             this.lblAddress.Text = "Address";
             // 
@@ -664,10 +664,10 @@ namespace bdOOPFinalPj
             // 
             this.txtAddress.BackColor = System.Drawing.Color.White;
             this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAddress.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtAddress.Location = new System.Drawing.Point(109, 364);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(584, 26);
+            this.txtAddress.Size = new System.Drawing.Size(584, 24);
             this.txtAddress.TabIndex = 58;
             // 
             // pnlUsername
@@ -682,11 +682,11 @@ namespace bdOOPFinalPj
             // 
             this.txtDUI.BackColor = System.Drawing.Color.White;
             this.txtDUI.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDUI.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtDUI.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtDUI.Location = new System.Drawing.Point(109, 289);
             this.txtDUI.MaxLength = 10;
             this.txtDUI.Name = "txtDUI";
-            this.txtDUI.Size = new System.Drawing.Size(243, 26);
+            this.txtDUI.Size = new System.Drawing.Size(243, 24);
             this.txtDUI.TabIndex = 56;
             // 
             // lblName
@@ -702,11 +702,11 @@ namespace bdOOPFinalPj
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Silver;
             this.label2.Location = new System.Drawing.Point(450, 259);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 54;
             this.label2.Text = "Full Name";
             // 
@@ -723,11 +723,11 @@ namespace bdOOPFinalPj
             // lblDUI
             // 
             this.lblDUI.AutoSize = true;
-            this.lblDUI.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDUI.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblDUI.ForeColor = System.Drawing.Color.Silver;
             this.lblDUI.Location = new System.Drawing.Point(112, 259);
             this.lblDUI.Name = "lblDUI";
-            this.lblDUI.Size = new System.Drawing.Size(135, 13);
+            this.lblDUI.Size = new System.Drawing.Size(154, 13);
             this.lblDUI.TabIndex = 52;
             this.lblDUI.Text = "Personal ID Number (DUI)";
             // 
@@ -738,16 +738,16 @@ namespace bdOOPFinalPj
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(3, 3);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(811, 190);
+            this.pnlTop.Size = new System.Drawing.Size(817, 190);
             this.pnlTop.TabIndex = 2;
             // 
             // lblTitleAppointment
             // 
             this.lblTitleAppointment.AutoSize = true;
-            this.lblTitleAppointment.Font = new System.Drawing.Font("Roboto", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTitleAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTitleAppointment.Location = new System.Drawing.Point(208, 117);
             this.lblTitleAppointment.Name = "lblTitleAppointment";
-            this.lblTitleAppointment.Size = new System.Drawing.Size(405, 48);
+            this.lblTitleAppointment.Size = new System.Drawing.Size(401, 46);
             this.lblTitleAppointment.TabIndex = 1;
             this.lblTitleAppointment.Text = "Appointment Process";
             // 
@@ -802,7 +802,7 @@ namespace bdOOPFinalPj
             this.pageTracing.Location = new System.Drawing.Point(4, 22);
             this.pageTracing.Name = "pageTracing";
             this.pageTracing.Padding = new System.Windows.Forms.Padding(3);
-            this.pageTracing.Size = new System.Drawing.Size(817, 730);
+            this.pageTracing.Size = new System.Drawing.Size(823, 730);
             this.pageTracing.TabIndex = 3;
             this.pageTracing.Text = "Chronic Illness";
             this.pageTracing.UseVisualStyleBackColor = true;
@@ -814,16 +814,16 @@ namespace bdOOPFinalPj
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(3, 3);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(811, 190);
+            this.panel12.Size = new System.Drawing.Size(817, 190);
             this.panel12.TabIndex = 72;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Roboto", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(209, 117);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(391, 48);
+            this.label7.Size = new System.Drawing.Size(388, 46);
             this.label7.TabIndex = 1;
             this.label7.Text = "Appointment Tracing";
             // 
@@ -848,10 +848,10 @@ namespace bdOOPFinalPj
             // 
             this.txtTraceDate1.BackColor = System.Drawing.Color.White;
             this.txtTraceDate1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTraceDate1.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTraceDate1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTraceDate1.Location = new System.Drawing.Point(21, 568);
             this.txtTraceDate1.Name = "txtTraceDate1";
-            this.txtTraceDate1.Size = new System.Drawing.Size(243, 26);
+            this.txtTraceDate1.Size = new System.Drawing.Size(243, 24);
             this.txtTraceDate1.TabIndex = 69;
             // 
             // panel14
@@ -866,10 +866,10 @@ namespace bdOOPFinalPj
             // 
             this.txtTraceName.BackColor = System.Drawing.Color.White;
             this.txtTraceName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTraceName.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTraceName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTraceName.Location = new System.Drawing.Point(18, 379);
             this.txtTraceName.Name = "txtTraceName";
-            this.txtTraceName.Size = new System.Drawing.Size(243, 26);
+            this.txtTraceName.Size = new System.Drawing.Size(243, 24);
             this.txtTraceName.TabIndex = 62;
             // 
             // panel25
@@ -884,10 +884,10 @@ namespace bdOOPFinalPj
             // 
             this.txtTracePlace1.BackColor = System.Drawing.Color.White;
             this.txtTracePlace1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTracePlace1.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTracePlace1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTracePlace1.Location = new System.Drawing.Point(546, 568);
             this.txtTracePlace1.Name = "txtTracePlace1";
-            this.txtTracePlace1.Size = new System.Drawing.Size(243, 26);
+            this.txtTracePlace1.Size = new System.Drawing.Size(243, 24);
             this.txtTracePlace1.TabIndex = 71;
             // 
             // lblTracePlace1
@@ -942,10 +942,10 @@ namespace bdOOPFinalPj
             // 
             this.txtTraceHour1.BackColor = System.Drawing.Color.White;
             this.txtTraceHour1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTraceHour1.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTraceHour1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTraceHour1.Location = new System.Drawing.Point(286, 568);
             this.txtTraceHour1.Name = "txtTraceHour1";
-            this.txtTraceHour1.Size = new System.Drawing.Size(243, 26);
+            this.txtTraceHour1.Size = new System.Drawing.Size(243, 24);
             this.txtTraceHour1.TabIndex = 70;
             // 
             // lblTraceDate1
@@ -971,10 +971,10 @@ namespace bdOOPFinalPj
             // 
             this.txtTraceEmail.BackColor = System.Drawing.Color.White;
             this.txtTraceEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTraceEmail.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTraceEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTraceEmail.Location = new System.Drawing.Point(546, 508);
             this.txtTraceEmail.Name = "txtTraceEmail";
-            this.txtTraceEmail.Size = new System.Drawing.Size(243, 26);
+            this.txtTraceEmail.Size = new System.Drawing.Size(243, 24);
             this.txtTraceEmail.TabIndex = 68;
             // 
             // lblTraceEmail
@@ -1000,10 +1000,10 @@ namespace bdOOPFinalPj
             // 
             this.txtTracePhoneNmbr.BackColor = System.Drawing.Color.White;
             this.txtTracePhoneNmbr.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTracePhoneNmbr.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTracePhoneNmbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTracePhoneNmbr.Location = new System.Drawing.Point(286, 381);
             this.txtTracePhoneNmbr.Name = "txtTracePhoneNmbr";
-            this.txtTracePhoneNmbr.Size = new System.Drawing.Size(241, 26);
+            this.txtTracePhoneNmbr.Size = new System.Drawing.Size(241, 24);
             this.txtTracePhoneNmbr.TabIndex = 63;
             // 
             // lblTraceIllness
@@ -1029,10 +1029,10 @@ namespace bdOOPFinalPj
             // 
             this.txtTraceIDInstitution.BackColor = System.Drawing.Color.White;
             this.txtTraceIDInstitution.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTraceIDInstitution.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTraceIDInstitution.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTraceIDInstitution.Location = new System.Drawing.Point(18, 504);
             this.txtTraceIDInstitution.Name = "txtTraceIDInstitution";
-            this.txtTraceIDInstitution.Size = new System.Drawing.Size(243, 26);
+            this.txtTraceIDInstitution.Size = new System.Drawing.Size(243, 24);
             this.txtTraceIDInstitution.TabIndex = 66;
             // 
             // lblTraceIdInstitution
@@ -1051,10 +1051,10 @@ namespace bdOOPFinalPj
             this.panel17.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel17.Controls.Add(this.lblWarning02);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel17.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.panel17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel17.Location = new System.Drawing.Point(3, 637);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(811, 90);
+            this.panel17.Size = new System.Drawing.Size(817, 90);
             this.panel17.TabIndex = 65;
             // 
             // lblWarning02
@@ -1062,7 +1062,7 @@ namespace bdOOPFinalPj
             this.lblWarning02.AutoSize = true;
             this.lblWarning02.Location = new System.Drawing.Point(181, 27);
             this.lblWarning02.Name = "lblWarning02";
-            this.lblWarning02.Size = new System.Drawing.Size(461, 13);
+            this.lblWarning02.Size = new System.Drawing.Size(433, 13);
             this.lblWarning02.TabIndex = 0;
             this.lblWarning02.Text = "In this area you will be able to trace the appointments of the patients that you " +
     "saved before";
@@ -1080,10 +1080,10 @@ namespace bdOOPFinalPj
             // 
             this.txtTraceAddress.BackColor = System.Drawing.Color.White;
             this.txtTraceAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTraceAddress.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTraceAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTraceAddress.Location = new System.Drawing.Point(18, 439);
             this.txtTraceAddress.Name = "txtTraceAddress";
-            this.txtTraceAddress.Size = new System.Drawing.Size(768, 26);
+            this.txtTraceAddress.Size = new System.Drawing.Size(768, 24);
             this.txtTraceAddress.TabIndex = 65;
             // 
             // lblTraceAddress
@@ -1120,10 +1120,10 @@ namespace bdOOPFinalPj
             // 
             this.txtTraceAge.BackColor = System.Drawing.Color.White;
             this.txtTraceAge.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTraceAge.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTraceAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTraceAge.Location = new System.Drawing.Point(546, 379);
             this.txtTraceAge.Name = "txtTraceAge";
-            this.txtTraceAge.Size = new System.Drawing.Size(243, 26);
+            this.txtTraceAge.Size = new System.Drawing.Size(243, 24);
             this.txtTraceAge.TabIndex = 64;
             // 
             // panel15
@@ -1138,10 +1138,10 @@ namespace bdOOPFinalPj
             // 
             this.txtTraceIllness.BackColor = System.Drawing.Color.White;
             this.txtTraceIllness.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTraceIllness.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTraceIllness.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTraceIllness.Location = new System.Drawing.Point(284, 506);
             this.txtTraceIllness.Name = "txtTraceIllness";
-            this.txtTraceIllness.Size = new System.Drawing.Size(243, 26);
+            this.txtTraceIllness.Size = new System.Drawing.Size(243, 24);
             this.txtTraceIllness.TabIndex = 67;
             // 
             // lblTracePhoneNmbr
@@ -1216,7 +1216,7 @@ namespace bdOOPFinalPj
             this.pageVaccination.Location = new System.Drawing.Point(4, 22);
             this.pageVaccination.Name = "pageVaccination";
             this.pageVaccination.Padding = new System.Windows.Forms.Padding(3);
-            this.pageVaccination.Size = new System.Drawing.Size(817, 730);
+            this.pageVaccination.Size = new System.Drawing.Size(823, 730);
             this.pageVaccination.TabIndex = 4;
             this.pageVaccination.Text = "tabPage3";
             this.pageVaccination.UseVisualStyleBackColor = true;
@@ -1236,7 +1236,7 @@ namespace bdOOPFinalPj
             this.pageDownload.Location = new System.Drawing.Point(4, 22);
             this.pageDownload.Name = "pageDownload";
             this.pageDownload.Padding = new System.Windows.Forms.Padding(3);
-            this.pageDownload.Size = new System.Drawing.Size(817, 730);
+            this.pageDownload.Size = new System.Drawing.Size(823, 730);
             this.pageDownload.TabIndex = 5;
             this.pageDownload.Text = "tabPage4";
             this.pageDownload.UseVisualStyleBackColor = true;
@@ -1280,16 +1280,16 @@ namespace bdOOPFinalPj
             this.panel26.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel26.Location = new System.Drawing.Point(3, 637);
             this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(811, 90);
+            this.panel26.Size = new System.Drawing.Size(817, 90);
             this.panel26.TabIndex = 84;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(178, 34);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(470, 17);
+            this.label10.Size = new System.Drawing.Size(479, 17);
             this.label10.TabIndex = 0;
             this.label10.Text = "Here you can download the patient report to print it or send it to the patient";
             // 
@@ -1321,16 +1321,16 @@ namespace bdOOPFinalPj
             this.panel30.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel30.Location = new System.Drawing.Point(3, 3);
             this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(811, 190);
+            this.panel30.Size = new System.Drawing.Size(817, 190);
             this.panel30.TabIndex = 83;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Roboto", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label11.Location = new System.Drawing.Point(246, 118);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(328, 48);
+            this.label11.Size = new System.Drawing.Size(330, 46);
             this.label11.TabIndex = 1;
             this.label11.Text = "Report Download";
             // 
@@ -1399,7 +1399,7 @@ namespace bdOOPFinalPj
             this.pageStats.Location = new System.Drawing.Point(4, 22);
             this.pageStats.Name = "pageStats";
             this.pageStats.Padding = new System.Windows.Forms.Padding(3);
-            this.pageStats.Size = new System.Drawing.Size(817, 730);
+            this.pageStats.Size = new System.Drawing.Size(823, 730);
             this.pageStats.TabIndex = 6;
             this.pageStats.Text = "tabPage5";
             this.pageStats.UseVisualStyleBackColor = true;
@@ -1420,11 +1420,11 @@ namespace bdOOPFinalPj
             this.Text = "FormMain";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.pnlLeft.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panelBase.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoMainForm)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.pageAppointment.ResumeLayout(false);
