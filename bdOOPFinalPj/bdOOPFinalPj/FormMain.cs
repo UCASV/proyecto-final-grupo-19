@@ -1,4 +1,6 @@
-﻿using System;
+﻿using bdOOPFinalPj.SqlServerContext;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +20,27 @@ namespace bdOOPFinalPj
             InitializeComponent();
             pnlIndicator.Height = panelBase.Height;
             pnlIndicator.Top = panelBase.Top;
+        }
+
+        private bool ValidDUI(string dui)
+        {
+            if (dui.Length > 9 && Regex.IsMatch(dui.Substring(0, 7), @"^[0-9]+$") &&
+                    (dui[9] == '0' || dui[9] == '1' || dui[9] == '2' || dui[9] == '3' || dui[9] == '4' || dui[9] == '5' || dui[9] == '6' ||
+                        dui[9] == '7' || dui[9] == '8' || dui[9] == '9'))
+            {
+                if (dui[8] == '-')
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
         }
         private void btbAppointment_Click(object sender, EventArgs e)
         {
@@ -95,42 +118,75 @@ namespace bdOOPFinalPj
 
         private void btnTrace_Click(object sender, EventArgs e)
         {
-            lblTraceAddress.Visible = true;
-            lblTraceAge.Visible = true;
-            lblTraceDate1.Visible = true;
-            lblTraceEmail.Visible = true;
-            lblTraceHour1.Visible = true;
-            txtTraceIDInstitution.Visible = true;
-            lblTraceIllness.Visible = true;
-            lblTraceName.Visible = true;
-            lblTracePhoneNmbr.Visible = true;
-            lblTracePlace1.Visible = true;
-            txtTraceIDInstitution.Visible = false;
-            lblTraceIdInstitution.Visible = true;
+            //-------------------------------------------------------------------------------------------
+            // llAMAMOS A LA BDD Y DENTRO DE ESTE CODIGO SACAMOS UNA LISTA QUE GUARDARA A LOS CIUDADANOS
+            var db = new PROYECTOFContext();
+            var listCitizen = db.Citizens
+                .Include(o => o.IdCabin)
+                .Include(o => o.IdVaccinationP)
+                .Include(o => o.IdIdentifier)
+                .OrderBy(o => o.Dui)
+                .ToList();
+            // AHORA BUSCAMOS AL CUIDADANO CON EL MISMO DUI QUE ESCRIBIMOS EN EL TxtTraceDUI
+            var result = listCitizen.Where(u => u.Dui.Equals(txtTraceDUI.Text)).ToList();
+            Identifier identi = (Identifier)db.Identifiers.Where(i => i.Id.Equals(result[0].IdIdentifier));
+            var cronicals = db.Diseases.Where(d => d.IdCitizen.Equals(result[0].Dui)).ToList();
+            VaccinationProcess process = (VaccinationProcess)db.VaccinationProcesses.Where(v => v.Id.Equals(result[0].IdVaccinationP));
+            
+            //-------------------------------------------------------------------------------------------
 
+            if (ValidDUI(txtTraceDUI.Text) /*&& result.Count != 0*/ )
+            {
+                Citizen oneCitizen = result[0];
+                lblTraceAddress.Visible = true;
+                lblTraceAge.Visible = true;
+                lblTraceDate1.Visible = true;
+                lblTraceEmail.Visible = true;
+                lblTraceHour1.Visible = true;
+                lblTraceIdInstitution.Visible = true;
+                lblTraceIllness.Visible = true;
+                lblTraceName.Visible = true;
+                lblTracePhoneNmbr.Visible = true;
+                lblTracePlace1.Visible = true;
 
-            txtTraceAddress.Visible = true;
-            txtTraceAge.Visible = true;
-            txtTraceDate1.Visible = true;
-            txtTraceEmail.Visible = true;
-            txtTraceHour1.Visible = true;
-            txtTraceIDInstitution.Visible = true;
-            txtTracePhoneNmbr.Visible = true;
-            txtTraceName.Visible = true;
-            txtTraceIllness.Visible = true;
-            txtTracePlace1.Visible = true;
+                //Mostramos los datos del Cuidadano acorde a su dui en cada TXT
+                txtTraceAddress.Visible = true;
+                txtTraceAddress.Text = oneCitizen.Addres;
+                txtTraceAge.Visible = true;
+                txtTraceAge.Text = oneCitizen.Age.ToString();
+                txtTraceDate1.Visible = true;
+                //txtTraceDate1.Text = 
+                txtTraceEmail.Visible = true;
+                txtTraceEmail.Text = oneCitizen.Mail;
+                txtTraceHour1.Visible = true;
+                //txtTraceHour1.Text = 
+                txtTraceIDInstitution.Visible = true;
+                txtTraceIDInstitution.Text = identi.Identifier1;
+                txtTracePhoneNmbr.Visible = true;
+                txtTracePhoneNmbr.Text = oneCitizen.Phone.ToString();
+                txtTraceName.Visible = true;
+                txtTraceName.Text = oneCitizen.NameCitizen;
+                txtTraceIllness.Visible = true;
+                //txtTraceIllness.Text = 
+                txtTracePlace1.Visible = true;
+                //txtTracePlace1.Text = 
 
+                panel14.Visible = true;
+                panel15.Visible = true;
+                panel16.Visible = true;
+                panel11.Visible = true;
+                panel18.Visible = true;
+                panel19.Visible = true;
+                panel20.Visible = true;
+                panel21.Visible = true;
+                panel23.Visible = true;
+                panel25.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("¡No se encuentra Cuidadano!", "HAPA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
-            panel14.Visible = true;
-            panel15.Visible = true;
-            panel16.Visible = true;
-            panel11.Visible = true;
-            panel18.Visible = true;
-            panel19.Visible = true;
-            panel20.Visible = true;
-            panel21.Visible = true;
-            panel23.Visible = true;
-            panel25.Visible = true;
         }
 
         private void panelBase_Paint(object sender, PaintEventArgs e)
@@ -199,7 +255,7 @@ namespace bdOOPFinalPj
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            bool valid = ValidDUI();
+            bool valid = ValidDUI(txtDUI.Text);
             if (valid)
             {
                 MessageBox.Show("Exito", "HAPA", MessageBoxButtons.OK);

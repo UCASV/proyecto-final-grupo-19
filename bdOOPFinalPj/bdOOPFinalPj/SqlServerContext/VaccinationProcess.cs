@@ -18,6 +18,7 @@ namespace bdOOPFinalPj.SqlServerContext
         public DateTime? DateHourStart { get; set; }
         public DateTime? DateHourVaccinated { get; set; }
         public int? NumberMinutes { get; set; }
+        public string Place { get; set; }
 
         public virtual ICollection<Citizen> Citizens { get; set; }
         public virtual ICollection<Effect> Effects { get; set; }
