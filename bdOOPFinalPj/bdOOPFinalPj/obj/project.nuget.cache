@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "ATv4grtNU20Ua/ozLogF8uBeVkr1JzGdvNxQPyyMQYXt0ilx03uqyU+a2Gw1oVQld6/l5daau/2EeKByDHH7tg==",
+=======
+  "dgSpecHash": "LS8qCsflFaJFSXiUOUEEoPKf6d6m0osN9qUn2ADER76IGR6zJM2JEuo7QgeAo3ew1fMYLMZDwsy8vNi+BQebbA==",
+>>>>>>> 7bb8c72f1dbaf60b963efcd0c18b05184bd2a6fa
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
   "expectedPackageFiles": [
