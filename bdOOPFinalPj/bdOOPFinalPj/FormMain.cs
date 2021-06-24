@@ -131,7 +131,8 @@ namespace bdOOPFinalPj
             var result = listCitizen.Where(u => u.Dui.Equals(txtTraceDUI.Text)).ToList();
             Identifier identi = (Identifier) db.Identifiers.Where(i => i.Id.Equals(result[0].IdIdentifier));
             var cronicals = db.Diseases.Where(d => d.IdCitizen.Equals(result[0].Dui)).ToList();
-            VaccinationProcess process = (VaccinationProcess) db.VaccinationProcesses.Where(v => v.Id.Equals(result[0].IdVaccinationP));
+            VaccinationProcess process = (VaccinationProcess)db.VaccinationProcesses.Where(v => v.Id.Equals(result[0].IdVaccinationP));
+            
             //-------------------------------------------------------------------------------------------
 
             if(ValidDUI(txtTraceDUI.Text) /*&& result.Count != 0*/ )
