@@ -5761,23 +5761,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hernández López\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hernández López\\OneDrive\\Documentos\\Respaldo\\OOP\\Proyecto\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
       "projectName": "bdOOPFinalPj",
-      "projectPath": "C:\\Users\\Hernández López\\OneDrive\\Documentos\\Respaldo\\OOP\\Proyecto\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
-      "packagesPath": "C:\\Users\\Hernández López\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hernández López\\OneDrive\\Documentos\\Respaldo\\OOP\\Proyecto\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\obj\\",
+      "projectPath": "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\LastProject\\bdOOPFinalPj\\bdOOPFinalPj\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Hernández López\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
