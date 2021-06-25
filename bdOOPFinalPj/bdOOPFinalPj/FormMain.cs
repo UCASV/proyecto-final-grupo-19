@@ -42,6 +42,14 @@ namespace bdOOPFinalPj
                 return false;
             }
         }
+
+        private void Design_TabControl()
+        {
+            tabControl.Appearance = TabAppearance.FlatButtons;
+            tabControl.ItemSize = new Size(0, 1);
+            tabControl.SizeMode = TabSizeMode.Fixed;
+            tabControl.TabStop = false;
+        }
         private void btbAppointment_Click(object sender, EventArgs e)
         {
             tabControl.SelectedTab = pageAppointment;
@@ -64,8 +72,8 @@ namespace bdOOPFinalPj
             
             tabControl.SelectedTab = pageTracing;
 
-            pnlIndicator.Height = panel1.Height;
-            pnlIndicator.Top = panel1.Top;
+            pnlIndicator.Height = panel4.Height;
+            pnlIndicator.Top = panel4.Top;
 
             txtTraceName.Text = String.Empty;
             txtTraceAddress.Text = String.Empty;
@@ -202,8 +210,8 @@ namespace bdOOPFinalPj
         {
             tabControl.SelectedTab = pageDownload;
 
-            pnlIndicator.Height = panel4.Height;
-            pnlIndicator.Top = panel4.Top;
+            pnlIndicator.Height = panel1.Height;
+            pnlIndicator.Top = panel1.Top;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -224,10 +232,7 @@ namespace bdOOPFinalPj
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            tabControl.Appearance = TabAppearance.FlatButtons;
-            tabControl.ItemSize = new Size(0, 1);
-            tabControl.SizeMode = TabSizeMode.Fixed;
-            tabControl.TabStop = false;
+            Design_TabControl();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -242,6 +247,95 @@ namespace bdOOPFinalPj
                 MessageBox.Show("Error", "HAPA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
+        }
+
+        private void pageVaccination_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbClose5_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pbClose1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pbClose2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pbClose3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pbClose4_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pbMin1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pbMin2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pbMin3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pbMin4_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pbMin5_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnWaitingLineRegister_Click(object sender, EventArgs e)
+        {
+            //Ejecutar luego de validar el DUI
+            gbApply.Visible = true;
+            gbWait.Location = new Point(12, 264);
+        }
+
+        private void btnSaveSynthoms_Click(object sender, EventArgs e)
+        {
+            //Ejecutar luego de validar la selección del CheckedListBox
+            gbSecond.Visible = true;
+        }
+
+        private void btnVaccineApplication_Click(object sender, EventArgs e)
+        {
+            //Ejecutar luego de validar la selección del CheckedListBox
+            gbObservation.Visible = true;
+           
+        }
+
+        private void btnRegisterSecondDose_Click(object sender, EventArgs e)
+        {
+            //Añadir Message Box con la fecha y hora de la segunda dósis, luego de eso, el formulario se refrescará
+            
+            this.Controls.Clear();
+            this.InitializeComponent();
+            Design_TabControl();
+
+            tabControl.SelectedTab = pageVaccination;
+
+            pnlIndicator.Height = panel5.Height;
+            pnlIndicator.Top = panel5.Top;
         }
     }
 }

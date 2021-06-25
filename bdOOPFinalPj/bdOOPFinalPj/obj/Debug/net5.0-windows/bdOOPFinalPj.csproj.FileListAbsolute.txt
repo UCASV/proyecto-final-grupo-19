@@ -51,6 +51,7 @@ C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.AssemblyInfo.cs
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.dll
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\ref\bdOOPFinalPj.dll
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\LastProject\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.pdb
@@ -113,6 +114,66 @@ C:\Users\Oscar Carpio\Desktop\Proyecto Final POOBD\proyecto-final-grupo-19\bdOOP
 C:\Users\Oscar Carpio\Desktop\Proyecto Final POOBD\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\ref\bdOOPFinalPj.dll
 C:\Users\Oscar Carpio\Desktop\Proyecto Final POOBD\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.pdb
 C:\Users\Oscar Carpio\Desktop\Proyecto Final POOBD\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.genruntimeconfig.cache
+=======
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.exe
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.deps.json
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.runtimeconfig.json
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.runtimeconfig.dev.json
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\ref\bdOOPFinalPj.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.pdb
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Humanizer.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.Identity.Client.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\System.Runtime.Caching.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.AssemblyReference.cache
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.FormLogin.resources
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.FormMain.resources
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.Properties.Resources.resources
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.GenerateResource.cache
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.AssemblyInfoInputs.cache
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.AssemblyInfo.cs
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.CoreCompileInputs.cache
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.CopyComplete
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\ref\bdOOPFinalPj.dll
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.pdb
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.genruntimeconfig.cache
+>>>>>>> UIbranch
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.exe
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.deps.json
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\bdOOPFinalPj.runtimeconfig.json
@@ -158,6 +219,10 @@ C:\Users\user\Desktop\BD\PROYECTO\repo_aux\proyecto-final-grupo-19\bdOOPFinalPj\
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.AssemblyReference.cache
+<<<<<<< HEAD
+=======
+C:\Users\user\Desktop\BD\PROYECTO\repo_aux\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.Form1.resources
+>>>>>>> UIbranch
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.FormLogin.resources
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.FormMain.resources
 C:\Users\user\Desktop\BD\PROYECTO\repo_aux\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.Properties.Resources.resources
