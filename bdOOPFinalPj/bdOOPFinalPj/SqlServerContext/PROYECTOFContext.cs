@@ -105,16 +105,19 @@ namespace bdOOPFinalPj.SqlServerContext
                 entity.HasOne(d => d.IdCabinNavigation)
                     .WithMany(p => p.Citizens)
                     .HasForeignKey(d => d.IdCabin)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__CITIZEN__idCabin__4BAC3F29");
 
                 entity.HasOne(d => d.IdIdentifierNavigation)
                     .WithMany(p => p.Citizens)
                     .HasForeignKey(d => d.IdIdentifier)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__CITIZEN__idIdent__4D94879B");
 
                 entity.HasOne(d => d.IdVaccinationPNavigation)
                     .WithMany(p => p.Citizens)
                     .HasForeignKey(d => d.IdVaccinationP)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__CITIZEN__idVacci__4CA06362");
             });
 

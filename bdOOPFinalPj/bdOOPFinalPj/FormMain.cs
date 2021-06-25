@@ -121,23 +121,21 @@ namespace bdOOPFinalPj
             //-------------------------------------------------------------------------------------------
             // llAMAMOS A LA BDD Y DENTRO DE ESTE CODIGO SACAMOS UNA LISTA QUE GUARDARA A LOS CIUDADANOS
             var db = new PROYECTOFContext();
-            var listCitizen = db.Citizens
-                .Include(o => o.IdCabin)
-                .Include(o => o.IdVaccinationP)
-                .Include(o => o.IdIdentifier)
-                .OrderBy(o => o.Dui)
+            List<Citizen> listCitizen = db.Citizens
+                .Include(x => x.IdIdentifierNavigation)
+                .Include(c => c.IdVaccinationPNavigation)
                 .ToList();
             // AHORA BUSCAMOS AL CUIDADANO CON EL MISMO DUI QUE ESCRIBIMOS EN EL TxtTraceDUI
             var result = listCitizen.Where(u => u.Dui.Equals(txtTraceDUI.Text)).ToList();
-            Identifier identi = (Identifier) db.Identifiers.Where(i => i.Id.Equals(result[0].IdIdentifier));
-            var cronicals = db.Diseases.Where(d => d.IdCitizen.Equals(result[0].Dui)).ToList();
-            VaccinationProcess process = (VaccinationProcess)db.VaccinationProcesses.Where(v => v.Id.Equals(result[0].IdVaccinationP));
-            
             //-------------------------------------------------------------------------------------------
 
-            if(ValidDUI(txtTraceDUI.Text) /*&& result.Count != 0*/ )
-            {
+            if(ValidDUI(txtTraceDUI.Text) && result.Count != 0 )
+            { // Usamos variables locales para trabajar los datos que estan relacionando con el dato de CITIZEN.
                 Citizen oneCitizen = result[0];
+                var identi = db.Identifiers.Where(i => i.Id.Equals(result[0].IdIdentifier)).ToList();
+                var cronicals = db.Diseases.Where(d => d.IdCitizen.Equals(result[0].Dui)).ToList();
+                var process = db.VaccinationProcesses.Where(v => v.Id.Equals(result[0].IdVaccinationP)).ToList();
+                DateTime? date = process[0].DateHourVaccination;
                 lblTraceAddress.Visible = true;
                 lblTraceAge.Visible = true;
                 lblTraceDate1.Visible = true;
@@ -149,19 +147,19 @@ namespace bdOOPFinalPj
                 lblTracePhoneNmbr.Visible = true;
                 lblTracePlace1.Visible = true;
 
-                //Mostramos los datos del Cuidadano acorde a su dui en cada TXT
+                //Mostramos los datos del Cuidadano con las variables locales, acorde a su dui en cada TXT
                 txtTraceAddress.Visible = true;
                 txtTraceAddress.Text = oneCitizen.Addres;
                 txtTraceAge.Visible = true;
                 txtTraceAge.Text = oneCitizen.Age.ToString();
                 txtTraceDate1.Visible = true;
-                //txtTraceDate1.Text = 
+                txtTraceDate1.Text = date.Value.Date.ToString();
                 txtTraceEmail.Visible = true;
                 txtTraceEmail.Text = oneCitizen.Mail;
                 txtTraceHour1.Visible = true;
-                //txtTraceHour1.Text = 
+                txtTraceHour1.Text = date.Value.Hour.ToString();
                 txtTraceIDInstitution.Visible = true;
-                txtTraceIDInstitution.Text = identi.Identifier1;
+                txtTraceIDInstitution.Text = identi[0].Identifier1;
                 txtTracePhoneNmbr.Visible = true;
                 txtTracePhoneNmbr.Text = oneCitizen.Phone.ToString();
                 txtTraceName.Visible = true;
@@ -169,7 +167,7 @@ namespace bdOOPFinalPj
                 txtTraceIllness.Visible = true;
                 //txtTraceIllness.Text = 
                 txtTracePlace1.Visible = true;
-                //txtTracePlace1.Text = 
+                txtTracePlace1.Text = process[0].Place;
 
                 panel14.Visible = true;
                 panel15.Visible = true;

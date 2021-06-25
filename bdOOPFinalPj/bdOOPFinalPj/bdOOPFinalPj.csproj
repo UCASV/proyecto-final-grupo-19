@@ -7,9 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\net5.0-windows\bdOOPFinalPj.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="bin\Debug\net5.0-windows\bdOOPFinalPj.deps.json" />
     <Content Include="bin\Debug\net5.0-windows\bdOOPFinalPj.runtimeconfig.dev.json" />
     <Content Include="bin\Debug\net5.0-windows\bdOOPFinalPj.runtimeconfig.json" />
+    <Content Include="obj\bdOOPFinalPj.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net5.0-windows\bdOOPFinalPj.designer.deps.json" />
+    <Content Include="obj\Debug\net5.0-windows\bdOOPFinalPj.designer.runtimeconfig.json" />
+    <Content Include="obj\project.assets.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +26,25 @@
     <None Include="bin\Debug\net5.0-windows\bdOOPFinalPj.exe" />
     <None Include="bin\Debug\net5.0-windows\bdOOPFinalPj.pdb" />
     <None Include="bin\Debug\net5.0-windows\ref\bdOOPFinalPj.dll" />
+    <None Include="obj\bdOOPFinalPj.csproj.nuget.g.props" />
+    <None Include="obj\bdOOPFinalPj.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\net5.0-windows\apphost.exe" />
+    <None Include="obj\Debug\net5.0-windows\bdOOPFinalPj.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net5.0-windows\bdOOPFinalPj.assets.cache" />
+    <None Include="obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.CopyComplete" />
+    <None Include="obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net5.0-windows\bdOOPFinalPj.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\net5.0-windows\bdOOPFinalPj.dll" />
+    <None Include="obj\Debug\net5.0-windows\bdOOPFinalPj.FormLogin.resources" />
+    <None Include="obj\Debug\net5.0-windows\bdOOPFinalPj.FormMain.resources" />
+    <None Include="obj\Debug\net5.0-windows\bdOOPFinalPj.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net5.0-windows\bdOOPFinalPj.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net5.0-windows\bdOOPFinalPj.pdb" />
+    <None Include="obj\Debug\net5.0-windows\bdOOPFinalPj.Properties.Resources.resources" />
+    <None Include="obj\Debug\net5.0-windows\ref\bdOOPFinalPj.dll" />
+    <None Include="obj\Debug\net5.0-windows\TempPE\Properties.Resources.Designer.cs.dll" />
+    <None Include="obj\project.nuget.cache" />
   </ItemGroup>
 
   <ItemGroup>
