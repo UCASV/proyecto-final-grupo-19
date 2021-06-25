@@ -33,12 +33,12 @@ namespace bdOOPFinalPj
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlIndicator = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnDownload = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnTracing = new System.Windows.Forms.Button();
             this.panelBase = new System.Windows.Forms.Panel();
             this.btbAppointment = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnDownload = new System.Windows.Forms.Button();
+            this.btnTracing = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnVaccination = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -125,7 +125,35 @@ namespace bdOOPFinalPj
             this.panel13 = new System.Windows.Forms.Panel();
             this.btnTrace = new System.Windows.Forms.Button();
             this.pageVaccination = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.panel38 = new System.Windows.Forms.Panel();
+            this.btnRegisterSecondDose = new System.Windows.Forms.Button();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.panel36 = new System.Windows.Forms.Panel();
+            this.btnVaccineApplication = new System.Windows.Forms.Button();
+            this.label21 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.panel37 = new System.Windows.Forms.Panel();
+            this.btnSaveSynthoms = new System.Windows.Forms.Button();
+            this.clbSynthoms = new System.Windows.Forms.CheckedListBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.btnWaitingLineRegister = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtVaccineDUI = new System.Windows.Forms.TextBox();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.pageDownload = new System.Windows.Forms.TabPage();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel32 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.panel31 = new System.Windows.Forms.Panel();
@@ -142,6 +170,11 @@ namespace bdOOPFinalPj
             this.panel28 = new System.Windows.Forms.Panel();
             this.btnDownloadVerify = new System.Windows.Forms.Button();
             this.pageStats = new System.Windows.Forms.TabPage();
+            this.panel39 = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pnlLeft.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelBase.SuspendLayout();
@@ -160,12 +193,28 @@ namespace bdOOPFinalPj
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel17.SuspendLayout();
             this.panel13.SuspendLayout();
+            this.pageVaccination.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.panel38.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.panel36.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.panel37.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.panel34.SuspendLayout();
+            this.panel29.SuspendLayout();
+            this.panel33.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pageDownload.SuspendLayout();
             this.panel32.SuspendLayout();
             this.panel26.SuspendLayout();
             this.panel30.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel28.SuspendLayout();
+            this.pageStats.SuspendLayout();
+            this.panel39.SuspendLayout();
+            this.panel40.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeft
@@ -194,12 +243,29 @@ namespace bdOOPFinalPj
             // panel1
             // 
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.btnTracing);
+            this.panel1.Controls.Add(this.btnDownload);
             this.panel1.Location = new System.Drawing.Point(0, 232);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(216, 120);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnDownload
+            // 
+            this.btnDownload.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnDownload.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDownload.FlatAppearance.BorderSize = 0;
+            this.btnDownload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDownload.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDownload.Image = ((System.Drawing.Image)(resources.GetObject("btnDownload.Image")));
+            this.btnDownload.Location = new System.Drawing.Point(0, 0);
+            this.btnDownload.Name = "btnDownload";
+            this.btnDownload.Size = new System.Drawing.Size(216, 120);
+            this.btnDownload.TabIndex = 4;
+            this.btnDownload.Text = "Report Download";
+            this.btnDownload.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDownload.UseVisualStyleBackColor = false;
+            this.btnDownload.Click += new System.EventHandler(this.btnPrinting_Click);
             // 
             // panel2
             // 
@@ -207,24 +273,6 @@ namespace bdOOPFinalPj
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(215, 100);
             this.panel2.TabIndex = 3;
-            // 
-            // btnTracing
-            // 
-            this.btnTracing.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnTracing.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnTracing.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTracing.FlatAppearance.BorderSize = 0;
-            this.btnTracing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTracing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnTracing.Image = ((System.Drawing.Image)(resources.GetObject("btnTracing.Image")));
-            this.btnTracing.Location = new System.Drawing.Point(0, 0);
-            this.btnTracing.Name = "btnTracing";
-            this.btnTracing.Size = new System.Drawing.Size(216, 120);
-            this.btnTracing.TabIndex = 2;
-            this.btnTracing.Text = "Appointment Tracing";
-            this.btnTracing.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnTracing.UseVisualStyleBackColor = false;
-            this.btnTracing.Click += new System.EventHandler(this.btnTracing_Click);
             // 
             // panelBase
             // 
@@ -256,28 +304,29 @@ namespace bdOOPFinalPj
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.SkyBlue;
-            this.panel4.Controls.Add(this.btnDownload);
+            this.panel4.Controls.Add(this.btnTracing);
             this.panel4.Location = new System.Drawing.Point(2, 353);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(216, 120);
             this.panel4.TabIndex = 3;
             // 
-            // btnDownload
+            // btnTracing
             // 
-            this.btnDownload.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnDownload.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDownload.FlatAppearance.BorderSize = 0;
-            this.btnDownload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDownload.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDownload.Image = ((System.Drawing.Image)(resources.GetObject("btnDownload.Image")));
-            this.btnDownload.Location = new System.Drawing.Point(0, 0);
-            this.btnDownload.Name = "btnDownload";
-            this.btnDownload.Size = new System.Drawing.Size(216, 120);
-            this.btnDownload.TabIndex = 4;
-            this.btnDownload.Text = "Report Download";
-            this.btnDownload.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnDownload.UseVisualStyleBackColor = false;
-            this.btnDownload.Click += new System.EventHandler(this.btnPrinting_Click);
+            this.btnTracing.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnTracing.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnTracing.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTracing.FlatAppearance.BorderSize = 0;
+            this.btnTracing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTracing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTracing.Image = ((System.Drawing.Image)(resources.GetObject("btnTracing.Image")));
+            this.btnTracing.Location = new System.Drawing.Point(0, 0);
+            this.btnTracing.Name = "btnTracing";
+            this.btnTracing.Size = new System.Drawing.Size(216, 120);
+            this.btnTracing.TabIndex = 2;
+            this.btnTracing.Text = "Appointment Tracing";
+            this.btnTracing.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnTracing.UseVisualStyleBackColor = false;
+            this.btnTracing.Click += new System.EventHandler(this.btnTracing_Click);
             // 
             // panel5
             // 
@@ -349,7 +398,7 @@ namespace bdOOPFinalPj
             this.tabControl.Controls.Add(this.pageVaccination);
             this.tabControl.Controls.Add(this.pageDownload);
             this.tabControl.Controls.Add(this.pageStats);
-            this.tabControl.Location = new System.Drawing.Point(206, 0);
+            this.tabControl.Location = new System.Drawing.Point(206, -30);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(831, 756);
@@ -422,7 +471,7 @@ namespace bdOOPFinalPj
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(443, 524);
+            this.label6.Location = new System.Drawing.Point(444, 522);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(11, 13);
             this.label6.TabIndex = 81;
@@ -453,6 +502,7 @@ namespace bdOOPFinalPj
             // cboIllness
             // 
             this.cboIllness.BackColor = System.Drawing.Color.White;
+            this.cboIllness.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboIllness.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cboIllness.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cboIllness.FormattingEnabled = true;
@@ -460,7 +510,6 @@ namespace bdOOPFinalPj
             this.cboIllness.Name = "cboIllness";
             this.cboIllness.Size = new System.Drawing.Size(121, 24);
             this.cboIllness.TabIndex = 63;
-            this.cboIllness.Text = "Illness";
             // 
             // lblIllness
             // 
@@ -477,7 +526,7 @@ namespace bdOOPFinalPj
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(247, 527);
+            this.label5.Location = new System.Drawing.Point(246, 523);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(11, 13);
             this.label5.TabIndex = 77;
@@ -497,6 +546,7 @@ namespace bdOOPFinalPj
             // cboID
             // 
             this.cboID.BackColor = System.Drawing.Color.White;
+            this.cboID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboID.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cboID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cboID.FormattingEnabled = true;
@@ -504,7 +554,6 @@ namespace bdOOPFinalPj
             this.cboID.Name = "cboID";
             this.cboID.Size = new System.Drawing.Size(121, 24);
             this.cboID.TabIndex = 62;
-            this.cboID.Text = "Identification";
             // 
             // panel10
             // 
@@ -519,7 +568,7 @@ namespace bdOOPFinalPj
             this.txtEmail.BackColor = System.Drawing.Color.White;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtEmail.Location = new System.Drawing.Point(539, 442);
+            this.txtEmail.Location = new System.Drawing.Point(539, 444);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(154, 24);
             this.txtEmail.TabIndex = 61;
@@ -548,7 +597,7 @@ namespace bdOOPFinalPj
             this.txtPhoneNmbr.BackColor = System.Drawing.Color.White;
             this.txtPhoneNmbr.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPhoneNmbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtPhoneNmbr.Location = new System.Drawing.Point(112, 442);
+            this.txtPhoneNmbr.Location = new System.Drawing.Point(112, 444);
             this.txtPhoneNmbr.Name = "txtPhoneNmbr";
             this.txtPhoneNmbr.Size = new System.Drawing.Size(154, 24);
             this.txtPhoneNmbr.TabIndex = 59;
@@ -566,7 +615,7 @@ namespace bdOOPFinalPj
             this.txtAge.BackColor = System.Drawing.Color.White;
             this.txtAge.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtAge.Location = new System.Drawing.Point(333, 442);
+            this.txtAge.Location = new System.Drawing.Point(333, 444);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(154, 24);
             this.txtAge.TabIndex = 60;
@@ -575,7 +624,7 @@ namespace bdOOPFinalPj
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(357, 420);
+            this.label4.Location = new System.Drawing.Point(359, 420);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(11, 13);
             this.label4.TabIndex = 73;
@@ -596,7 +645,7 @@ namespace bdOOPFinalPj
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(192, 419);
+            this.label3.Location = new System.Drawing.Point(200, 419);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(11, 13);
             this.label3.TabIndex = 71;
@@ -626,7 +675,7 @@ namespace bdOOPFinalPj
             this.txtName.BackColor = System.Drawing.Color.White;
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtName.Location = new System.Drawing.Point(451, 289);
+            this.txtName.Location = new System.Drawing.Point(451, 291);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(243, 24);
             this.txtName.TabIndex = 57;
@@ -665,7 +714,7 @@ namespace bdOOPFinalPj
             this.txtAddress.BackColor = System.Drawing.Color.White;
             this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtAddress.Location = new System.Drawing.Point(109, 364);
+            this.txtAddress.Location = new System.Drawing.Point(109, 366);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(584, 24);
             this.txtAddress.TabIndex = 58;
@@ -683,7 +732,7 @@ namespace bdOOPFinalPj
             this.txtDUI.BackColor = System.Drawing.Color.White;
             this.txtDUI.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDUI.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtDUI.Location = new System.Drawing.Point(109, 289);
+            this.txtDUI.Location = new System.Drawing.Point(109, 291);
             this.txtDUI.MaxLength = 10;
             this.txtDUI.Name = "txtDUI";
             this.txtDUI.Size = new System.Drawing.Size(243, 24);
@@ -693,7 +742,7 @@ namespace bdOOPFinalPj
             // 
             this.lblName.AutoSize = true;
             this.lblName.ForeColor = System.Drawing.Color.Red;
-            this.lblName.Location = new System.Drawing.Point(504, 258);
+            this.lblName.Location = new System.Drawing.Point(512, 258);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(11, 13);
             this.lblName.TabIndex = 55;
@@ -714,7 +763,7 @@ namespace bdOOPFinalPj
             // 
             this.lblText.AutoSize = true;
             this.lblText.ForeColor = System.Drawing.Color.Red;
-            this.lblText.Location = new System.Drawing.Point(244, 258);
+            this.lblText.Location = new System.Drawing.Point(265, 258);
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(11, 13);
             this.lblText.TabIndex = 53;
@@ -762,6 +811,7 @@ namespace bdOOPFinalPj
             // 
             // pageTracing
             // 
+            this.pageTracing.BackColor = System.Drawing.Color.White;
             this.pageTracing.Controls.Add(this.panel12);
             this.pageTracing.Controls.Add(this.panel21);
             this.pageTracing.Controls.Add(this.txtTraceDate1);
@@ -805,7 +855,6 @@ namespace bdOOPFinalPj
             this.pageTracing.Size = new System.Drawing.Size(823, 730);
             this.pageTracing.TabIndex = 3;
             this.pageTracing.Text = "Chronic Illness";
-            this.pageTracing.UseVisualStyleBackColor = true;
             // 
             // panel12
             // 
@@ -849,7 +898,7 @@ namespace bdOOPFinalPj
             this.txtTraceDate1.BackColor = System.Drawing.Color.White;
             this.txtTraceDate1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTraceDate1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTraceDate1.Location = new System.Drawing.Point(21, 568);
+            this.txtTraceDate1.Location = new System.Drawing.Point(21, 570);
             this.txtTraceDate1.Name = "txtTraceDate1";
             this.txtTraceDate1.Size = new System.Drawing.Size(243, 24);
             this.txtTraceDate1.TabIndex = 69;
@@ -867,7 +916,7 @@ namespace bdOOPFinalPj
             this.txtTraceName.BackColor = System.Drawing.Color.White;
             this.txtTraceName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTraceName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTraceName.Location = new System.Drawing.Point(18, 379);
+            this.txtTraceName.Location = new System.Drawing.Point(18, 381);
             this.txtTraceName.Name = "txtTraceName";
             this.txtTraceName.Size = new System.Drawing.Size(243, 24);
             this.txtTraceName.TabIndex = 62;
@@ -885,7 +934,7 @@ namespace bdOOPFinalPj
             this.txtTracePlace1.BackColor = System.Drawing.Color.White;
             this.txtTracePlace1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTracePlace1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTracePlace1.Location = new System.Drawing.Point(546, 568);
+            this.txtTracePlace1.Location = new System.Drawing.Point(546, 570);
             this.txtTracePlace1.Name = "txtTracePlace1";
             this.txtTracePlace1.Size = new System.Drawing.Size(243, 24);
             this.txtTracePlace1.TabIndex = 71;
@@ -943,7 +992,7 @@ namespace bdOOPFinalPj
             this.txtTraceHour1.BackColor = System.Drawing.Color.White;
             this.txtTraceHour1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTraceHour1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTraceHour1.Location = new System.Drawing.Point(286, 568);
+            this.txtTraceHour1.Location = new System.Drawing.Point(286, 570);
             this.txtTraceHour1.Name = "txtTraceHour1";
             this.txtTraceHour1.Size = new System.Drawing.Size(243, 24);
             this.txtTraceHour1.TabIndex = 70;
@@ -972,7 +1021,7 @@ namespace bdOOPFinalPj
             this.txtTraceEmail.BackColor = System.Drawing.Color.White;
             this.txtTraceEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTraceEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTraceEmail.Location = new System.Drawing.Point(546, 508);
+            this.txtTraceEmail.Location = new System.Drawing.Point(546, 510);
             this.txtTraceEmail.Name = "txtTraceEmail";
             this.txtTraceEmail.Size = new System.Drawing.Size(243, 24);
             this.txtTraceEmail.TabIndex = 68;
@@ -1001,7 +1050,7 @@ namespace bdOOPFinalPj
             this.txtTracePhoneNmbr.BackColor = System.Drawing.Color.White;
             this.txtTracePhoneNmbr.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTracePhoneNmbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTracePhoneNmbr.Location = new System.Drawing.Point(286, 381);
+            this.txtTracePhoneNmbr.Location = new System.Drawing.Point(286, 383);
             this.txtTracePhoneNmbr.Name = "txtTracePhoneNmbr";
             this.txtTracePhoneNmbr.Size = new System.Drawing.Size(241, 24);
             this.txtTracePhoneNmbr.TabIndex = 63;
@@ -1030,7 +1079,7 @@ namespace bdOOPFinalPj
             this.txtTraceIDInstitution.BackColor = System.Drawing.Color.White;
             this.txtTraceIDInstitution.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTraceIDInstitution.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTraceIDInstitution.Location = new System.Drawing.Point(18, 504);
+            this.txtTraceIDInstitution.Location = new System.Drawing.Point(18, 506);
             this.txtTraceIDInstitution.Name = "txtTraceIDInstitution";
             this.txtTraceIDInstitution.Size = new System.Drawing.Size(243, 24);
             this.txtTraceIDInstitution.TabIndex = 66;
@@ -1081,7 +1130,7 @@ namespace bdOOPFinalPj
             this.txtTraceAddress.BackColor = System.Drawing.Color.White;
             this.txtTraceAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTraceAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTraceAddress.Location = new System.Drawing.Point(18, 439);
+            this.txtTraceAddress.Location = new System.Drawing.Point(18, 441);
             this.txtTraceAddress.Name = "txtTraceAddress";
             this.txtTraceAddress.Size = new System.Drawing.Size(768, 24);
             this.txtTraceAddress.TabIndex = 65;
@@ -1121,7 +1170,7 @@ namespace bdOOPFinalPj
             this.txtTraceAge.BackColor = System.Drawing.Color.White;
             this.txtTraceAge.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTraceAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTraceAge.Location = new System.Drawing.Point(546, 379);
+            this.txtTraceAge.Location = new System.Drawing.Point(546, 381);
             this.txtTraceAge.Name = "txtTraceAge";
             this.txtTraceAge.Size = new System.Drawing.Size(243, 24);
             this.txtTraceAge.TabIndex = 64;
@@ -1139,7 +1188,7 @@ namespace bdOOPFinalPj
             this.txtTraceIllness.BackColor = System.Drawing.Color.White;
             this.txtTraceIllness.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTraceIllness.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTraceIllness.Location = new System.Drawing.Point(284, 506);
+            this.txtTraceIllness.Location = new System.Drawing.Point(284, 508);
             this.txtTraceIllness.Name = "txtTraceIllness";
             this.txtTraceIllness.Size = new System.Drawing.Size(243, 24);
             this.txtTraceIllness.TabIndex = 67;
@@ -1213,16 +1262,322 @@ namespace bdOOPFinalPj
             // 
             // pageVaccination
             // 
+            this.pageVaccination.BackColor = System.Drawing.Color.White;
+            this.pageVaccination.Controls.Add(this.groupBox3);
+            this.pageVaccination.Controls.Add(this.label19);
+            this.pageVaccination.Controls.Add(this.groupBox4);
+            this.pageVaccination.Controls.Add(this.groupBox2);
+            this.pageVaccination.Controls.Add(this.panel35);
+            this.pageVaccination.Controls.Add(this.groupBox1);
+            this.pageVaccination.Controls.Add(this.txtVaccineDUI);
+            this.pageVaccination.Controls.Add(this.panel29);
+            this.pageVaccination.Controls.Add(this.label20);
+            this.pageVaccination.Controls.Add(this.panel33);
+            this.pageVaccination.Controls.Add(this.label17);
             this.pageVaccination.Location = new System.Drawing.Point(4, 22);
             this.pageVaccination.Name = "pageVaccination";
             this.pageVaccination.Padding = new System.Windows.Forms.Padding(3);
             this.pageVaccination.Size = new System.Drawing.Size(823, 730);
             this.pageVaccination.TabIndex = 4;
             this.pageVaccination.Text = "tabPage3";
-            this.pageVaccination.UseVisualStyleBackColor = true;
+            this.pageVaccination.Click += new System.EventHandler(this.pageVaccination_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.panel38);
+            this.groupBox3.Controls.Add(this.label23);
+            this.groupBox3.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox3.Location = new System.Drawing.Point(413, 450);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(394, 182);
+            this.groupBox3.TabIndex = 88;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Second Dose";
+            // 
+            // panel38
+            // 
+            this.panel38.Controls.Add(this.btnRegisterSecondDose);
+            this.panel38.Location = new System.Drawing.Point(158, 79);
+            this.panel38.Name = "panel38";
+            this.panel38.Size = new System.Drawing.Size(77, 59);
+            this.panel38.TabIndex = 97;
+            // 
+            // btnRegisterSecondDose
+            // 
+            this.btnRegisterSecondDose.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnRegisterSecondDose.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnRegisterSecondDose.FlatAppearance.BorderSize = 0;
+            this.btnRegisterSecondDose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegisterSecondDose.Image = ((System.Drawing.Image)(resources.GetObject("btnRegisterSecondDose.Image")));
+            this.btnRegisterSecondDose.Location = new System.Drawing.Point(0, 0);
+            this.btnRegisterSecondDose.Name = "btnRegisterSecondDose";
+            this.btnRegisterSecondDose.Size = new System.Drawing.Size(77, 59);
+            this.btnRegisterSecondDose.TabIndex = 64;
+            this.btnRegisterSecondDose.UseVisualStyleBackColor = false;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label23.ForeColor = System.Drawing.Color.Silver;
+            this.label23.Location = new System.Drawing.Point(117, 44);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(164, 13);
+            this.label23.TabIndex = 96;
+            this.label23.Text = "Register Your Second Dose";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.ForeColor = System.Drawing.Color.Red;
+            this.label19.Location = new System.Drawing.Point(436, 205);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(11, 13);
+            this.label19.TabIndex = 93;
+            this.label19.Text = "*";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.panel36);
+            this.groupBox4.Controls.Add(this.label21);
+            this.groupBox4.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox4.Location = new System.Drawing.Point(12, 450);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(394, 182);
+            this.groupBox4.TabIndex = 87;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Vaccine Application";
+            // 
+            // panel36
+            // 
+            this.panel36.Controls.Add(this.btnVaccineApplication);
+            this.panel36.Location = new System.Drawing.Point(147, 85);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(77, 59);
+            this.panel36.TabIndex = 95;
+            // 
+            // btnVaccineApplication
+            // 
+            this.btnVaccineApplication.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnVaccineApplication.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnVaccineApplication.FlatAppearance.BorderSize = 0;
+            this.btnVaccineApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVaccineApplication.Image = ((System.Drawing.Image)(resources.GetObject("btnVaccineApplication.Image")));
+            this.btnVaccineApplication.Location = new System.Drawing.Point(0, 0);
+            this.btnVaccineApplication.Name = "btnVaccineApplication";
+            this.btnVaccineApplication.Size = new System.Drawing.Size(77, 59);
+            this.btnVaccineApplication.TabIndex = 64;
+            this.btnVaccineApplication.UseVisualStyleBackColor = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label21.ForeColor = System.Drawing.Color.Silver;
+            this.label21.Location = new System.Drawing.Point(80, 50);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(212, 13);
+            this.label21.TabIndex = 94;
+            this.label21.Text = "Register Vaccination Date and Time";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.panel37);
+            this.groupBox2.Controls.Add(this.clbSynthoms);
+            this.groupBox2.Controls.Add(this.label22);
+            this.groupBox2.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox2.Location = new System.Drawing.Point(413, 264);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(394, 182);
+            this.groupBox2.TabIndex = 86;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Observation Phase";
+            // 
+            // panel37
+            // 
+            this.panel37.Controls.Add(this.btnSaveSynthoms);
+            this.panel37.Location = new System.Drawing.Point(270, 130);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(55, 35);
+            this.panel37.TabIndex = 99;
+            // 
+            // btnSaveSynthoms
+            // 
+            this.btnSaveSynthoms.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnSaveSynthoms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSaveSynthoms.FlatAppearance.BorderSize = 0;
+            this.btnSaveSynthoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveSynthoms.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveSynthoms.Image")));
+            this.btnSaveSynthoms.Location = new System.Drawing.Point(0, 0);
+            this.btnSaveSynthoms.Name = "btnSaveSynthoms";
+            this.btnSaveSynthoms.Size = new System.Drawing.Size(55, 35);
+            this.btnSaveSynthoms.TabIndex = 64;
+            this.btnSaveSynthoms.UseVisualStyleBackColor = false;
+            // 
+            // clbSynthoms
+            // 
+            this.clbSynthoms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.clbSynthoms.FormattingEnabled = true;
+            this.clbSynthoms.Items.AddRange(new object[] {
+            "Pain in the vaccination area",
+            "Redness in the vaccination area",
+            "Fatigue",
+            "Fadache",
+            "Myalgia",
+            "Anaphylaxis"});
+            this.clbSynthoms.Location = new System.Drawing.Point(80, 69);
+            this.clbSynthoms.Name = "clbSynthoms";
+            this.clbSynthoms.Size = new System.Drawing.Size(245, 96);
+            this.clbSynthoms.TabIndex = 98;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label22.ForeColor = System.Drawing.Color.Silver;
+            this.label22.Location = new System.Drawing.Point(117, 44);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(162, 13);
+            this.label22.TabIndex = 96;
+            this.label22.Text = "Register Vaccine Synthoms";
+            // 
+            // panel35
+            // 
+            this.panel35.BackColor = System.Drawing.Color.Silver;
+            this.panel35.Location = new System.Drawing.Point(284, 249);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(243, 1);
+            this.panel35.TabIndex = 92;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.panel34);
+            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Location = new System.Drawing.Point(12, 264);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(394, 182);
+            this.groupBox1.TabIndex = 85;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Waiting Line";
+            // 
+            // panel34
+            // 
+            this.panel34.Controls.Add(this.btnWaitingLineRegister);
+            this.panel34.Location = new System.Drawing.Point(147, 85);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(77, 59);
+            this.panel34.TabIndex = 95;
+            // 
+            // btnWaitingLineRegister
+            // 
+            this.btnWaitingLineRegister.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnWaitingLineRegister.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnWaitingLineRegister.FlatAppearance.BorderSize = 0;
+            this.btnWaitingLineRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWaitingLineRegister.Image = ((System.Drawing.Image)(resources.GetObject("btnWaitingLineRegister.Image")));
+            this.btnWaitingLineRegister.Location = new System.Drawing.Point(0, 0);
+            this.btnWaitingLineRegister.Name = "btnWaitingLineRegister";
+            this.btnWaitingLineRegister.Size = new System.Drawing.Size(77, 59);
+            this.btnWaitingLineRegister.TabIndex = 64;
+            this.btnWaitingLineRegister.UseVisualStyleBackColor = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label18.ForeColor = System.Drawing.Color.Silver;
+            this.label18.Location = new System.Drawing.Point(71, 50);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(237, 13);
+            this.label18.TabIndex = 94;
+            this.label18.Text = "Register Waiting Process Date and Time";
+            // 
+            // txtVaccineDUI
+            // 
+            this.txtVaccineDUI.BackColor = System.Drawing.Color.White;
+            this.txtVaccineDUI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtVaccineDUI.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtVaccineDUI.Location = new System.Drawing.Point(284, 224);
+            this.txtVaccineDUI.Name = "txtVaccineDUI";
+            this.txtVaccineDUI.Size = new System.Drawing.Size(243, 24);
+            this.txtVaccineDUI.TabIndex = 91;
+            // 
+            // panel29
+            // 
+            this.panel29.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel29.Controls.Add(this.label14);
+            this.panel29.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel29.Location = new System.Drawing.Point(3, 637);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(817, 90);
+            this.panel29.TabIndex = 84;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(144, 34);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(532, 17);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "In this area you will be able to register all the vaccination information of your" +
+    " patient";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label20.ForeColor = System.Drawing.Color.Silver;
+            this.label20.Location = new System.Drawing.Point(284, 207);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(154, 13);
+            this.label20.TabIndex = 90;
+            this.label20.Text = "Personal ID Number (DUI)";
+            // 
+            // panel33
+            // 
+            this.panel33.Controls.Add(this.label15);
+            this.panel33.Controls.Add(this.pictureBox4);
+            this.panel33.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel33.Location = new System.Drawing.Point(3, 3);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(817, 190);
+            this.panel33.TabIndex = 83;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(221, 117);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(386, 46);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "Vaccination Process";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(381, 52);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(49, 48);
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.ForeColor = System.Drawing.Color.Red;
+            this.label17.Location = new System.Drawing.Point(427, 184);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(11, 13);
+            this.label17.TabIndex = 89;
+            this.label17.Text = "*";
             // 
             // pageDownload
             // 
+            this.pageDownload.BackColor = System.Drawing.Color.White;
+            this.pageDownload.Controls.Add(this.label16);
             this.pageDownload.Controls.Add(this.panel32);
             this.pageDownload.Controls.Add(this.panel31);
             this.pageDownload.Controls.Add(this.panel26);
@@ -1239,7 +1594,16 @@ namespace bdOOPFinalPj
             this.pageDownload.Size = new System.Drawing.Size(823, 730);
             this.pageDownload.TabIndex = 5;
             this.pageDownload.Text = "tabPage4";
-            this.pageDownload.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.Color.Red;
+            this.label16.Location = new System.Drawing.Point(438, 218);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(11, 13);
+            this.label16.TabIndex = 85;
+            this.label16.Text = "*";
             // 
             // panel32
             // 
@@ -1346,7 +1710,7 @@ namespace bdOOPFinalPj
             // panel27
             // 
             this.panel27.BackColor = System.Drawing.Color.Silver;
-            this.panel27.Location = new System.Drawing.Point(286, 261);
+            this.panel27.Location = new System.Drawing.Point(286, 266);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(243, 1);
             this.panel27.TabIndex = 66;
@@ -1375,7 +1739,7 @@ namespace bdOOPFinalPj
             // panel28
             // 
             this.panel28.Controls.Add(this.btnDownloadVerify);
-            this.panel28.Location = new System.Drawing.Point(287, 279);
+            this.panel28.Location = new System.Drawing.Point(287, 291);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(240, 39);
             this.panel28.TabIndex = 62;
@@ -1396,13 +1760,64 @@ namespace bdOOPFinalPj
             // 
             // pageStats
             // 
+            this.pageStats.BackColor = System.Drawing.Color.White;
+            this.pageStats.Controls.Add(this.panel39);
+            this.pageStats.Controls.Add(this.panel40);
             this.pageStats.Location = new System.Drawing.Point(4, 22);
             this.pageStats.Name = "pageStats";
             this.pageStats.Padding = new System.Windows.Forms.Padding(3);
             this.pageStats.Size = new System.Drawing.Size(823, 730);
             this.pageStats.TabIndex = 6;
             this.pageStats.Text = "tabPage5";
-            this.pageStats.UseVisualStyleBackColor = true;
+            // 
+            // panel39
+            // 
+            this.panel39.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel39.Controls.Add(this.label24);
+            this.panel39.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel39.Location = new System.Drawing.Point(3, 637);
+            this.panel39.Name = "panel39";
+            this.panel39.Size = new System.Drawing.Size(817, 90);
+            this.panel39.TabIndex = 84;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label24.Location = new System.Drawing.Point(203, 34);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(425, 17);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "In this area you will see all the vaccination statistics of our platform";
+            // 
+            // panel40
+            // 
+            this.panel40.Controls.Add(this.label25);
+            this.panel40.Controls.Add(this.pictureBox5);
+            this.panel40.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel40.Location = new System.Drawing.Point(3, 3);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(817, 190);
+            this.panel40.TabIndex = 83;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label25.Location = new System.Drawing.Point(208, 117);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(401, 46);
+            this.label25.TabIndex = 1;
+            this.label25.Text = "Vaccination Statistics";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(381, 52);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(49, 48);
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
             // 
             // FormMain
             // 
@@ -1443,6 +1858,25 @@ namespace bdOOPFinalPj
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
             this.panel13.ResumeLayout(false);
+            this.pageVaccination.ResumeLayout(false);
+            this.pageVaccination.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.panel38.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.panel36.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.panel37.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.panel34.ResumeLayout(false);
+            this.panel29.ResumeLayout(false);
+            this.panel29.PerformLayout();
+            this.panel33.ResumeLayout(false);
+            this.panel33.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pageDownload.ResumeLayout(false);
             this.pageDownload.PerformLayout();
             this.panel32.ResumeLayout(false);
@@ -1452,6 +1886,12 @@ namespace bdOOPFinalPj
             this.panel30.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel28.ResumeLayout(false);
+            this.pageStats.ResumeLayout(false);
+            this.panel39.ResumeLayout(false);
+            this.panel39.PerformLayout();
+            this.panel40.ResumeLayout(false);
+            this.panel40.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1570,5 +2010,38 @@ namespace bdOOPFinalPj
         private System.Windows.Forms.Panel panel31;
         private System.Windows.Forms.TextBox txtPatientDownload;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Panel panel35;
+        private System.Windows.Forms.TextBox txtVaccineDUI;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel33;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Panel panel38;
+        private System.Windows.Forms.Button btnRegisterSecondDose;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Panel panel36;
+        private System.Windows.Forms.Button btnVaccineApplication;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Panel panel37;
+        private System.Windows.Forms.Button btnSaveSynthoms;
+        private System.Windows.Forms.CheckedListBox clbSynthoms;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Panel panel34;
+        private System.Windows.Forms.Button btnWaitingLineRegister;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Panel panel39;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Panel panel40;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

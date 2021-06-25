@@ -64,8 +64,8 @@ namespace bdOOPFinalPj
             
             tabControl.SelectedTab = pageTracing;
 
-            pnlIndicator.Height = panel1.Height;
-            pnlIndicator.Top = panel1.Top;
+            pnlIndicator.Height = panel4.Height;
+            pnlIndicator.Top = panel4.Top;
 
             txtTraceName.Text = String.Empty;
             txtTraceAddress.Text = String.Empty;
@@ -203,8 +203,8 @@ namespace bdOOPFinalPj
         {
             tabControl.SelectedTab = pageDownload;
 
-            pnlIndicator.Height = panel4.Height;
-            pnlIndicator.Top = panel4.Top;
+            pnlIndicator.Height = panel1.Height;
+            pnlIndicator.Top = panel1.Top;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -265,6 +265,11 @@ namespace bdOOPFinalPj
                 MessageBox.Show("Error", "HAPA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
+        }
+
+        private void pageVaccination_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -83,6 +83,7 @@ namespace bdOOPFinalPj
             this.txtPassword.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtPassword.Location = new System.Drawing.Point(156, 232);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(243, 26);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
@@ -155,27 +156,7 @@ namespace bdOOPFinalPj
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // pnlPassword
-            // 
-            this.pnlPassword.BackColor = System.Drawing.Color.Silver;
-            this.pnlPassword.Location = new System.Drawing.Point(156, 261);
-            this.pnlPassword.Name = "pnlPassword";
-            this.pnlPassword.Size = new System.Drawing.Size(243, 1);
-            this.pnlPassword.TabIndex = 12;
-            // 
-            // cboCabain
-            // 
-            this.cboCabain.BackColor = System.Drawing.Color.White;
-            this.cboCabain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboCabain.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cboCabain.FormattingEnabled = true;
-            this.cboCabain.Location = new System.Drawing.Point(219, 41);
-            this.cboCabain.Name = "cboCabain";
-            this.cboCabain.Size = new System.Drawing.Size(121, 24);
-            this.cboCabain.TabIndex = 4;
-            this.cboCabain.Text = "Cabains";
-            //
-            // // pnlCabain
+            // pnlCabain
             // 
             this.pnlCabain.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pnlCabain.Controls.Add(this.cboCabain);
@@ -185,6 +166,18 @@ namespace bdOOPFinalPj
             this.pnlCabain.Name = "pnlCabain";
             this.pnlCabain.Size = new System.Drawing.Size(547, 96);
             this.pnlCabain.TabIndex = 8;
+            // 
+            // cboCabain
+            // 
+            this.cboCabain.BackColor = System.Drawing.Color.White;
+            this.cboCabain.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCabain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboCabain.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cboCabain.FormattingEnabled = true;
+            this.cboCabain.Location = new System.Drawing.Point(219, 41);
+            this.cboCabain.Name = "cboCabain";
+            this.cboCabain.Size = new System.Drawing.Size(121, 24);
+            this.cboCabain.TabIndex = 4;
             // 
             // lblCabain
             // 
@@ -204,7 +197,7 @@ namespace bdOOPFinalPj
             this.pnlUsername.Size = new System.Drawing.Size(243, 1);
             this.pnlUsername.TabIndex = 14;
             // 
-            // lblCabain
+            // pnlPassword
             // 
             this.pnlPassword.BackColor = System.Drawing.Color.Silver;
             this.pnlPassword.Location = new System.Drawing.Point(156, 258);
