@@ -29,6 +29,7 @@ namespace bdOOPFinalPj
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.pnlLogin2 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.pbClose = new System.Windows.Forms.PictureBox();
@@ -252,10 +253,10 @@ namespace bdOOPFinalPj
             // 
             // pbLogoApp
             // 
-            this.pbLogoApp.Image = global::bdOOPFinalPj.Properties.Resources.HAPPA_littler;
-            this.pbLogoApp.Location = new System.Drawing.Point(51, 91);
+            this.pbLogoApp.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoApp.Image")));
+            this.pbLogoApp.Location = new System.Drawing.Point(16, 130);
             this.pbLogoApp.Name = "pbLogoApp";
-            this.pbLogoApp.Size = new System.Drawing.Size(101, 93);
+            this.pbLogoApp.Size = new System.Drawing.Size(173, 104);
             this.pbLogoApp.TabIndex = 0;
             this.pbLogoApp.TabStop = false;
             // 
@@ -268,9 +269,10 @@ namespace bdOOPFinalPj
             this.Controls.Add(this.pnlLogin2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormLogin";
+            this.Text = "HAPA COVID-19";
             this.pnlLogin2.ResumeLayout(false);
             this.pnlLogin2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
