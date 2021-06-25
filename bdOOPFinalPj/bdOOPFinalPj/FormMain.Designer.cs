@@ -33,8 +33,8 @@ namespace bdOOPFinalPj
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlIndicator = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnDownload = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnDownload = new System.Windows.Forms.Button();
             this.panelBase = new System.Windows.Forms.Panel();
             this.btbAppointment = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -250,6 +250,13 @@ namespace bdOOPFinalPj
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(0, 310);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(215, 100);
+            this.panel2.TabIndex = 3;
+            // 
             // btnDownload
             // 
             this.btnDownload.BackColor = System.Drawing.Color.SkyBlue;
@@ -266,13 +273,6 @@ namespace bdOOPFinalPj
             this.btnDownload.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnDownload.UseVisualStyleBackColor = false;
             this.btnDownload.Click += new System.EventHandler(this.btnPrinting_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(0, 310);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(215, 100);
-            this.panel2.TabIndex = 3;
             // 
             // panelBase
             // 
@@ -398,7 +398,7 @@ namespace bdOOPFinalPj
             this.tabControl.Controls.Add(this.pageVaccination);
             this.tabControl.Controls.Add(this.pageDownload);
             this.tabControl.Controls.Add(this.pageStats);
-            this.tabControl.Location = new System.Drawing.Point(206, -30);
+            this.tabControl.Location = new System.Drawing.Point(208, -4);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(831, 756);
@@ -964,6 +964,7 @@ namespace bdOOPFinalPj
             this.txtTraceDUI.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTraceDUI.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTraceDUI.Location = new System.Drawing.Point(286, 241);
+            this.txtTraceDUI.MaxLength = 10;
             this.txtTraceDUI.Name = "txtTraceDUI";
             this.txtTraceDUI.Size = new System.Drawing.Size(243, 24);
             this.txtTraceDUI.TabIndex = 60;
@@ -1286,7 +1287,7 @@ namespace bdOOPFinalPj
             // 
             this.groupBox3.Controls.Add(this.panel38);
             this.groupBox3.Controls.Add(this.label23);
-            this.groupBox3.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.Location = new System.Drawing.Point(413, 450);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(394, 182);
@@ -1340,7 +1341,7 @@ namespace bdOOPFinalPj
             // 
             this.groupBox4.Controls.Add(this.panel36);
             this.groupBox4.Controls.Add(this.label21);
-            this.groupBox4.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox4.Location = new System.Drawing.Point(12, 450);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(394, 182);
@@ -1385,7 +1386,7 @@ namespace bdOOPFinalPj
             this.groupBox2.Controls.Add(this.panel37);
             this.groupBox2.Controls.Add(this.clbSynthoms);
             this.groupBox2.Controls.Add(this.label22);
-            this.groupBox2.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.Location = new System.Drawing.Point(413, 264);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(394, 182);
@@ -1427,7 +1428,7 @@ namespace bdOOPFinalPj
             "Anaphylaxis"});
             this.clbSynthoms.Location = new System.Drawing.Point(80, 69);
             this.clbSynthoms.Name = "clbSynthoms";
-            this.clbSynthoms.Size = new System.Drawing.Size(245, 96);
+            this.clbSynthoms.Size = new System.Drawing.Size(245, 90);
             this.clbSynthoms.TabIndex = 98;
             // 
             // label22
@@ -1453,7 +1454,7 @@ namespace bdOOPFinalPj
             // 
             this.groupBox1.Controls.Add(this.panel34);
             this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(12, 264);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(394, 182);
