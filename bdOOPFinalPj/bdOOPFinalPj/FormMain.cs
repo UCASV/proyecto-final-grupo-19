@@ -271,5 +271,88 @@ namespace bdOOPFinalPj
         {
 
         }
+
+        private void pbClose5_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pbClose1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pbClose2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pbClose3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pbClose4_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pbMin1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pbMin2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pbMin3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pbMin4_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pbMin5_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnWaitingLineRegister_Click(object sender, EventArgs e)
+        {
+            //Ejecutar luego de validar el DUI
+            gbApply.Visible = true;
+            gbWait.Location = new Point(12, 264);
+        }
+
+        private void btnSaveSynthoms_Click(object sender, EventArgs e)
+        {
+            //Ejecutar luego de validar la selección del CheckedListBox
+            gbSecond.Visible = true;
+        }
+
+        private void btnVaccineApplication_Click(object sender, EventArgs e)
+        {
+            //Ejecutar luego de validar la selección del CheckedListBox
+            gbObservation.Visible = true;
+           
+        }
+
+        private void btnRegisterSecondDose_Click(object sender, EventArgs e)
+        {
+            //Añadir Message Box con la fecha y hora de la segunda dósis, luego de eso, el formulario se refrescará
+            
+            this.Controls.Clear();
+            this.InitializeComponent();
+
+            tabControl.SelectedTab = pageVaccination;
+
+            pnlIndicator.Height = panel5.Height;
+            pnlIndicator.Top = panel5.Top;
+        }
     }
 }
