@@ -8,11 +8,16 @@ using System.Windows.Forms;
 
 namespace bdOOPFinalPj
 {
-    public partial class Form1 : Form
+    public partial class FormDiseases : System.Windows.Forms.Form
     {
-        public Form1()
+        public FormDiseases()
         {
             InitializeComponent();
+        }
+
+        private void pbCloseDisease_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

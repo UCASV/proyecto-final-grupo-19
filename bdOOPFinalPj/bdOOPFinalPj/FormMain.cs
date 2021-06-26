@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace bdOOPFinalPj
 {
-    public partial class FormMain : Form
+    public partial class FormMain : System.Windows.Forms.Form
     {
         public FormMain()
         {
@@ -354,5 +354,7 @@ namespace bdOOPFinalPj
             pnlIndicator.Height = panel5.Height;
             pnlIndicator.Top = panel5.Top;
         }
+
+
     }
 }
