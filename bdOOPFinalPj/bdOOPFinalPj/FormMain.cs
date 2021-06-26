@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace bdOOPFinalPj
 {
-    public partial class FormMain : Form
+    public partial class FormMain : System.Windows.Forms.Form
     {
         public FormMain()
         {
@@ -65,7 +65,7 @@ namespace bdOOPFinalPj
             txtPhoneNmbr.Text = String.Empty;
 
             cboID.SelectedIndex = -1;
-            cboIllness.SelectedIndex = -1;
+            // cboIllness.SelectedIndex = -1;
         }
         private void btnTracing_Click(object sender, EventArgs e)
         {   
@@ -336,6 +336,14 @@ namespace bdOOPFinalPj
 
             pnlIndicator.Height = panel5.Height;
             pnlIndicator.Top = panel5.Top;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormDiseases formDiseases = new FormDiseases();
+            formDiseases.ShowDialog();
+            formDiseases = null;
+            Show();
         }
     }
 }
