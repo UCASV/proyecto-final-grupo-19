@@ -1737,6 +1737,7 @@ namespace bdOOPFinalPj
             this.button4.Text = "Download";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel31
             // 
@@ -1888,6 +1889,7 @@ namespace bdOOPFinalPj
             this.btnDownloadVerify.TabIndex = 61;
             this.btnDownloadVerify.Text = "Check for availability";
             this.btnDownloadVerify.UseVisualStyleBackColor = false;
+            this.btnDownloadVerify.Click += new System.EventHandler(this.btnDownloadVerify_Click);
             // 
             // pageStats
             // 

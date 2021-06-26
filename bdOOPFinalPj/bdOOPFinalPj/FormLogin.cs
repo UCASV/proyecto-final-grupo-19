@@ -101,7 +101,6 @@ namespace bdOOPFinalPj
                 //Obtengo la hora a la cual se realiza el login 
                 var time = DateTime.Now;
                 //Si los datos son correctos se despliega un Messagebox dando la bienvenida al usuario
-                MessageBox.Show("Bienvenido!", "HAPA COVID-19 APP", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 addRegistration(time, idcabin);
                 //Despues de mostrar el Messagebox se despliega la ventana principal 
                 Hide();
@@ -113,7 +112,7 @@ namespace bdOOPFinalPj
             else
             {
                 //Si los datos son erroneos mando unMessagebox indicando el error y limpio los textbox. 
-                MessageBox.Show("Usuario o contrasena incorrecta", "Clinica UCA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Incorrect user or password", "HAPA COVID-19", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtPassword.Text = null;
                 txtUsername.Text = null;
             }

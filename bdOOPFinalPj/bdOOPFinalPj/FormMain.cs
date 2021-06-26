@@ -24,6 +24,9 @@ namespace bdOOPFinalPj
         public FormMain(int c)
         {
             InitializeComponent();
+            label13.Visible = false;
+            txtPatientDownload.Visible = false;
+            button4.Visible = false;
             pnlIndicator.Height = panelBase.Height;
             pnlIndicator.Top = panelBase.Top;
             this.idcabin = c;
@@ -449,6 +452,42 @@ namespace bdOOPFinalPj
         private void pageAppointment_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDownloadVerify_Click(object sender, EventArgs e)
+        {
+            List<Citizen> listCitizen = auxCitizen.consult();
+            var result = listCitizen.Where(u => u.Dui.Equals(txtPatientDownload.Text)).ToList(); 
+
+            if (exists())
+            {
+                label13.Visible = true;
+                txtPatientDownload.Visible = true ;
+                txtPatientDownload.Text = result[0].NameCitizen;
+                button4.Visible = true;
+            }
+            else
+                MessageBox.Show("The user is not found, please register the user who makes an appointment", "HAPA COVID-19", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+        }
+
+        private bool exists ()
+        {
+            List<Citizen> listCitizen = auxCitizen.consult();
+            var result = listCitizen.Where(u => u.Dui.Equals(txtPatientDownload.Text)).ToList();
+
+            if (result.Count > 0)
+
+                return true;
+            else
+            
+                return false;
+            
         }
     }
 }

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj": {}
+    "C:\\Users\\Oscar Carpio\\Desktop\\proyecto\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj": {
+    "C:\\Users\\Oscar Carpio\\Desktop\\proyecto\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
+        "projectUniqueName": "C:\\Users\\Oscar Carpio\\Desktop\\proyecto\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
         "projectName": "bdOOPFinalPj",
-        "projectPath": "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\obj\\",
+        "projectPath": "C:\\Users\\Oscar Carpio\\Desktop\\proyecto\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
+        "packagesPath": "C:\\Users\\Oscar Carpio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Oscar Carpio\\Desktop\\proyecto\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Oscar Carpio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,6 +53,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.7, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.2, )"
             }
           },
           "imports": [
