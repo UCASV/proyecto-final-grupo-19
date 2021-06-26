@@ -14,12 +14,26 @@ using System.Windows.Forms;
 namespace bdOOPFinalPj
 {
     public partial class FormMain : Form
-    {
+    { 
+        // Aplicando patron de diseño: Repositorio.
+        private Repository.IdentifierRepo ListIde;
+        private Repository.CitizenRepo auxCitizen;
+        private Repository.vaccinationRepo auxVacc;
+        private Repository.DiseaseRepo auxDiseas;
         public FormMain()
         {
             InitializeComponent();
             pnlIndicator.Height = panelBase.Height;
             pnlIndicator.Top = panelBase.Top;
+            auxCitizen = new Repository.CitizenRepo();
+            ListIde = new Repository.IdentifierRepo();
+            auxVacc = new Repository.vaccinationRepo();
+            auxDiseas = new Repository.DiseaseRepo();
+
+            var auxIde = ListIde.consult();
+            cboID.DataSource = auxIde;
+            cboID.ValueMember = "Id";
+            cboID.DisplayMember = "Identifier1";
         }
 
         private bool ValidDUI(string dui)
@@ -129,10 +143,7 @@ namespace bdOOPFinalPj
             //-------------------------------------------------------------------------------------------
             // llAMAMOS A LA BDD Y DENTRO DE ESTE CODIGO SACAMOS UNA LISTA QUE GUARDARA A LOS CIUDADANOS
             var db = new PROYECTOFContext();
-            List<Citizen> listCitizen = db.Citizens
-                .Include(x => x.IdIdentifierNavigation)
-                .Include(c => c.IdVaccinationPNavigation)
-                .ToList();
+            List<Citizen> listCitizen = auxCitizen.consult();
             // AHORA BUSCAMOS AL CUIDADANO CON EL MISMO DUI QUE ESCRIBIMOS EN EL TxtTraceDUI
             var result = listCitizen.Where(u => u.Dui.Equals(txtTraceDUI.Text)).ToList();
             //-------------------------------------------------------------------------------------------
@@ -140,9 +151,9 @@ namespace bdOOPFinalPj
             if(ValidDUI(txtTraceDUI.Text) && result.Count != 0 )
             { // Usamos variables locales para trabajar los datos que estan relacionando con el dato de CITIZEN.
                 Citizen oneCitizen = result[0];
-                var identi = db.Identifiers.Where(i => i.Id.Equals(result[0].IdIdentifier)).ToList();
-                var cronicals = db.Diseases.Where(d => d.IdCitizen.Equals(result[0].Dui)).ToList();
-                var process = db.VaccinationProcesses.Where(v => v.Id.Equals(result[0].IdVaccinationP)).ToList();
+                var identi = ListIde.consult().Where(i => i.Id.Equals(result[0].IdIdentifier)).ToList();
+                var cronicals = auxDiseas.consult().Where(d => d.IdCitizen.Equals(result[0].Dui)).ToList();
+                var process = auxVacc.consult().Where(v => v.Id.Equals(result[0].IdVaccinationP)).ToList();
                 DateTime? date = process[0].DateHourVaccination;
                 lblTraceAddress.Visible = true;
                 lblTraceAge.Visible = true;
@@ -238,13 +249,82 @@ namespace bdOOPFinalPj
         private void btnSave_Click(object sender, EventArgs e)
         {
             bool valid = ValidDUI(txtDUI.Text);
-            if (valid)
+            if (valid) // validamos primero el DUI
             {
-                MessageBox.Show("Exito", "HAPA", MessageBoxButtons.OK);
+                var resultCitizen = auxCitizen.consult().Where(c => c.Dui.Equals(txtDUI.Text)).ToList();
+                if (resultCitizen.Count == 0)
+                {// validamos si ya esta registrado la persona con su DUI.
+                    if (Int32.Parse(txtAge.Text) > 60 && cboID.SelectedItem.ToString() != "none")
+                    { // validamos si pertenece al grupo de prioridad y asignamos una fecha temprana
+                        DateTime newDate = DateTime.Now;
+                        Random days = new Random();
+                        int day = days.Next(5, 10);
+                        newDate = newDate.AddDays(day);
+                        VaccinationProcess vaccination = new VaccinationProcess()
+                        {
+                            DateHourVaccination = newDate,
+                            Place = "Hospital El Salvador"
+                        };
+                        auxVacc.insert(vaccination);
+                        //ingresamos datos de cuidadano
+                        var listaConst = auxVacc.consult();
+                        listaConst.OrderByDescending(c => c.Id);
+
+                        Citizen oneCitizen = new Citizen()
+                        {
+                            Dui = txtDUI.Text,
+                            NameCitizen = txtName.Text,
+                            Addres = txtAddress.Text,
+                            Age = Int32.Parse(txtAge.Text),
+                            Phone = Int32.Parse(txtPhoneNmbr.Text),
+                            Mail = txtEmail.Text,
+                            IdIdentifier = Int32.Parse(cboID.SelectedItem.ToString()),
+                            //IdCabin = ,
+                            IdVaccinationP = listaConst[0].Id
+                        };
+                        auxCitizen.insert(oneCitizen);
+                        MessageBox.Show("Ingresado como PRIORIDAD", "HAPA", MessageBoxButtons.OK);
+                    }
+                    else // Si no pertenence al grupo de prioridad se dara una fecha general
+                    {
+                        DateTime newDate = DateTime.Now;
+                        Random days = new Random();
+                        int day = days.Next(10, 15);
+                        newDate = newDate.AddDays(day);
+                        VaccinationProcess vaccination = new VaccinationProcess()
+                        {
+                            DateHourVaccination = newDate,
+                            Place = "Hospital El Salvador"
+                        };
+                        auxVacc.insert(vaccination);
+                        //ingresamos datos de cuidadano
+                        var listaProcces = auxVacc.consult();
+                        listaProcces.OrderByDescending(c => c.Id);
+
+                        Citizen oneCitizen = new Citizen()
+                        {
+                            Dui = txtDUI.Text,
+                            NameCitizen = txtName.Text,
+                            Addres = txtAddress.Text,
+                            Age = Int32.Parse(txtAge.Text),
+                            Phone = Int32.Parse(txtPhoneNmbr.Text),
+                            Mail = txtEmail.Text,
+                            IdIdentifier = Int32.Parse(cboID.SelectedItem.ToString()),
+                            //IdCabin = ,
+                            IdVaccinationP = listaProcces[0].Id
+                        };
+                        auxCitizen.insert(oneCitizen);
+                    }
+                    MessageBox.Show("Exito al guardar", "HAPA", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    MessageBox.Show("La persona ya esta registrada", "HAPA", MessageBoxButtons.OK);
+                }
             }
             else
             {
-                MessageBox.Show("Error", "HAPA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Dato erroneo", "HAPA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
         }
@@ -307,8 +387,20 @@ namespace bdOOPFinalPj
         private void btnWaitingLineRegister_Click(object sender, EventArgs e)
         {
             //Ejecutar luego de validar el DUI
-            gbApply.Visible = true;
-            gbWait.Location = new Point(12, 264);
+            var validation = auxCitizen.consult().Where(c => c.Dui.Equals(txtVaccineDUI.Text)).ToList();
+            if(validation.Count != 0)
+            {
+                DateTime waiting = DateTime.Now;
+                var procces = (VaccinationProcess) auxVacc.consult().Where(v => v.Id.Equals(validation[0].IdVaccinationP));
+                procces.DateHourStart = waiting;
+                auxVacc.update(procces);
+                gbApply.Visible = true;
+                gbWait.Location = new Point(12, 264);
+            }
+            else
+            {
+                MessageBox.Show("DUI no encontrado", "HAPA", MessageBoxButtons.OK);
+            }
         }
 
         private void btnSaveSynthoms_Click(object sender, EventArgs e)
@@ -336,6 +428,11 @@ namespace bdOOPFinalPj
 
             pnlIndicator.Height = panel5.Height;
             pnlIndicator.Top = panel5.Top;
+        }
+
+        private void pageAppointment_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

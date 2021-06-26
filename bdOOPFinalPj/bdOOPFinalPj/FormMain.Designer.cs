@@ -466,6 +466,7 @@ namespace bdOOPFinalPj
             this.pageAppointment.Size = new System.Drawing.Size(823, 730);
             this.pageAppointment.TabIndex = 2;
             this.pageAppointment.Text = "tabPage1";
+            this.pageAppointment.Click += new System.EventHandler(this.pageAppointment_Click);
             // 
             // cboIllness
             // 
@@ -571,7 +572,7 @@ namespace bdOOPFinalPj
             this.cboID.FormattingEnabled = true;
             this.cboID.Location = new System.Drawing.Point(115, 544);
             this.cboID.Name = "cboID";
-            this.cboID.Size = new System.Drawing.Size(121, 26);
+            this.cboID.Size = new System.Drawing.Size(151, 26);
             this.cboID.TabIndex = 62;
             // 
             // panel10
