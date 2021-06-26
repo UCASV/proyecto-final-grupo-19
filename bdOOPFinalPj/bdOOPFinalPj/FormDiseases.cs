@@ -34,38 +34,14 @@ namespace bdOOPFinalPj
                 di.IdCitizen = DuiCitizen;
                 auxDiseas.insert(di);
             }
-            if(txtDisease1.Text != null)
-            {
-                Disease di = new Disease();
-                di.Diseases = txtDisease1.Text;
-                di.IdCitizen = DuiCitizen;
-                auxDiseas.insert(di);
-            }
-            if(txtDisease2.Text != null)
+            if(txtDisease2.Text != String.Empty)
             {
                 Disease di = new Disease();
                 di.Diseases = txtDisease2.Text;
                 di.IdCitizen = DuiCitizen;
                 auxDiseas.insert(di);
             }
-            if(txtDisease3.Text != null)
-            {
-                Disease di = new Disease();
-                di.Diseases = txtDisease3.Text;
-                di.IdCitizen = DuiCitizen;
-                auxDiseas.insert(di);
-            }
-            if(txtDiseases.Text != null)
-            {
-                Disease di = new Disease();
-                di.Diseases = txtDiseases.Text;
-                di.IdCitizen = DuiCitizen;
-                auxDiseas.insert(di);
-            }
-            txtDisease1.Text = String.Empty;
             txtDisease2.Text = String.Empty;
-            txtDisease3.Text = String.Empty;
-            txtDiseases.Text = String.Empty;
             cbNone.Checked = false;
         }
     }

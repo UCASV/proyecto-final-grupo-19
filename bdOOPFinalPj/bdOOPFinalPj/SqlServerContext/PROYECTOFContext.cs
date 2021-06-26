@@ -126,7 +126,6 @@ namespace bdOOPFinalPj.SqlServerContext
                 entity.ToTable("DISEASES");
 
                 entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
                     .HasColumnName("id");
 
                 entity.Property(e => e.Diseases)

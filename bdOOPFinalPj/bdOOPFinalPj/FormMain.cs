@@ -141,6 +141,7 @@ namespace bdOOPFinalPj
 
         private void btnTrace_Click(object sender, EventArgs e)
         {
+            txtTraceIllness.Text = string.Empty;
             //-------------------------------------------------------------------------------------------
             // llAMAMOS A LA BDD Y DENTRO DE ESTE CODIGO SACAMOS UNA LISTA QUE GUARDARA A LOS CIUDADANOS
             List<Citizen> listCitizen = auxCitizen.consult();
@@ -155,7 +156,7 @@ namespace bdOOPFinalPj
                 var cronicals = auxDiseas.consult().Where(d => d.IdCitizen.Equals(result[0].Dui)).ToList();
                 var process = auxVacc.consult().Where(v => v.Id.Equals(result[0].IdVaccinationP)).ToList();
                 DateTime? date = process[0].DateHourVaccination;
-                cronicals.ForEach(c => di = $"{c.Diseases}, ");
+                
                 lblTraceAddress.Visible = true;
                 lblTraceAge.Visible = true;
                 lblTraceDate1.Visible = true;
@@ -185,7 +186,10 @@ namespace bdOOPFinalPj
                 txtTraceName.Visible = true;
                 txtTraceName.Text = oneCitizen.NameCitizen;
                 txtTraceIllness.Visible = true;
-                //txtTraceIllness.Text = di;
+                foreach (var d in cronicals)
+                {
+                    txtTraceIllness.Text += d.Diseases + ", ";
+                }
                 txtTracePlace1.Visible = true;
                 txtTracePlace1.Text = process[0].Place;
 
@@ -387,9 +391,9 @@ namespace bdOOPFinalPj
             if(validation.Count != 0)
             {
                 DateTime waiting = DateTime.Now;
-                var procces = (VaccinationProcess) auxVacc.consult().Where(v => v.Id.Equals(validation[0].IdVaccinationP));
-                procces.DateHourStart = waiting;
-                auxVacc.update(procces);
+                var procces =  auxVacc.consult().Where(v => v.Id.Equals(validation[0].IdVaccinationP)).ToList();
+                procces[0].DateHourStart = waiting;
+                auxVacc.update(procces[0]);
                 gbApply.Visible = true;
                 gbWait.Location = new Point(12, 264);
             }

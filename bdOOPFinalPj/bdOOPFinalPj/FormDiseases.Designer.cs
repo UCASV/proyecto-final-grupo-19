@@ -35,19 +35,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSaveDiseases = new System.Windows.Forms.Button();
-            this.lblDisease1 = new System.Windows.Forms.Label();
-            this.txtDisease1 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.cbNone = new System.Windows.Forms.CheckBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtDisease2 = new System.Windows.Forms.TextBox();
             this.lblDisease2 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.txtDisease3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.txtDiseases = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbNone = new System.Windows.Forms.CheckBox();
             this.pnlDiseasesTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloseDisease)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -98,7 +89,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.btnSaveDiseases);
-            this.panel1.Location = new System.Drawing.Point(697, 316);
+            this.panel1.Location = new System.Drawing.Point(684, 183);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(77, 39);
             this.panel1.TabIndex = 1;
@@ -117,34 +108,18 @@
             this.btnSaveDiseases.UseVisualStyleBackColor = false;
             this.btnSaveDiseases.Click += new System.EventHandler(this.btnSaveDiseases_Click);
             // 
-            // lblDisease1
+            // cbNone
             // 
-            this.lblDisease1.AutoSize = true;
-            this.lblDisease1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDisease1.ForeColor = System.Drawing.Color.Silver;
-            this.lblDisease1.Location = new System.Drawing.Point(32, 180);
-            this.lblDisease1.Name = "lblDisease1";
-            this.lblDisease1.Size = new System.Drawing.Size(56, 13);
-            this.lblDisease1.TabIndex = 2;
-            this.lblDisease1.Text = "Disease:";
-            // 
-            // txtDisease1
-            // 
-            this.txtDisease1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDisease1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtDisease1.Location = new System.Drawing.Point(32, 201);
-            this.txtDisease1.Name = "txtDisease1";
-            this.txtDisease1.Size = new System.Drawing.Size(174, 17);
-            this.txtDisease1.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel2.Location = new System.Drawing.Point(32, 221);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(175, 1);
-            this.panel2.TabIndex = 4;
+            this.cbNone.AutoSize = true;
+            this.cbNone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbNone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cbNone.ForeColor = System.Drawing.Color.Silver;
+            this.cbNone.Location = new System.Drawing.Point(556, 201);
+            this.cbNone.Name = "cbNone";
+            this.cbNone.Size = new System.Drawing.Size(53, 17);
+            this.cbNone.TabIndex = 11;
+            this.cbNone.Text = "None";
+            this.cbNone.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -175,97 +150,17 @@
             this.lblDisease2.TabIndex = 5;
             this.lblDisease2.Text = "Disease:";
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Silver;
-            this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel4.Location = new System.Drawing.Point(563, 221);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(175, 1);
-            this.panel4.TabIndex = 10;
-            // 
-            // txtDisease3
-            // 
-            this.txtDisease3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDisease3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtDisease3.Location = new System.Drawing.Point(563, 201);
-            this.txtDisease3.Name = "txtDisease3";
-            this.txtDisease3.Size = new System.Drawing.Size(174, 17);
-            this.txtDisease3.TabIndex = 9;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(563, 180);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Disease:";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Silver;
-            this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel5.Location = new System.Drawing.Point(290, 330);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(175, 1);
-            this.panel5.TabIndex = 10;
-            // 
-            // txtDiseases
-            // 
-            this.txtDiseases.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDiseases.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtDiseases.Location = new System.Drawing.Point(290, 310);
-            this.txtDiseases.Name = "txtDiseases";
-            this.txtDiseases.Size = new System.Drawing.Size(174, 17);
-            this.txtDiseases.TabIndex = 9;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(290, 289);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Diseases:";
-            // 
-            // cbNone
-            // 
-            this.cbNone.AutoSize = true;
-            this.cbNone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbNone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cbNone.ForeColor = System.Drawing.Color.Silver;
-            this.cbNone.Location = new System.Drawing.Point(563, 312);
-            this.cbNone.Name = "cbNone";
-            this.cbNone.Size = new System.Drawing.Size(53, 17);
-            this.cbNone.TabIndex = 11;
-            this.cbNone.Text = "None";
-            this.cbNone.UseVisualStyleBackColor = true;
-            // 
             // FormDiseases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(786, 367);
+            this.ClientSize = new System.Drawing.Size(786, 313);
             this.Controls.Add(this.cbNone);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.txtDiseases);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtDisease3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtDisease2);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblDisease2);
-            this.Controls.Add(this.txtDisease1);
-            this.Controls.Add(this.lblDisease1);
             this.Controls.Add(this.pnlDiseasesTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -289,19 +184,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnSaveDiseases;
-        private System.Windows.Forms.Label lblDisease1;
-        private System.Windows.Forms.TextBox txtDisease1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pbCloseDisease;
+        private System.Windows.Forms.CheckBox cbNone;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtDisease2;
         private System.Windows.Forms.Label lblDisease2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txtDisease3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox txtDiseases;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pbCloseDisease;
-        private System.Windows.Forms.CheckBox cbNone;
     }
 }

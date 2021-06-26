@@ -26,12 +26,8 @@ namespace bdOOPFinalPj
 
         private async void btnLogin_Click(object sender, EventArgs e)
         {
-            int cabin = check();
-            Hide();
-            txtPassword.Text = String.Empty;
-            txtUsername.Text = String.Empty;      
-            LoadingScreen(username);
-            ShowMainForm(cabin);
+            check();
+            
         }
 
         public async void LoadingScreen(string u)
@@ -85,7 +81,7 @@ namespace bdOOPFinalPj
             Close();
         }
 
-        private int check()
+        private void check()
         {
             var db = new PROYECTOFContext();
             List<Manager> managers = db.Managers
@@ -108,7 +104,11 @@ namespace bdOOPFinalPj
                 MessageBox.Show("Bienvenido!", "HAPA COVID-19 APP", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 addRegistration(time, idcabin);
                 //Despues de mostrar el Messagebox se despliega la ventana principal 
-
+                Hide();
+                txtPassword.Text = String.Empty;
+                txtUsername.Text = String.Empty;
+                LoadingScreen(username);
+                ShowMainForm(idcabin);
             }
             else
             {
@@ -117,8 +117,6 @@ namespace bdOOPFinalPj
                 txtPassword.Text = null;
                 txtUsername.Text = null;
             }
-
-            return idcabin;
         }
 
         private void addRegistration(DateTime time, int idCabin)
