@@ -114,6 +114,7 @@
             this.btnSaveDiseases.Size = new System.Drawing.Size(77, 39);
             this.btnSaveDiseases.TabIndex = 2;
             this.btnSaveDiseases.UseVisualStyleBackColor = false;
+            this.btnSaveDiseases.Click += new System.EventHandler(this.btnSaveDiseases_Click);
             // 
             // lblDisease1
             // 
@@ -130,7 +131,7 @@
             // 
             this.txtDisease1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDisease1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtDisease1.Location = new System.Drawing.Point(32, 198);
+            this.txtDisease1.Location = new System.Drawing.Point(32, 201);
             this.txtDisease1.Name = "txtDisease1";
             this.txtDisease1.Size = new System.Drawing.Size(174, 17);
             this.txtDisease1.TabIndex = 3;
@@ -157,7 +158,7 @@
             // 
             this.txtDisease2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDisease2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtDisease2.Location = new System.Drawing.Point(290, 198);
+            this.txtDisease2.Location = new System.Drawing.Point(290, 201);
             this.txtDisease2.Name = "txtDisease2";
             this.txtDisease2.Size = new System.Drawing.Size(174, 17);
             this.txtDisease2.TabIndex = 6;
@@ -186,7 +187,7 @@
             // 
             this.txtDisease3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDisease3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtDisease3.Location = new System.Drawing.Point(563, 198);
+            this.txtDisease3.Location = new System.Drawing.Point(563, 201);
             this.txtDisease3.Name = "txtDisease3";
             this.txtDisease3.Size = new System.Drawing.Size(174, 17);
             this.txtDisease3.TabIndex = 9;
@@ -215,7 +216,7 @@
             // 
             this.txtDiseases.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDiseases.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtDiseases.Location = new System.Drawing.Point(290, 307);
+            this.txtDiseases.Location = new System.Drawing.Point(290, 310);
             this.txtDiseases.Name = "txtDiseases";
             this.txtDiseases.Size = new System.Drawing.Size(174, 17);
             this.txtDiseases.TabIndex = 9;

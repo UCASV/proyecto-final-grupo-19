@@ -232,3 +232,5 @@ C:\Users\Hernández López\OneDrive\Documentos\Vacunacion\Proyecto\proyecto-fina
 C:\Users\Hernández López\OneDrive\Documentos\Vacunacion\Proyecto\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.genruntimeconfig.cache
 C:\Users\Hernández López\OneDrive\Documentos\Vacunacion\Proyecto\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.FormDiseases.resources
 C:\Users\Hernández López\OneDrive\Documentos\Vacunacion\Proyecto\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.FormLoading.resources
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.FormDiseases.resources
+C:\Users\edwan\Desktop\POO\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.FormLoading.resources

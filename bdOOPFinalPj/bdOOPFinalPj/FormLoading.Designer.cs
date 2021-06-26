@@ -30,6 +30,7 @@ namespace bdOOPFinalPj
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLoading));
             this.pnlWELCOME = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,7 +38,9 @@ namespace bdOOPFinalPj
             this.timer1Welcome = new System.Windows.Forms.Timer(this.components);
             this.timer2Welcome = new System.Windows.Forms.Timer(this.components);
             this.pbWelcomeBar = new System.Windows.Forms.ProgressBar();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlWELCOME
@@ -46,7 +49,7 @@ namespace bdOOPFinalPj
             this.pnlWELCOME.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlWELCOME.Location = new System.Drawing.Point(0, 0);
             this.pnlWELCOME.Name = "pnlWELCOME";
-            this.pnlWELCOME.Size = new System.Drawing.Size(835, 112);
+            this.pnlWELCOME.Size = new System.Drawing.Size(835, 103);
             this.pnlWELCOME.TabIndex = 0;
             // 
             // pictureBox1
@@ -100,6 +103,17 @@ namespace bdOOPFinalPj
             this.pbWelcomeBar.Step = 25;
             this.pbWelcomeBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.pbWelcomeBar.TabIndex = 4;
+            this.pbWelcomeBar.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(163, 15);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(774, 344);
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // FormLoading
             // 
@@ -112,6 +126,7 @@ namespace bdOOPFinalPj
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnlWELCOME);
+            this.Controls.Add(this.pictureBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
@@ -120,6 +135,7 @@ namespace bdOOPFinalPj
             this.Text = "FormLoading";
             this.Load += new System.EventHandler(this.FormLoading_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,5 +150,6 @@ namespace bdOOPFinalPj
         private System.Windows.Forms.Timer timer1Welcome;
         private System.Windows.Forms.Timer timer2Welcome;
         private System.Windows.Forms.ProgressBar pbWelcomeBar;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

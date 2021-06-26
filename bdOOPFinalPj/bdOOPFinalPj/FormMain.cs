@@ -57,7 +57,7 @@ namespace bdOOPFinalPj
             txtPhoneNmbr.Text = String.Empty;
 
             cboID.SelectedIndex = -1;
-            cboIllness.SelectedIndex = -1;
+            // cboIllness.SelectedIndex = -1;
         }
         private void btnTracing_Click(object sender, EventArgs e)
         {   
@@ -355,6 +355,12 @@ namespace bdOOPFinalPj
             pnlIndicator.Top = panel5.Top;
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormDiseases formDiseases = new FormDiseases();
+            formDiseases.ShowDialog();
+            formDiseases = null;
+            Show();
+        }
     }
 }

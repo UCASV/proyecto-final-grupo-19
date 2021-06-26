@@ -46,12 +46,11 @@ namespace bdOOPFinalPj
             this.btnStats = new System.Windows.Forms.Button();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.pageAppointment = new System.Windows.Forms.TabPage();
-            this.cboIllness = new System.Windows.Forms.CheckedListBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.pnlTitle1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.btnSave = new System.Windows.Forms.Button();
             this.lblIllness = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
@@ -185,6 +184,8 @@ namespace bdOOPFinalPj
             this.pbClose5 = new System.Windows.Forms.PictureBox();
             this.label25 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoMainForm)).BeginInit();
             this.panel1.SuspendLayout();
@@ -195,6 +196,7 @@ namespace bdOOPFinalPj
             this.tabControl.SuspendLayout();
             this.pageAppointment.SuspendLayout();
             this.pnlTitle1.SuspendLayout();
+            this.panel22.SuspendLayout();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMin1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose1)).BeginInit();
@@ -234,6 +236,7 @@ namespace bdOOPFinalPj
             ((System.ComponentModel.ISupportInitialize)(this.pbMin5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel41.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlLeft
@@ -427,8 +430,7 @@ namespace bdOOPFinalPj
             // pageAppointment
             // 
             this.pageAppointment.BackColor = System.Drawing.Color.White;
-            this.pageAppointment.Controls.Add(this.btnSave);
-            this.pageAppointment.Controls.Add(this.cboIllness);
+            this.pageAppointment.Controls.Add(this.panel41);
             this.pageAppointment.Controls.Add(this.pnlTitle1);
             this.pageAppointment.Controls.Add(this.label6);
             this.pageAppointment.Controls.Add(this.panel22);
@@ -467,15 +469,19 @@ namespace bdOOPFinalPj
             this.pageAppointment.TabIndex = 2;
             this.pageAppointment.Text = "tabPage1";
             // 
-            // cboIllness
+            // btnSave
             // 
-            this.cboIllness.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.cboIllness.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cboIllness.FormattingEnabled = true;
-            this.cboIllness.Location = new System.Drawing.Point(346, 537);
-            this.cboIllness.Name = "cboIllness";
-            this.cboIllness.Size = new System.Drawing.Size(120, 90);
-            this.cboIllness.TabIndex = 83;
+            this.btnSave.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Image = global::bdOOPFinalPj.Properties.Resources.Save;
+            this.btnSave.Location = new System.Drawing.Point(0, 0);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(77, 39);
+            this.btnSave.TabIndex = 64;
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // pnlTitle1
             // 
@@ -510,23 +516,11 @@ namespace bdOOPFinalPj
             // 
             // panel22
             // 
-            this.panel22.Location = new System.Drawing.Point(616, 528);
+            this.panel22.Controls.Add(this.btnSave);
+            this.panel22.Location = new System.Drawing.Point(616, 537);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(77, 39);
             this.panel22.TabIndex = 80;
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Image = global::bdOOPFinalPj.Properties.Resources.Save;
-            this.btnSave.Location = new System.Drawing.Point(632, 573);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(77, 39);
-            this.btnSave.TabIndex = 64;
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lblIllness
             // 
@@ -1954,6 +1948,28 @@ namespace bdOOPFinalPj
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
+            // panel41
+            // 
+            this.panel41.Controls.Add(this.button1);
+            this.panel41.Location = new System.Drawing.Point(365, 537);
+            this.panel41.Name = "panel41";
+            this.panel41.Size = new System.Drawing.Size(77, 39);
+            this.panel41.TabIndex = 81;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(77, 39);
+            this.button1.TabIndex = 64;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1981,6 +1997,7 @@ namespace bdOOPFinalPj
             this.pageAppointment.PerformLayout();
             this.pnlTitle1.ResumeLayout(false);
             this.pnlTitle1.PerformLayout();
+            this.panel22.ResumeLayout(false);
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMin1)).EndInit();
@@ -2036,6 +2053,7 @@ namespace bdOOPFinalPj
             ((System.ComponentModel.ISupportInitialize)(this.pbMin5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel41.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2196,6 +2214,7 @@ namespace bdOOPFinalPj
         private System.Windows.Forms.PictureBox pbClose3;
         private System.Windows.Forms.PictureBox pbMin5;
         private System.Windows.Forms.PictureBox pbClose5;
-        private System.Windows.Forms.CheckedListBox cboIllness;
+        private System.Windows.Forms.Panel panel41;
+        private System.Windows.Forms.Button button1;
     }
 }

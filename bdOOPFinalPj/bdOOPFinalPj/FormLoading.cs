@@ -47,5 +47,10 @@ namespace bdOOPFinalPj
             timer1Welcome.Start();
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

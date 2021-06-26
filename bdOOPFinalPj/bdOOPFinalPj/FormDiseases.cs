@@ -19,5 +19,14 @@ namespace bdOOPFinalPj
         {
             Close();
         }
+
+        private void btnSaveDiseases_Click(object sender, EventArgs e)
+        {
+            txtDisease1.Text = String.Empty;
+            txtDisease2.Text = String.Empty;
+            txtDisease3.Text = String.Empty;
+            txtDiseases.Text = String.Empty;
+            cbNone.Checked = false;
+        }
     }
 }
