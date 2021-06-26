@@ -10,6 +10,7 @@ namespace bdOOPFinalPj
 {
     class Repository
     {
+        
         // Interfaz para asignar las funciones que harán cada clase
         public interface IRepository<T>
         {

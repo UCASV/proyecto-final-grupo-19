@@ -6,13 +6,15 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace bdOOPFinalPj
 {
-    public partial class FormLogin : Form
+    public partial class FormLogin : System.Windows.Forms.Form
     {
+        private string username;
         public FormLogin()
         {
             InitializeComponent();
@@ -22,9 +24,50 @@ namespace bdOOPFinalPj
             cboCabain.ValueMember = "Id";
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private async void btnLogin_Click(object sender, EventArgs e)
         {
-            check();
+            int cabin = check();
+            Hide();
+            txtPassword.Text = String.Empty;
+            txtUsername.Text = String.Empty;      
+            LoadingScreen(username);
+            ShowMainForm(cabin);
+        }
+
+        public async void LoadingScreen(string u)
+        {
+            LoadingShow(u);
+
+            Task oTask = new Task(Wait4it);
+            oTask.Start();
+            await oTask;
+
+            LoadingHide();
+        }
+
+        public void Wait4it()
+        {
+            Thread.Sleep(7000);
+        }
+
+        public void ShowMainForm(int c)
+        {
+            FormMain formMain = new FormMain(c);
+            formMain.ShowDialog();
+            Show();
+        }
+        
+        public void LoadingShow(string u)
+        {
+            FormLoading formLoading = new FormLoading(u);
+            formLoading.ShowDialog();
+            formLoading = null;
+            Show();
+        }
+
+        public void LoadingHide()
+        {
+            Hide();
         }
 
         private void pnlLogin2_Paint(object sender, PaintEventArgs e)
@@ -42,13 +85,13 @@ namespace bdOOPFinalPj
             Close();
         }
 
-        private void check()
+        private int check()
         {
             var db = new PROYECTOFContext();
             List<Manager> managers = db.Managers
                 .ToList();
 
-            string username = txtUsername.Text;
+            username = txtUsername.Text;
             string password = txtPassword.Text;
             //obtengo la cabina desde la cual se realizo el registro, para luego poder obtener su id.
             Cabin numero = (Cabin)cboCabain.SelectedItem;
@@ -66,12 +109,7 @@ namespace bdOOPFinalPj
                 addRegistration(time, idcabin);
                 //Despues de mostrar el Messagebox se despliega la ventana principal 
 
-                FormMain formMain = new FormMain();
-                formMain.ShowDialog();
-                this.Close();
-
             }
-
             else
             {
                 //Si los datos son erroneos mando unMessagebox indicando el error y limpio los textbox. 
@@ -80,7 +118,7 @@ namespace bdOOPFinalPj
                 txtUsername.Text = null;
             }
 
-
+            return idcabin;
         }
 
         private void addRegistration(DateTime time, int idCabin)

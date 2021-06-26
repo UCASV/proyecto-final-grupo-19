@@ -14,22 +14,23 @@ using System.Windows.Forms;
 namespace bdOOPFinalPj
 {
     public partial class FormMain : Form
-    { 
-        // Aplicando patron de diseño: Repositorio.
+    {
+        private int idcabin;
+        //Aplicando patron de diseño: Repositorio.
         private Repository.IdentifierRepo ListIde;
         private Repository.CitizenRepo auxCitizen;
         private Repository.vaccinationRepo auxVacc;
         private Repository.DiseaseRepo auxDiseas;
-        public FormMain()
+        public FormMain(int c)
         {
             InitializeComponent();
             pnlIndicator.Height = panelBase.Height;
             pnlIndicator.Top = panelBase.Top;
+            this.idcabin = c;
             auxCitizen = new Repository.CitizenRepo();
             ListIde = new Repository.IdentifierRepo();
             auxVacc = new Repository.vaccinationRepo();
             auxDiseas = new Repository.DiseaseRepo();
-
             var auxIde = ListIde.consult();
             cboID.DataSource = auxIde;
             cboID.ValueMember = "Id";
@@ -79,7 +80,7 @@ namespace bdOOPFinalPj
             txtPhoneNmbr.Text = String.Empty;
 
             cboID.SelectedIndex = -1;
-            cboIllness.SelectedIndex = -1;
+            // cboIllness.SelectedIndex = -1;
         }
         private void btnTracing_Click(object sender, EventArgs e)
         {   
@@ -142,19 +143,19 @@ namespace bdOOPFinalPj
         {
             //-------------------------------------------------------------------------------------------
             // llAMAMOS A LA BDD Y DENTRO DE ESTE CODIGO SACAMOS UNA LISTA QUE GUARDARA A LOS CIUDADANOS
-            var db = new PROYECTOFContext();
             List<Citizen> listCitizen = auxCitizen.consult();
             // AHORA BUSCAMOS AL CUIDADANO CON EL MISMO DUI QUE ESCRIBIMOS EN EL TxtTraceDUI
             var result = listCitizen.Where(u => u.Dui.Equals(txtTraceDUI.Text)).ToList();
             //-------------------------------------------------------------------------------------------
-
-            if(ValidDUI(txtTraceDUI.Text) && result.Count != 0 )
+            string di;
+            if (ValidDUI(txtTraceDUI.Text) && result.Count != 0 )
             { // Usamos variables locales para trabajar los datos que estan relacionando con el dato de CITIZEN.
                 Citizen oneCitizen = result[0];
                 var identi = ListIde.consult().Where(i => i.Id.Equals(result[0].IdIdentifier)).ToList();
                 var cronicals = auxDiseas.consult().Where(d => d.IdCitizen.Equals(result[0].Dui)).ToList();
                 var process = auxVacc.consult().Where(v => v.Id.Equals(result[0].IdVaccinationP)).ToList();
                 DateTime? date = process[0].DateHourVaccination;
+                cronicals.ForEach(c => di = $"{c.Diseases}, ");
                 lblTraceAddress.Visible = true;
                 lblTraceAge.Visible = true;
                 lblTraceDate1.Visible = true;
@@ -184,7 +185,7 @@ namespace bdOOPFinalPj
                 txtTraceName.Visible = true;
                 txtTraceName.Text = oneCitizen.NameCitizen;
                 txtTraceIllness.Visible = true;
-                //txtTraceIllness.Text = 
+                //txtTraceIllness.Text = di;
                 txtTracePlace1.Visible = true;
                 txtTracePlace1.Text = process[0].Place;
 
@@ -249,7 +250,8 @@ namespace bdOOPFinalPj
         private void btnSave_Click(object sender, EventArgs e)
         {
             bool valid = ValidDUI(txtDUI.Text);
-            if (valid) // validamos primero el DUI
+            int? age = Int32.Parse(txtAge.Text);
+            if (valid && age > 18) // validamos primero el DUI
             {
                 var resultCitizen = auxCitizen.consult().Where(c => c.Dui.Equals(txtDUI.Text)).ToList();
                 if (resultCitizen.Count == 0)
@@ -267,22 +269,19 @@ namespace bdOOPFinalPj
                         };
                         auxVacc.insert(vaccination);
                         //ingresamos datos de cuidadano
-                        var listaConst = auxVacc.consult();
-                        listaConst.OrderByDescending(c => c.Id);
+                        var listaConst = auxVacc.consult().OrderByDescending(c => c.Id).ToList();
 
-                        Citizen oneCitizen = new Citizen()
-                        {
-                            Dui = txtDUI.Text,
-                            NameCitizen = txtName.Text,
-                            Addres = txtAddress.Text,
-                            Age = Int32.Parse(txtAge.Text),
-                            Phone = Int32.Parse(txtPhoneNmbr.Text),
-                            Mail = txtEmail.Text,
-                            IdIdentifier = Int32.Parse(cboID.SelectedItem.ToString()),
-                            //IdCabin = ,
-                            IdVaccinationP = listaConst[0].Id
-                        };
-                        auxCitizen.insert(oneCitizen);
+                        Citizen twoCitizen = new Citizen();
+                        twoCitizen.Dui = txtDUI.Text;
+                        twoCitizen.NameCitizen = txtName.Text;
+                        twoCitizen.Addres = txtAddress.Text;
+                        twoCitizen.Age = Int32.Parse(txtAge.Text);
+                        twoCitizen.Phone = Int32.Parse(txtPhoneNmbr.Text);
+                        twoCitizen.Mail = txtEmail.Text;
+                        twoCitizen.IdIdentifier = Int32.Parse(cboID.SelectedValue.ToString());
+                        twoCitizen.IdCabin = idcabin;
+                        twoCitizen.IdVaccinationP = listaConst[0].Id;
+                        auxCitizen.insert(twoCitizen);
                         MessageBox.Show("Ingresado como PRIORIDAD", "HAPA", MessageBoxButtons.OK);
                     }
                     else // Si no pertenence al grupo de prioridad se dara una fecha general
@@ -298,22 +297,19 @@ namespace bdOOPFinalPj
                         };
                         auxVacc.insert(vaccination);
                         //ingresamos datos de cuidadano
-                        var listaProcces = auxVacc.consult();
-                        listaProcces.OrderByDescending(c => c.Id);
+                        var listaProcces = auxVacc.consult().OrderByDescending(c => c.Id).ToList();
 
-                        Citizen oneCitizen = new Citizen()
-                        {
-                            Dui = txtDUI.Text,
-                            NameCitizen = txtName.Text,
-                            Addres = txtAddress.Text,
-                            Age = Int32.Parse(txtAge.Text),
-                            Phone = Int32.Parse(txtPhoneNmbr.Text),
-                            Mail = txtEmail.Text,
-                            IdIdentifier = Int32.Parse(cboID.SelectedItem.ToString()),
-                            //IdCabin = ,
-                            IdVaccinationP = listaProcces[0].Id
-                        };
-                        auxCitizen.insert(oneCitizen);
+                        Citizen twoCitizen = new Citizen();
+                        twoCitizen.Dui = txtDUI.Text;
+                        twoCitizen.NameCitizen = txtName.Text;
+                        twoCitizen.Addres = txtAddress.Text;
+                        twoCitizen.Age = Int32.Parse(txtAge.Text);
+                        twoCitizen.Phone = Int32.Parse(txtPhoneNmbr.Text);
+                        twoCitizen.Mail = txtEmail.Text;
+                        twoCitizen.IdIdentifier = Int32.Parse(cboID.SelectedValue.ToString());
+                        twoCitizen.IdCabin = idcabin;
+                        twoCitizen.IdVaccinationP = listaProcces[0].Id;
+                        auxCitizen.insert(twoCitizen);
                     }
                     MessageBox.Show("Exito al guardar", "HAPA", MessageBoxButtons.OK);
                 }
@@ -428,6 +424,22 @@ namespace bdOOPFinalPj
 
             pnlIndicator.Height = panel5.Height;
             pnlIndicator.Top = panel5.Top;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            bool valid = ValidDUI(txtDUI.Text);
+            if (valid)
+            {
+                FormDiseases formDiseases = new FormDiseases(txtDUI.Text);
+                formDiseases.ShowDialog();
+                formDiseases = null;
+                Show();
+            }
+            else
+            {
+                MessageBox.Show("DUI invalido", "HAPA", MessageBoxButtons.OK);
+            }
         }
 
         private void pageAppointment_Click(object sender, EventArgs e)
