@@ -21,6 +21,7 @@ namespace bdOOPFinalPj
         private Repository.CitizenRepo auxCitizen;
         private Repository.vaccinationRepo auxVacc;
         private Repository.DiseaseRepo auxDiseas;
+        private Repository.EffectRepo auxEffect;
         public FormMain(int c)
         {
             InitializeComponent();
@@ -31,6 +32,7 @@ namespace bdOOPFinalPj
             ListIde = new Repository.IdentifierRepo();
             auxVacc = new Repository.vaccinationRepo();
             auxDiseas = new Repository.DiseaseRepo();
+            auxEffect = new Repository.EffectRepo(); 
             var auxIde = ListIde.consult();
             cboID.DataSource = auxIde;
             cboID.ValueMember = "Id";
@@ -90,6 +92,7 @@ namespace bdOOPFinalPj
             pnlIndicator.Height = panel4.Height;
             pnlIndicator.Top = panel4.Top;
 
+            txtTraceDUI.Text = String.Empty;
             txtTraceName.Text = String.Empty;
             txtTraceAddress.Text = String.Empty;
             txtTraceAge.Text = String.Empty;
@@ -254,7 +257,9 @@ namespace bdOOPFinalPj
         private void btnSave_Click(object sender, EventArgs e)
         {
             bool valid = ValidDUI(txtDUI.Text);
-            int? age = Int32.Parse(txtAge.Text);
+            int? age = null;
+            if (txtAge.Text != String.Empty)
+                age = Int32.Parse(txtAge.Text);
             if (valid && age > 18) // validamos primero el DUI
             {
                 var resultCitizen = auxCitizen.consult().Where(c => c.Dui.Equals(txtDUI.Text)).ToList();
@@ -406,6 +411,16 @@ namespace bdOOPFinalPj
         private void btnSaveSynthoms_Click(object sender, EventArgs e)
         {
             //Ejecutar luego de validar la selección del CheckedListBox
+            var validation = auxCitizen.consult().Where(c => c.Dui.Equals(txtVaccineDUI.Text)).ToList();
+            for (int i=0; i < clbSynthoms.CheckedItems.Count; i++)
+            { // recorremos los elementos seleccionados del grupo y los guardamos en variables
+                var selected = clbSynthoms.CheckedItems[i].ToString();
+                var process = auxVacc.consult().Where(v => v.Id.Equals(validation[0].IdVaccinationP)).ToList();
+                Effect efe = new Effect(); // se instancia variable tipo efecto para guardarla
+                efe.SideEffects = selected;
+                efe.IdProcess = process[0].Id;
+                auxEffect.insert(efe); // lo insertamos con ayuda del patron repositorio a la BDD
+            }
             gbSecond.Visible = true;
         }
 
@@ -450,5 +465,6 @@ namespace bdOOPFinalPj
         {
 
         }
+
     }
 }
