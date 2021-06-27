@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cBP4q5CP2M2UfxU7HlA1blmsLbzeAu8CMYtLrNplwS6q/kP1OdcPbVnnJUvNn2bBnjFUJFyGKTJx1wBlkwR86w==",
+  "dgSpecHash": "MmG4UFm1aIZPGzebrlmNdLpe/TqnoGpyu4WF43R0mi2W3aaXvtksnViF+6EhReLDU/8krlD4+efHcwxqJQ1dIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Oscar Carpio\\Desktop\\proyecto\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
+  "projectFilePath": "C:\\Users\\Oscar Carpio\\Desktop\\proyecto version 1.0\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Oscar Carpio\\.nuget\\packages\\bouncycastle\\1.8.6.1\\bouncycastle.1.8.6.1.nupkg.sha512",
     "C:\\Users\\Oscar Carpio\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

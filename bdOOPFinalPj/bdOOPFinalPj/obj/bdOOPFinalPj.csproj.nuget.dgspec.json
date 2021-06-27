@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Oscar Carpio\\Desktop\\proyecto\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj": {}
+    "C:\\Users\\Oscar Carpio\\Desktop\\proyecto version 1.0\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Oscar Carpio\\Desktop\\proyecto\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj": {
+    "C:\\Users\\Oscar Carpio\\Desktop\\proyecto version 1.0\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oscar Carpio\\Desktop\\proyecto\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
+        "projectUniqueName": "C:\\Users\\Oscar Carpio\\Desktop\\proyecto version 1.0\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
         "projectName": "bdOOPFinalPj",
-        "projectPath": "C:\\Users\\Oscar Carpio\\Desktop\\proyecto\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
+        "projectPath": "C:\\Users\\Oscar Carpio\\Desktop\\proyecto version 1.0\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
         "packagesPath": "C:\\Users\\Oscar Carpio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oscar Carpio\\Desktop\\proyecto\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\obj\\",
+        "outputPath": "C:\\Users\\Oscar Carpio\\Desktop\\proyecto version 1.0\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Oscar Carpio\\AppData\\Roaming\\NuGet\\NuGet.Config",

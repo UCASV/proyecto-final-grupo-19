@@ -19,12 +19,14 @@ namespace bdOOPFinalPj.SqlServerContext
         public string Mail { get; set; }
         public int? Phone { get; set; }
         public int? IdCabin { get; set; }
-        public int? IdVaccinationP { get; set; }
+        public int? IdVaccinationP1 { get; set; }
+        public int? IdVaccinationP2 { get; set; }
         public int? IdIdentifier { get; set; }
 
         public virtual Cabin IdCabinNavigation { get; set; }
         public virtual Identifier IdIdentifierNavigation { get; set; }
-        public virtual VaccinationProcess IdVaccinationPNavigation { get; set; }
+        public virtual VaccinationProcess IdVaccinationP1Navigation { get; set; }
+        public virtual VaccinationProcess IdVaccinationP2Navigation { get; set; }
         public virtual ICollection<Disease> Diseases { get; set; }
     }
 }

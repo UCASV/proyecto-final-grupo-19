@@ -32,7 +32,7 @@ namespace bdOOPFinalPj.SqlServerContext
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=PROYECTOF;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("server=DESKTOP-A93M26I\\SQLEXPRESS; Database= PROYECTOF; Trusted_Connection = true;");
             }
         }
 
@@ -67,7 +67,7 @@ namespace bdOOPFinalPj.SqlServerContext
             modelBuilder.Entity<Citizen>(entity =>
             {
                 entity.HasKey(e => e.Dui)
-                    .HasName("PK__CITIZEN__D876F1BE8DAB294D");
+                    .HasName("PK__CITIZEN__D876F1BE42BFF983");
 
                 entity.ToTable("CITIZEN");
 
@@ -87,7 +87,9 @@ namespace bdOOPFinalPj.SqlServerContext
 
                 entity.Property(e => e.IdIdentifier).HasColumnName("idIdentifier");
 
-                entity.Property(e => e.IdVaccinationP).HasColumnName("idVaccinationP");
+                entity.Property(e => e.IdVaccinationP1).HasColumnName("idVaccinationP1");
+
+                entity.Property(e => e.IdVaccinationP2).HasColumnName("idVaccinationP2");
 
                 entity.Property(e => e.Mail)
                     .HasMaxLength(50)
@@ -109,12 +111,17 @@ namespace bdOOPFinalPj.SqlServerContext
                 entity.HasOne(d => d.IdIdentifierNavigation)
                     .WithMany(p => p.Citizens)
                     .HasForeignKey(d => d.IdIdentifier)
-                    .HasConstraintName("FK__CITIZEN__idIdent__4AB81AF0");
+                    .HasConstraintName("FK__CITIZEN__idIdent__4BAC3F29");
 
-                entity.HasOne(d => d.IdVaccinationPNavigation)
-                    .WithMany(p => p.Citizens)
-                    .HasForeignKey(d => d.IdVaccinationP)
+                entity.HasOne(d => d.IdVaccinationP1Navigation)
+                    .WithMany(p => p.CitizenIdVaccinationP1Navigations)
+                    .HasForeignKey(d => d.IdVaccinationP1)
                     .HasConstraintName("FK__CITIZEN__idVacci__49C3F6B7");
+
+                entity.HasOne(d => d.IdVaccinationP2Navigation)
+                    .WithMany(p => p.CitizenIdVaccinationP2Navigations)
+                    .HasForeignKey(d => d.IdVaccinationP2)
+                    .HasConstraintName("FK__CITIZEN__idVacci__4AB81AF0");
             });
 
             modelBuilder.Entity<Disease>(entity =>
@@ -136,7 +143,7 @@ namespace bdOOPFinalPj.SqlServerContext
                 entity.HasOne(d => d.IdCitizenNavigation)
                     .WithMany(p => p.Diseases)
                     .HasForeignKey(d => d.IdCitizen)
-                    .HasConstraintName("FK__DISEASES__idCiti__4BAC3F29");
+                    .HasConstraintName("FK__DISEASES__idCiti__4CA06362");
             });
 
             modelBuilder.Entity<Effect>(entity =>
@@ -155,7 +162,7 @@ namespace bdOOPFinalPj.SqlServerContext
                 entity.HasOne(d => d.IdProcessNavigation)
                     .WithMany(p => p.Effects)
                     .HasForeignKey(d => d.IdProcess)
-                    .HasConstraintName("FK__EFFECTS__idProce__4CA06362");
+                    .HasConstraintName("FK__EFFECTS__idProce__4D94879B");
             });
 
             modelBuilder.Entity<Identifier>(entity =>
@@ -231,7 +238,6 @@ namespace bdOOPFinalPj.SqlServerContext
                 entity.HasOne(d => d.IdManagerNavigation)
                     .WithMany(p => p.Registrations)
                     .HasForeignKey(d => d.IdManager)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__REGISTRAT__idMan__47DBAE45");
             });
 

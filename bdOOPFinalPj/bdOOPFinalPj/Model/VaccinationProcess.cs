@@ -9,7 +9,8 @@ namespace bdOOPFinalPj.SqlServerContext
     {
         public VaccinationProcess()
         {
-            Citizens = new HashSet<Citizen>();
+            CitizenIdVaccinationP1Navigations = new HashSet<Citizen>();
+            CitizenIdVaccinationP2Navigations = new HashSet<Citizen>();
             Effects = new HashSet<Effect>();
         }
 
@@ -20,7 +21,8 @@ namespace bdOOPFinalPj.SqlServerContext
         public int? NumberMinutes { get; set; }
         public string Place { get; set; }
 
-        public virtual ICollection<Citizen> Citizens { get; set; }
+        public virtual ICollection<Citizen> CitizenIdVaccinationP1Navigations { get; set; }
+        public virtual ICollection<Citizen> CitizenIdVaccinationP2Navigations { get; set; }
         public virtual ICollection<Effect> Effects { get; set; }
     }
 }

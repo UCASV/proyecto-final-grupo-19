@@ -32,7 +32,8 @@ namespace bdOOPFinalPj
             public List<Citizen> consult()
             {
                 return _Context.Citizens
-                    .Include(c => c.IdIdentifierNavigation).Include(c => c.IdVaccinationPNavigation)
+                    .Include(c => c.IdIdentifierNavigation).Include(c => c.IdVaccinationP1Navigation ) 
+                    .Include(c => c.IdVaccinationP2Navigation)
                     .ToList();
             }
 
