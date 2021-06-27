@@ -478,6 +478,8 @@ namespace bdOOPFinalPj
             DateTime schedule = getDate();
             string location = getLocation();
             createpdf(schedule, location);
+            MessageBox.Show("Successfully created PDF file", "HAPA COVID-19", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
         private void btnDownloadVerify_Click(object sender, EventArgs e)
