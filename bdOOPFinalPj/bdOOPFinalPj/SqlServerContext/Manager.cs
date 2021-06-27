@@ -9,7 +9,7 @@ namespace bdOOPFinalPj.SqlServerContext
     {
         public Manager()
         {
-            Managerxregistrations = new HashSet<Managerxregistration>();
+            Registrations = new HashSet<Registration>();
         }
 
         public int Id { get; set; }
@@ -21,6 +21,6 @@ namespace bdOOPFinalPj.SqlServerContext
         public int? IdTypeEmployed { get; set; }
 
         public virtual TypeOfEmployee IdTypeEmployedNavigation { get; set; }
-        public virtual ICollection<Managerxregistration> Managerxregistrations { get; set; }
+        public virtual ICollection<Registration> Registrations { get; set; }
     }
 }

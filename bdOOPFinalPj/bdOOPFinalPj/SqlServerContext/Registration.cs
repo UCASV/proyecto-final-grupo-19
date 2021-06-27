@@ -7,16 +7,12 @@ namespace bdOOPFinalPj.SqlServerContext
 {
     public partial class Registration
     {
-        public Registration()
-        {
-            Managerxregistrations = new HashSet<Managerxregistration>();
-        }
-
         public int Id { get; set; }
         public DateTime? DateHour { get; set; }
         public int? IdCabin { get; set; }
+        public int IdManager { get; set; }
 
         public virtual Cabin IdCabinNavigation { get; set; }
-        public virtual ICollection<Managerxregistration> Managerxregistrations { get; set; }
+        public virtual Manager IdManagerNavigation { get; set; }
     }
 }

@@ -101,7 +101,7 @@ namespace bdOOPFinalPj
                 //Obtengo la hora a la cual se realiza el login 
                 var time = DateTime.Now;
                 //Si los datos son correctos se despliega un Messagebox dando la bienvenida al usuario
-                addRegistration(time, idcabin);
+                addRegistration(time, idcabin, result[0].Id);
                 //Despues de mostrar el Messagebox se despliega la ventana principal 
                 Hide();
                 txtPassword.Text = String.Empty;
@@ -118,14 +118,15 @@ namespace bdOOPFinalPj
             }
         }
 
-        private void addRegistration(DateTime time, int idCabin)
+        private void addRegistration(DateTime time, int idCabin, int idmanager)
         {
             var db = new PROYECTOFContext();
             //creo el nuevo registro
             var registro = new Registration
             {
                 DateHour = time,
-                IdCabin = idCabin
+                IdCabin = idCabin,
+                IdManager = idmanager
             };
             //agrego el registro a la base de datos
             db.Add(registro);

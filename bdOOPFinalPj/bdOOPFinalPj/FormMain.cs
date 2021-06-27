@@ -10,6 +10,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
 
 namespace bdOOPFinalPj
 {
@@ -21,6 +24,7 @@ namespace bdOOPFinalPj
         private Repository.CitizenRepo auxCitizen;
         private Repository.vaccinationRepo auxVacc;
         private Repository.DiseaseRepo auxDiseas;
+        private Repository.EffectRepo auxEffect;
         public FormMain(int c)
         {
             InitializeComponent();
@@ -34,6 +38,7 @@ namespace bdOOPFinalPj
             ListIde = new Repository.IdentifierRepo();
             auxVacc = new Repository.vaccinationRepo();
             auxDiseas = new Repository.DiseaseRepo();
+            auxEffect = new Repository.EffectRepo(); 
             var auxIde = ListIde.consult();
             cboID.DataSource = auxIde;
             cboID.ValueMember = "Id";
@@ -93,6 +98,7 @@ namespace bdOOPFinalPj
             pnlIndicator.Height = panel4.Height;
             pnlIndicator.Top = panel4.Top;
 
+            txtTraceDUI.Text = String.Empty;
             txtTraceName.Text = String.Empty;
             txtTraceAddress.Text = String.Empty;
             txtTraceAge.Text = String.Empty;
@@ -257,7 +263,9 @@ namespace bdOOPFinalPj
         private void btnSave_Click(object sender, EventArgs e)
         {
             bool valid = ValidDUI(txtDUI.Text);
-            int? age = Int32.Parse(txtAge.Text);
+            int? age = null;
+            if (txtAge.Text != String.Empty)
+                age = Int32.Parse(txtAge.Text);
             if (valid && age > 18) // validamos primero el DUI
             {
                 var resultCitizen = auxCitizen.consult().Where(c => c.Dui.Equals(txtDUI.Text)).ToList();
@@ -409,6 +417,16 @@ namespace bdOOPFinalPj
         private void btnSaveSynthoms_Click(object sender, EventArgs e)
         {
             //Ejecutar luego de validar la selección del CheckedListBox
+            var validation = auxCitizen.consult().Where(c => c.Dui.Equals(txtVaccineDUI.Text)).ToList();
+            for (int i=0; i < clbSynthoms.CheckedItems.Count; i++)
+            { // recorremos los elementos seleccionados del grupo y los guardamos en variables
+                var selected = clbSynthoms.CheckedItems[i].ToString();
+                var process = auxVacc.consult().Where(v => v.Id.Equals(validation[0].IdVaccinationP)).ToList();
+                Effect efe = new Effect(); // se instancia variable tipo efecto para guardarla
+                efe.SideEffects = selected;
+                efe.IdProcess = process[0].Id;
+                auxEffect.insert(efe); // lo insertamos con ayuda del patron repositorio a la BDD
+            }
             gbSecond.Visible = true;
         }
 
@@ -454,21 +472,24 @@ namespace bdOOPFinalPj
 
         }
 
+
         private void button4_Click(object sender, EventArgs e)
         {
-
+            DateTime schedule = getDate();
+            string location = getLocation();
+            createpdf(schedule, location);
         }
 
         private void btnDownloadVerify_Click(object sender, EventArgs e)
         {
             List<Citizen> listCitizen = auxCitizen.consult();
-            var result = listCitizen.Where(u => u.Dui.Equals(txtPatientDownload.Text)).ToList(); 
+            var result = listCitizen.Where(u => u.Dui.Equals(txtDownloadDUICheck.Text)).ToList(); 
 
-            if (exists())
+            if (exists() == true)
             {
                 label13.Visible = true;
                 txtPatientDownload.Visible = true ;
-                txtPatientDownload.Text = result[0].NameCitizen;
+                txtPatientDownload.Text = result[0].NameCitizen.ToString();
                 button4.Visible = true;
             }
             else
@@ -479,7 +500,7 @@ namespace bdOOPFinalPj
         private bool exists ()
         {
             List<Citizen> listCitizen = auxCitizen.consult();
-            var result = listCitizen.Where(u => u.Dui.Equals(txtPatientDownload.Text)).ToList();
+            var result = listCitizen.Where(u => u.Dui.Equals(txtDownloadDUICheck.Text)).ToList();
 
             if (result.Count > 0)
 
@@ -489,5 +510,246 @@ namespace bdOOPFinalPj
                 return false;
             
         }
+
+        public void createpdf(DateTime schedule, string location)
+        {
+            //con esto obtengo el user name del usuario de la pc para poder crear la cadena de direccion de la ubicacion
+            string nameuser = Environment.UserName;
+            //sacando un dato especifico del usuario se puede crear el nombre del pdf asi:
+            string nombredoc = txtPatientDownload.Text;
+
+            //si decimos que el instalador lo pongan en el escritorio, con esto el pdf se crea en el escritorio, asi :
+            string direccion = @"..\..\..\..\..\..\" + nombredoc +".pdf";
+           
+
+            //direccion donde se crea el pdf de manera dinamica: 
+            FileStream fs = new FileStream(direccion, FileMode.Create);
+            //FileStream fs = new FileStream(@"C:\Users\Oscar Carpio\Desktop\nuevo2pdf.pdf", FileMode.Create);
+
+
+            //configuracion de la fuente del tamano de pagina y margenes del pdf: 
+            Document doc = new Document(PageSize.A7.Rotate(), 5, 5, 7, 7);
+            // instancia q tiene como parametro el boosquejo del doc y la ubicacion donde generara:
+            PdfWriter pdw = PdfWriter.GetInstance(doc, fs);
+
+            doc.Open();
+
+            //definir titulo y autor 
+            doc.AddAuthor("HAPA COVID-19");
+            doc.AddTitle("Appointment");
+            iTextSharp.text.Font standarfont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
+
+            //configuro los tipos de fuente que tenfra el pdf
+            iTextSharp.text.Font timesRoman1 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 10, iTextSharp.text.Font.BOLD, BaseColor.BLACK);
+            iTextSharp.text.Font timesRoman2 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 5, iTextSharp.text.Font.BOLD, BaseColor.BLACK);
+
+            iTextSharp.text.Font normal = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.UNDEFINED, 5, iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
+
+            // obtengo la imagen de los recursos del proyecto
+            iTextSharp.text.Image logo = iTextSharp.text.Image.GetInstance(bdOOPFinalPj.Properties.Resources.HAPA_logo_transparente, System.Drawing.Imaging.ImageFormat.Png);
+            logo.ScalePercent(10);
+
+
+            //creo la tabla que agregare al documento pdf
+            var table = new PdfPTable(new float[] { 15f, 30f, 15f, 40f }) { WidthPercentage = 100 };
+
+            //creo las celdas
+            var c1 = new PdfPCell(new Phrase("-----------", timesRoman1)); // se coloco para darle formato
+            var c2 = new PdfPCell(new Phrase("------------------------", timesRoman1));
+            var c3 = new PdfPCell(new Phrase("-----------", timesRoman1)); // se coloco para darle formato
+            var c4 = new PdfPCell(logo) { Rowspan = 3 };
+
+            //////quito los bordes de las celdas.
+            c1.Border = 0;
+            c2.Border = 0;
+            c3.Border = 0;
+            c4.Border = 0;
+
+            //////agrego las celdas a mi tabla
+            table.AddCell(c1);
+            table.AddCell(c2);
+            table.AddCell(c3);
+            table.AddCell(c4);
+
+
+
+            c1.Phrase = new Phrase(new Phrase("", timesRoman1));
+            c2.Phrase = new Phrase(new Phrase("HAPA COVID-19", timesRoman1));
+            c3.Phrase = new Phrase(new Phrase("", timesRoman1));
+
+            //////agrego las celdas a mi tabla
+            table.AddCell(c1);
+            table.AddCell(c2);
+            table.AddCell(c3);
+
+            c1.Phrase = new Phrase(new Phrase("", timesRoman1));
+            c2.Phrase = new Phrase(new Phrase("Healt Aid Program Against Covid-19", timesRoman2));
+            c3.Phrase = new Phrase(new Phrase("", timesRoman1));
+
+            //////agrego las celdas a mi tabla
+            table.AddCell(c1);
+            table.AddCell(c2);
+            table.AddCell(c3);
+
+            model(table);
+
+            indented(table);
+            indented(table);
+            date(table, schedule);
+            indented(table);
+            hour(table, schedule);
+            indented(table);
+            place(table, location);
+
+
+            doc.Add(table);
+            doc.Close();
+            pdw.Close();
+        }
+
+        private void model(PdfPTable table)
+        {
+            //Configuracion de la fuente
+            iTextSharp.text.Font timesRoman1 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 10, iTextSharp.text.Font.BOLD, BaseColor.BLACK);
+
+            var c1 = new PdfPCell(new Phrase("-----------", timesRoman1)); // se coloco para darle formato
+            var c2 = new PdfPCell(new Phrase("------------------------", timesRoman1));
+            var c3 = new PdfPCell(new Phrase("-----------", timesRoman1)); // se coloco para darle formato
+            var c4 = new PdfPCell(new Phrase("-----------------------", timesRoman1)); // se coloco para darle formato
+            //////quito los bordes de las celdas.
+            c1.Border = 0;
+            c2.Border = 0;
+            c3.Border = 0;
+            c4.Border = 0;
+
+            //////agrego las celdas a mi tabla
+            table.AddCell(c1);
+            table.AddCell(c2);
+            table.AddCell(c3);
+            table.AddCell(c4);
+        }
+
+        private void indented(PdfPTable table)
+        {
+            //configuracion de la fuente del texto
+            iTextSharp.text.Font timesRoman4 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 5, iTextSharp.text.Font.BOLD, BaseColor.WHITE);
+
+            var c1 = new PdfPCell(new Phrase(".", timesRoman4)); // se coloco para darle formato
+            var c2 = new PdfPCell(new Phrase(".", timesRoman4));
+            var c3 = new PdfPCell(new Phrase(".", timesRoman4)); // se coloco para darle formato
+            var c4 = new PdfPCell(new Phrase(".", timesRoman4)); // se coloco para darle formato
+
+            //////quito los bordes de las celdas.
+            c1.Border = 0;
+            c2.Border = 0;
+            c3.Border = 0;
+            c4.Border = 0;
+
+            //////agrego las celdas a mi tabla
+            table.AddCell(c1);
+            table.AddCell(c2);
+            table.AddCell(c3);
+            table.AddCell(c4);
+        }
+
+        private void date(PdfPTable table, DateTime schedule)
+        {
+            string date = schedule.Date.ToString();
+            iTextSharp.text.Font timesRoman3 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 7, iTextSharp.text.Font.BOLD, BaseColor.BLACK);
+
+            var c1 = new PdfPCell(new Phrase("Fecha:", timesRoman3)); // se coloco para darle formato
+            var c2 = new PdfPCell(new Phrase("", timesRoman3));
+            var c3 = new PdfPCell(new Phrase(date, timesRoman3)); // se coloco para darle formato
+            var c4 = new PdfPCell(new Phrase("", timesRoman3)); // se coloco para darle formato
+
+            //////quito los bordes de las celdas.
+            c1.Border = 0;
+            c2.Border = 0;
+            c3.Border = 0;
+            c4.Border = 0;
+
+            //////agrego las celdas a mi tabla
+            table.AddCell(c1);
+            table.AddCell(c2);
+            table.AddCell(c3);
+            table.AddCell(c4);
+        }
+
+        private void hour(PdfPTable table, DateTime schedule)
+        {
+            string hour = schedule.Hour.ToString() + ":" + schedule.Minute.ToString() + ":" + schedule.Second.ToString();
+            iTextSharp.text.Font timesRoman3 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 7, iTextSharp.text.Font.BOLD, BaseColor.BLACK);
+
+            var c1 = new PdfPCell(new Phrase("Hora:", timesRoman3)); // se coloco para darle formato
+            var c2 = new PdfPCell(new Phrase("", timesRoman3));
+            var c3 = new PdfPCell(new Phrase(hour, timesRoman3)); // se coloco para darle formato
+            var c4 = new PdfPCell(new Phrase("", timesRoman3)); // se coloco para darle formato
+
+            //////quito los bordes de las celdas.
+            c1.Border = 0;
+            c2.Border = 0;
+            c3.Border = 0;
+            c4.Border = 0;
+
+            //////agrego las celdas a mi tabla
+            table.AddCell(c1);
+            table.AddCell(c2);
+            table.AddCell(c3);
+            table.AddCell(c4);
+        }
+
+        private void place (PdfPTable table, string location)
+        {
+            iTextSharp.text.Font timesRoman3 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 7, iTextSharp.text.Font.BOLD, BaseColor.BLACK);
+
+            var c1 = new PdfPCell(new Phrase("Lugar:", timesRoman3)); // se coloco para darle formato
+            var c2 = new PdfPCell(new Phrase("", timesRoman3));
+            var c3 = new PdfPCell(new Phrase(location, timesRoman3)); // se coloco para darle formato
+            var c4 = new PdfPCell(new Phrase("", timesRoman3)); // se coloco para darle formato
+
+            //////quito los bordes de las celdas.
+            c1.Border = 0;
+            c2.Border = 0;
+            c3.Border = 0;
+            c4.Border = 0;
+
+            //////agrego las celdas a mi tabla
+            table.AddCell(c1);
+            table.AddCell(c2);
+            table.AddCell(c3);
+            table.AddCell(c4);
+        }
+
+        private DateTime getDate()
+        {
+            DateTime schedule;
+            List<Citizen> listCitizen = auxCitizen.consult();
+            var result = listCitizen.Where(u => u.Dui.Equals(txtDownloadDUICheck.Text)).ToList();
+            //Citizen citizen = result[1];
+
+            List<VaccinationProcess> appointmentdDate = auxVacc.consult();
+            var resultserch = appointmentdDate.Where(u => u.Id.Equals(result[0].IdVaccinationP)).ToList();
+
+            schedule = (DateTime)resultserch[0].DateHourVaccination;
+
+            return schedule;
+        }
+
+        private string getLocation()
+        {
+            string location;
+            List<Citizen> listCitizen = auxCitizen.consult();
+            var result = listCitizen.Where(u => u.Dui.Equals(txtDownloadDUICheck.Text)).ToList();
+
+            List<VaccinationProcess> appointmentdDate = auxVacc.consult();
+            List<VaccinationProcess> resultserch = appointmentdDate.Where(u => u.Id.Equals(result[0].IdVaccinationP)).ToList();
+
+            location = resultserch[0].Place;
+
+            return location;
+        }
+
+
+
     }
 }

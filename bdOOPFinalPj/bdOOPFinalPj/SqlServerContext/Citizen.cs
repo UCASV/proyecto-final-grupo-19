@@ -18,9 +18,9 @@ namespace bdOOPFinalPj.SqlServerContext
         public int? Age { get; set; }
         public string Mail { get; set; }
         public int? Phone { get; set; }
-        public int IdCabin { get; set; }
-        public int IdVaccinationP { get; set; }
-        public int IdIdentifier { get; set; }
+        public int? IdCabin { get; set; }
+        public int? IdVaccinationP { get; set; }
+        public int? IdIdentifier { get; set; }
 
         public virtual Cabin IdCabinNavigation { get; set; }
         public virtual Identifier IdIdentifierNavigation { get; set; }
