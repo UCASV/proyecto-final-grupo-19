@@ -297,7 +297,7 @@ namespace bdOOPFinalPj
                         twoCitizen.IdCabin = idcabin;
                         twoCitizen.IdVaccinationP = listaConst[0].Id;
                         auxCitizen.insert(twoCitizen);
-                        MessageBox.Show("Ingresado como PRIORIDAD", "HAPA", MessageBoxButtons.OK);
+                        MessageBox.Show("Entered as PRIORITY", "HAPA", MessageBoxButtons.OK);
                     }
                     else // Si no pertenence al grupo de prioridad se dara una fecha general
                     {
@@ -326,16 +326,16 @@ namespace bdOOPFinalPj
                         twoCitizen.IdVaccinationP = listaProcces[0].Id;
                         auxCitizen.insert(twoCitizen);
                     }
-                    MessageBox.Show("Exito al guardar", "HAPA", MessageBoxButtons.OK);
+                    MessageBox.Show("Save success", "HAPA", MessageBoxButtons.OK);
                 }
                 else
                 {
-                    MessageBox.Show("La persona ya esta registrada", "HAPA", MessageBoxButtons.OK);
+                    MessageBox.Show("The person is already registered", "HAPA COVID-19", MessageBoxButtons.OK);
                 }
             }
             else
             {
-                MessageBox.Show("Dato erroneo", "HAPA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Wrong data", "HAPA COVID-19", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
         }
@@ -432,23 +432,84 @@ namespace bdOOPFinalPj
 
         private void btnVaccineApplication_Click(object sender, EventArgs e)
         {
-            //Ejecutar luego de validar la selección del CheckedListBox
-            gbObservation.Visible = true;
-           
+            var validation = auxCitizen.consult().Where(c => c.Dui.Equals(txtVaccineDUI.Text)).ToList();
+            if (validation.Count != 0)
+            {
+                DateTime hInit, hVaccination = DateTime.Now;
+                int minute = 0;
+                var vaccination = auxVacc.consult().Where(v => v.Id.Equals(validation[0].IdVaccinationP)).ToList();
+
+                hInit = (DateTime)vaccination[0].DateHourStart;
+                minute = hVaccination.Minute - hInit.Minute;
+
+                vaccination[0].DateHourVaccinated = hVaccination;
+                vaccination[0].NumberMinutes = minute;
+
+                auxVacc.update(vaccination[0]);
+                gbObservation.Visible = true;
+                
+                
+            }
+            else
+            {
+                MessageBox.Show("DUI no encontrado", "HAPA", MessageBoxButtons.OK);
+            }
         }
+
 
         private void btnRegisterSecondDose_Click(object sender, EventArgs e)
         {
             //Añadir Message Box con la fecha y hora de la segunda dósis, luego de eso, el formulario se refrescará
-            
-            this.Controls.Clear();
-            this.InitializeComponent();
-            Design_TabControl();
+            var db = new PROYECTOFContext();
+            var listInstitution = db.Identifiers.ToList();
 
-            tabControl.SelectedTab = pageVaccination;
+            
+            //cambios la ventana q se muestra
+            tabControl.SelectedTab = pageTracing;
+            
 
             pnlIndicator.Height = panel5.Height;
             pnlIndicator.Top = panel5.Top;
+            //obtengo toda la informacion del ciudadano para llenar los campos de la ventana
+            List<Citizen> citizen = auxCitizen.consult().Where(c => c.Dui.Equals(txtVaccineDUI.Text)).ToList();
+            
+            txtTraceDUI.Text = txtVaccineDUI.Text;
+            txtTraceName.Text = citizen[0].NameCitizen;
+            txtTracePhoneNmbr.Text = citizen[0].Phone.ToString();
+            txtTraceAge.Text = citizen[0].Age.ToString();
+            txtTraceAddress.Text = citizen[0].Addres;
+            //busco el identificador del ciudadano
+            List<Identifier> result = listInstitution
+                .Where(i => i.Id == citizen[0].IdIdentifier)
+                .ToList();
+            cboID.Text = result[0].Identifier1;
+            //obtengo todas las enfermedades conicas  del ciudadano
+            var resulDiseases = db.Diseases.Where(d => d.IdCitizen.Equals(citizen[0].Dui)).ToList();
+            foreach (var d in resulDiseases)
+            {
+                txtTraceIllness.Text += d.Diseases + ", ";
+            }
+
+            txtTraceEmail.Text = citizen[0].Mail;
+            //creo la nueva fecha de vacunacion
+            DateTime newdate = DateTime.Now.AddDays(42);
+            txtTraceDate1.Text = newdate.ToString();
+            txtTraceHour1.Text = newdate.Hour.ToString() + ":00";
+            txtTracePlace1.Text = "Hospital El Salvador";
+            saveNewAppoiment(newdate, (int)citizen[0].Age);
+            //obtengo el ultimo proceso de vacunacion
+            var listaProcces = auxVacc.consult().OrderByDescending(c => c.Id).ToList();
+            citizen[0].IdVaccinationP = listaProcces[0].Id;
+            //actualizo el proceso de cita del paciente
+            auxCitizen.update(citizen[0]);
+            
+
+            //this.Controls.Clear();
+            //this.InitializeComponent();
+            Design_TabControl();
+
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -751,6 +812,18 @@ namespace bdOOPFinalPj
             return location;
         }
 
+        private void saveNewAppoiment (DateTime date, int age)
+        {
+            
+            VaccinationProcess vaccination = new VaccinationProcess()
+            {
+                            DateHourVaccination = date ,
+                            Place = "Hospital El Salvador"
+            };
+            auxVacc.insert(vaccination);
+
+                       
+        }
 
 
     }

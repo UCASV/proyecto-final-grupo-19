@@ -23,7 +23,7 @@ namespace bdOOPFinalPj
         public class CitizenRepo : IRepository<Citizen>
         {
             private PROYECTOFContext _Context;
-
+             
             public CitizenRepo()
             {
                 _Context = new PROYECTOFContext();

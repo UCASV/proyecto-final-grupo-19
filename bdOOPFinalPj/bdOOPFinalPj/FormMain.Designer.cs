@@ -473,7 +473,7 @@ namespace bdOOPFinalPj
             // panel41
             // 
             this.panel41.Controls.Add(this.button1);
-            this.panel41.Location = new System.Drawing.Point(365, 537);
+            this.panel41.Location = new System.Drawing.Point(361, 526);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(77, 39);
             this.panel41.TabIndex = 81;
@@ -497,9 +497,9 @@ namespace bdOOPFinalPj
             this.pnlTitle1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pnlTitle1.Controls.Add(this.label9);
             this.pnlTitle1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlTitle1.Location = new System.Drawing.Point(3, 637);
+            this.pnlTitle1.Location = new System.Drawing.Point(3, 640);
             this.pnlTitle1.Name = "pnlTitle1";
-            this.pnlTitle1.Size = new System.Drawing.Size(817, 90);
+            this.pnlTitle1.Size = new System.Drawing.Size(817, 87);
             this.pnlTitle1.TabIndex = 82;
             // 
             // label9
@@ -526,7 +526,7 @@ namespace bdOOPFinalPj
             // panel22
             // 
             this.panel22.Controls.Add(this.btnSave);
-            this.panel22.Location = new System.Drawing.Point(616, 537);
+            this.panel22.Location = new System.Drawing.Point(616, 526);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(77, 39);
             this.panel22.TabIndex = 80;
@@ -550,7 +550,7 @@ namespace bdOOPFinalPj
             this.lblIllness.AutoSize = true;
             this.lblIllness.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblIllness.ForeColor = System.Drawing.Color.Silver;
-            this.lblIllness.Location = new System.Drawing.Point(357, 517);
+            this.lblIllness.Location = new System.Drawing.Point(352, 503);
             this.lblIllness.Name = "lblIllness";
             this.lblIllness.Size = new System.Drawing.Size(90, 13);
             this.lblIllness.TabIndex = 78;
@@ -571,7 +571,7 @@ namespace bdOOPFinalPj
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblID.ForeColor = System.Drawing.Color.Silver;
-            this.lblID.Location = new System.Drawing.Point(112, 518);
+            this.lblID.Location = new System.Drawing.Point(109, 504);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(137, 13);
             this.lblID.TabIndex = 76;
@@ -584,7 +584,7 @@ namespace bdOOPFinalPj
             this.cboID.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cboID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cboID.FormattingEnabled = true;
-            this.cboID.Location = new System.Drawing.Point(115, 544);
+            this.cboID.Location = new System.Drawing.Point(112, 526);
             this.cboID.Name = "cboID";
             this.cboID.Size = new System.Drawing.Size(151, 26);
             this.cboID.TabIndex = 62;
