@@ -186,6 +186,7 @@ namespace bdOOPFinalPj
             this.pbClose5 = new System.Windows.Forms.PictureBox();
             this.label25 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.sfdSavedoc = new System.Windows.Forms.SaveFileDialog();
             this.pnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoMainForm)).BeginInit();
             this.panel1.SuspendLayout();
@@ -2220,5 +2221,6 @@ namespace bdOOPFinalPj
         private System.Windows.Forms.PictureBox pbClose5;
         private System.Windows.Forms.Panel panel41;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.SaveFileDialog sfdSavedoc;
     }
 }

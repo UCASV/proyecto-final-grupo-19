@@ -665,11 +665,16 @@ namespace bdOOPFinalPj
 
         private void button4_Click(object sender, EventArgs e)
         {
-            DateTime schedule = getDate();
-            string location = getLocation();
-            createpdf(schedule, location);
-            MessageBox.Show("Successfully created PDF file", "HAPA COVID-19", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+            if (sfdSavedoc.ShowDialog() == DialogResult.OK)
+            {
+
+                string direction = sfdSavedoc.FileName;
+                DateTime schedule = getDate();
+                string location = getLocation();
+                createpdf(schedule, location, direction);
+                MessageBox.Show("Successfully created PDF file", "HAPA COVID-19", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void btnDownloadVerify_Click(object sender, EventArgs e)
@@ -703,7 +708,7 @@ namespace bdOOPFinalPj
             
         }
 
-        public void createpdf(DateTime schedule, string location)
+        public void createpdf(DateTime schedule, string location, string directionDoc)
         {
             //con esto obtengo el user name del usuario de la pc para poder crear la cadena de direccion de la ubicacion
             string nameuser = Environment.UserName;
@@ -711,11 +716,11 @@ namespace bdOOPFinalPj
             string nombredoc = txtPatientDownload.Text;
 
             //si decimos que el instalador lo pongan en el escritorio, con esto el pdf se crea en el escritorio, asi :
-            string direccion = @"..\..\..\..\..\..\" + nombredoc +".pdf";
-           
+            string direction = directionDoc + ".pdf";
+
 
             //direccion donde se crea el pdf de manera dinamica: 
-            FileStream fs = new FileStream(direccion, FileMode.Create);
+            FileStream fs = new FileStream(direction, FileMode.Create);
             //FileStream fs = new FileStream(@"C:\Users\Oscar Carpio\Desktop\nuevo2pdf.pdf", FileMode.Create);
 
 

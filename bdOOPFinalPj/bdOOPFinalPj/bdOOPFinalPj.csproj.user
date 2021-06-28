@@ -6,6 +6,7 @@
   <PropertyGroup>
     <ActiveDebugProfile>bdOOPFinalPj</ActiveDebugProfile>
     <ShowAllFiles>true</ShowAllFiles>
+    <_LastSelectedProfileId>C:\Users\Oscar Carpio\Desktop\proyecto version 1.0\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
     <Compile Update="View\FormDiseases.cs">
