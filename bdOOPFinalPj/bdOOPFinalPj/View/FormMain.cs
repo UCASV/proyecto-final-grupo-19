@@ -157,9 +157,9 @@ namespace bdOOPFinalPj
             // AHORA BUSCAMOS AL CUIDADANO CON EL MISMO DUI QUE ESCRIBIMOS EN EL TxtTraceDUI
             var result = listCitizen.Where(u => u.Dui.Equals(txtTraceDUI.Text)).ToList();
             //-------------------------------------------------------------------------------------------
-            if (result[0].IdVaccinationP2 == null)
+            if (ValidDUI(txtTraceDUI.Text) && result.Count != 0) 
             {
-                if (ValidDUI(txtTraceDUI.Text) && result.Count != 0)
+                if ((result[0].IdVaccinationP1 != null) && (result[0].IdVaccinationP2 == null))
                 { // Usamos variables locales para trabajar los datos que estan relacionando con el dato de CITIZEN.
                     Citizen oneCitizen = result[0];
                     var identi = ListIde.consult().Where(i => i.Id.Equals(result[0].IdIdentifier)).ToList();
@@ -214,65 +214,66 @@ namespace bdOOPFinalPj
                     panel23.Visible = true;
                     panel25.Visible = true;
                 }
+                else if ((result[0].IdVaccinationP1 != null) && (result[0].IdVaccinationP2 != null))
+                {
+                    if (ValidDUI(txtTraceDUI.Text) && result.Count != 0)
+                    { // Usamos variables locales para trabajar los datos que estan relacionando con el dato de CITIZEN.
+                        Citizen oneCitizen = result[0];
+                        var identi = ListIde.consult().Where(i => i.Id.Equals(result[0].IdIdentifier)).ToList();
+                        var cronicals = auxDiseas.consult().Where(d => d.IdCitizen.Equals(result[0].Dui)).ToList();
+                        var process = auxVacc.consult().Where(v => v.Id.Equals(result[0].IdVaccinationP2)).ToList();
+                        DateTime? date = process[0].DateHourVaccination;
 
-            }
-            else if (result[0].IdVaccinationP2 != null)
-            {
-                if (ValidDUI(txtTraceDUI.Text) && result.Count != 0)
-                { // Usamos variables locales para trabajar los datos que estan relacionando con el dato de CITIZEN.
-                    Citizen oneCitizen = result[0];
-                    var identi = ListIde.consult().Where(i => i.Id.Equals(result[0].IdIdentifier)).ToList();
-                    var cronicals = auxDiseas.consult().Where(d => d.IdCitizen.Equals(result[0].Dui)).ToList();
-                    var process = auxVacc.consult().Where(v => v.Id.Equals(result[0].IdVaccinationP2)).ToList();
-                    DateTime? date = process[0].DateHourVaccination;
+                        lblTraceAddress.Visible = true;
+                        lblTraceAge.Visible = true;
+                        lblTraceDate1.Visible = true;
+                        lblTraceEmail.Visible = true;
+                        lblTraceHour1.Visible = true;
+                        lblTraceIdInstitution.Visible = true;
+                        lblTraceIllness.Visible = true;
+                        lblTraceName.Visible = true;
+                        lblTracePhoneNmbr.Visible = true;
+                        lblTracePlace1.Visible = true;
 
-                    lblTraceAddress.Visible = true;
-                    lblTraceAge.Visible = true;
-                    lblTraceDate1.Visible = true;
-                    lblTraceEmail.Visible = true;
-                    lblTraceHour1.Visible = true;
-                    lblTraceIdInstitution.Visible = true;
-                    lblTraceIllness.Visible = true;
-                    lblTraceName.Visible = true;
-                    lblTracePhoneNmbr.Visible = true;
-                    lblTracePlace1.Visible = true;
+                        //Mostramos los datos del Cuidadano con las variables locales, acorde a su dui en cada TXT
+                        txtTraceAddress.Visible = true;
+                        txtTraceAddress.Text = oneCitizen.Addres;
+                        txtTraceAge.Visible = true;
+                        txtTraceAge.Text = oneCitizen.Age.ToString();
+                        txtTraceDate1.Visible = true;
+                        txtTraceDate1.Text = date.Value.Date.ToString();
+                        txtTraceEmail.Visible = true;
+                        txtTraceEmail.Text = oneCitizen.Mail;
+                        txtTraceHour1.Visible = true;
+                        txtTraceHour1.Text = date.Value.Hour.ToString();
+                        txtTraceIDInstitution.Visible = true;
+                        txtTraceIDInstitution.Text = identi[0].Identifier1;
+                        txtTracePhoneNmbr.Visible = true;
+                        txtTracePhoneNmbr.Text = oneCitizen.Phone.ToString();
+                        txtTraceName.Visible = true;
+                        txtTraceName.Text = oneCitizen.NameCitizen;
+                        txtTraceIllness.Visible = true;
+                        foreach (var d in cronicals)
+                        {
+                            txtTraceIllness.Text += d.Diseases + ", ";
+                        }
+                        txtTracePlace1.Visible = true;
+                        txtTracePlace1.Text = process[0].Place;
 
-                    //Mostramos los datos del Cuidadano con las variables locales, acorde a su dui en cada TXT
-                    txtTraceAddress.Visible = true;
-                    txtTraceAddress.Text = oneCitizen.Addres;
-                    txtTraceAge.Visible = true;
-                    txtTraceAge.Text = oneCitizen.Age.ToString();
-                    txtTraceDate1.Visible = true;
-                    txtTraceDate1.Text = date.Value.Date.ToString();
-                    txtTraceEmail.Visible = true;
-                    txtTraceEmail.Text = oneCitizen.Mail;
-                    txtTraceHour1.Visible = true;
-                    txtTraceHour1.Text = date.Value.Hour.ToString();
-                    txtTraceIDInstitution.Visible = true;
-                    txtTraceIDInstitution.Text = identi[0].Identifier1;
-                    txtTracePhoneNmbr.Visible = true;
-                    txtTracePhoneNmbr.Text = oneCitizen.Phone.ToString();
-                    txtTraceName.Visible = true;
-                    txtTraceName.Text = oneCitizen.NameCitizen;
-                    txtTraceIllness.Visible = true;
-                    foreach (var d in cronicals)
-                    {
-                        txtTraceIllness.Text += d.Diseases + ", ";
+                        panel14.Visible = true;
+                        panel15.Visible = true;
+                        panel16.Visible = true;
+                        panel11.Visible = true;
+                        panel18.Visible = true;
+                        panel19.Visible = true;
+                        panel20.Visible = true;
+                        panel21.Visible = true;
+                        panel23.Visible = true;
+                        panel25.Visible = true;
                     }
-                    txtTracePlace1.Visible = true;
-                    txtTracePlace1.Text = process[0].Place;
 
-                    panel14.Visible = true;
-                    panel15.Visible = true;
-                    panel16.Visible = true;
-                    panel11.Visible = true;
-                    panel18.Visible = true;
-                    panel19.Visible = true;
-                    panel20.Visible = true;
-                    panel21.Visible = true;
-                    panel23.Visible = true;
-                    panel25.Visible = true;
                 }
+            
 
             }
             else
@@ -467,34 +468,38 @@ namespace bdOOPFinalPj
             var validation = auxCitizen.consult().Where(c => c.Dui.Equals(txtVaccineDUI.Text)).ToList();
             var validation2 = auxVacc.consult().Where(c => c.Id.Equals(validation[0].IdVaccinationP1)).ToList();
             var validation3 = auxVacc.consult().Where(c => c.Id.Equals(validation[0].IdVaccinationP2)).ToList();
-            if (validation2[0].NumberMinutes == null || validation3[0].NumberMinutes == null) 
+            if (validation.Count != 0)
             {
-                if (validation[0].IdVaccinationP2 == null )
+                if (validation2[0].NumberMinutes == null || validation3[0].NumberMinutes == null)
                 {
-                    DateTime waiting = DateTime.Now;
-                    var procces = auxVacc.consult().Where(v => v.Id.Equals(validation[0].IdVaccinationP1)).ToList();
-                    procces[0].DateHourStart = waiting;
-                    auxVacc.update(procces[0]);
-                    gbApply.Visible = true;
-                    gbWait.Location = new Point(12, 264);
-                }
-                else if (validation[0].IdVaccinationP2 != null)
-                {
-                    DateTime waiting = DateTime.Now;
-                    var procces = auxVacc.consult().Where(v => v.Id.Equals(validation[0].IdVaccinationP2)).ToList();
-                    procces[0].DateHourStart = waiting;
-                    auxVacc.update(procces[0]);
-                    gbApply.Visible = true;
-                    gbWait.Location = new Point(12, 264);
+                    if (validation[0].IdVaccinationP2 == null)
+                    {
+                        DateTime waiting = DateTime.Now;
+                        var procces = auxVacc.consult().Where(v => v.Id.Equals(validation[0].IdVaccinationP1)).ToList();
+                        procces[0].DateHourStart = waiting;
+                        auxVacc.update(procces[0]);
+                        gbApply.Visible = true;
+                        gbWait.Location = new Point(12, 264);
+                    }
+                    else if (validation[0].IdVaccinationP2 != null)
+                    {
+                        DateTime waiting = DateTime.Now;
+                        var procces = auxVacc.consult().Where(v => v.Id.Equals(validation[0].IdVaccinationP2)).ToList();
+                        procces[0].DateHourStart = waiting;
+                        auxVacc.update(procces[0]);
+                        gbApply.Visible = true;
+                        gbWait.Location = new Point(12, 264);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Dui not found", "HAPA", MessageBoxButtons.OK);
+                    }
                 }
                 else
-                {
-                    MessageBox.Show("Dui not found", "HAPA", MessageBoxButtons.OK);
-                }
+                    MessageBox.Show("The patient has already finished his vaccination process", "HAPA", MessageBoxButtons.OK);
             }
             else
-                MessageBox.Show("The patient has already finished his vaccination process", "HAPA", MessageBoxButtons.OK);
-
+                MessageBox.Show("The DUI is not registered", "HAPA COVID-19", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void btnSaveSynthoms_Click(object sender, EventArgs e)
