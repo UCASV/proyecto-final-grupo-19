@@ -462,30 +462,39 @@ namespace bdOOPFinalPj
 
         private void btnWaitingLineRegister_Click(object sender, EventArgs e)
         {
+           
             //Ejecutar luego de validar el DUI
             var validation = auxCitizen.consult().Where(c => c.Dui.Equals(txtVaccineDUI.Text)).ToList();
-            if(validation[0].IdVaccinationP2 == null)
+            var validation2 = auxVacc.consult().Where(c => c.Id.Equals(validation[0].IdVaccinationP1)).ToList();
+            var validation3 = auxVacc.consult().Where(c => c.Id.Equals(validation[0].IdVaccinationP2)).ToList();
+            if (validation2[0].NumberMinutes == null || validation3[0].NumberMinutes == null) 
             {
-                DateTime waiting = DateTime.Now;
-                var procces =  auxVacc.consult().Where(v => v.Id.Equals(validation[0].IdVaccinationP1)).ToList();
-                procces[0].DateHourStart = waiting;
-                auxVacc.update(procces[0]);
-                gbApply.Visible = true;
-                gbWait.Location = new Point(12, 264);
-            }
-            else if(validation[0].IdVaccinationP2 != null)
-            {
-                DateTime waiting = DateTime.Now;
-                var procces =  auxVacc.consult().Where(v => v.Id.Equals(validation[0].IdVaccinationP2)).ToList();
-                procces[0].DateHourStart = waiting;
-                auxVacc.update(procces[0]);
-                gbApply.Visible = true;
-                gbWait.Location = new Point(12, 264);
+                if (validation[0].IdVaccinationP2 == null )
+                {
+                    DateTime waiting = DateTime.Now;
+                    var procces = auxVacc.consult().Where(v => v.Id.Equals(validation[0].IdVaccinationP1)).ToList();
+                    procces[0].DateHourStart = waiting;
+                    auxVacc.update(procces[0]);
+                    gbApply.Visible = true;
+                    gbWait.Location = new Point(12, 264);
+                }
+                else if (validation[0].IdVaccinationP2 != null)
+                {
+                    DateTime waiting = DateTime.Now;
+                    var procces = auxVacc.consult().Where(v => v.Id.Equals(validation[0].IdVaccinationP2)).ToList();
+                    procces[0].DateHourStart = waiting;
+                    auxVacc.update(procces[0]);
+                    gbApply.Visible = true;
+                    gbWait.Location = new Point(12, 264);
+                }
+                else
+                {
+                    MessageBox.Show("Dui not found", "HAPA", MessageBoxButtons.OK);
+                }
             }
             else
-            {
-                MessageBox.Show("Dui not found", "HAPA", MessageBoxButtons.OK);
-            }
+                MessageBox.Show("The patient has already finished his vaccination process", "HAPA", MessageBoxButtons.OK);
+
         }
 
         private void btnSaveSynthoms_Click(object sender, EventArgs e)
@@ -578,6 +587,7 @@ namespace bdOOPFinalPj
 
         private void btnRegisterSecondDose_Click(object sender, EventArgs e)
         {
+            clbSynthoms.ClearSelected();
             List<Citizen> citizen = auxCitizen.consult().Where(c => c.Dui.Equals(txtVaccineDUI.Text)).ToList();
 
             if (citizen[0].IdVaccinationP2 == null)
