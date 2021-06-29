@@ -5812,19 +5812,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Oscar Carpio\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Oscar Carpio\\Desktop\\prueba de repo\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
       "projectName": "bdOOPFinalPj",
-      "projectPath": "C:\\Users\\Oscar Carpio\\Desktop\\prueba de repo\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
-      "packagesPath": "C:\\Users\\Oscar Carpio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Oscar Carpio\\Desktop\\prueba de repo\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\obj\\",
+      "projectPath": "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\bdOOPFinalPj.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\BD\\PROYECTO\\repo_aux\\proyecto-final-grupo-19\\bdOOPFinalPj\\bdOOPFinalPj\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Oscar Carpio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -248,3 +248,5 @@ C:\Users\Oscar Carpio\Desktop\prueba de repo\proyecto-final-grupo-19\bdOOPFinalP
 C:\Users\Oscar Carpio\Desktop\prueba de repo\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\ref\bdOOPFinalPj.dll
 C:\Users\Oscar Carpio\Desktop\prueba de repo\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.pdb
 C:\Users\Oscar Carpio\Desktop\prueba de repo\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\obj\Debug\net5.0-windows\bdOOPFinalPj.genruntimeconfig.cache
+C:\Users\user\Desktop\BD\PROYECTO\repo_aux\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\user\Desktop\BD\PROYECTO\repo_aux\proyecto-final-grupo-19\bdOOPFinalPj\bdOOPFinalPj\bin\Debug\net5.0-windows\itextsharp.dll
